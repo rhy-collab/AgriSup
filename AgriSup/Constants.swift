@@ -13,6 +13,7 @@ struct K {
     struct Segues {
         static let LOGIN_TO_MAIN_VIEW = "LoginToMainView"
         static let REGISTER_TO_GET_STARTED = "RegisterToGetStarted"
+        static let REGISTER_TO_GET_STARTED_2 = "RegisterToGetStarted2"
     }
     
 }

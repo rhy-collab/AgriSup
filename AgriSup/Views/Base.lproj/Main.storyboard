@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="f6W-z7-1R4">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
@@ -19,45 +19,63 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AgriSup" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GetStartedImage" translatesAutoresizingMaskIntoConstraints="NO" id="SBo-sO-UAt">
-                                <rect key="frame" x="87" y="202" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LogoSuppliers" translatesAutoresizingMaskIntoConstraints="NO" id="PXv-Lk-Ndf">
-                                <rect key="frame" x="87" y="503" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XnB-iZ-CYT">
-                                <rect key="frame" x="136" y="664" width="162" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" name="BrandGreen"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
-                                <state key="normal" title="Get Started">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CRN-RE-YV0">
-                                <rect key="frame" x="170" y="725" width="78" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" name="BrandGrey"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
-                                <state key="normal" title="Login">
-                                    <color key="titleColor" name="BrandGreen"/>
-                                </state>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tbC-8l-Y3j">
-                                <rect key="frame" x="143" y="433" width="103" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="17"/>
-                                <color key="textColor" name="BrandGrey"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="69" translatesAutoresizingMaskIntoConstraints="NO" id="6kR-Mo-osi">
+                                <rect key="frame" x="0.0" y="88" width="375" height="690"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GetStartedImage" translatesAutoresizingMaskIntoConstraints="NO" id="SBo-sO-UAt">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="230.33333333333334"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tbC-8l-Y3j">
+                                        <rect key="frame" x="0.0" y="299.33333333333331" width="375" height="44.666666666666686"/>
+                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="28"/>
+                                        <color key="textColor" name="BrandGrey"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LogoSuppliers" translatesAutoresizingMaskIntoConstraints="NO" id="PXv-Lk-Ndf">
+                                        <rect key="frame" x="0.0" y="413" width="375" height="99"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="Mpb-hk-WrZ">
+                                        <rect key="frame" x="0.0" y="581" width="375" height="109"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XnB-iZ-CYT">
+                                                <rect key="frame" x="60" y="0.0" width="255" height="48"/>
+                                                <color key="backgroundColor" name="BrandGreen"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                                <state key="normal" title="Get Started">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CRN-RE-YV0">
+                                                <rect key="frame" x="60" y="61" width="255" height="48"/>
+                                                <color key="backgroundColor" name="BrandGrey"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                                <state key="normal" title="Login">
+                                                    <color key="titleColor" name="BrandGreen"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="XnB-iZ-CYT" secondAttribute="trailing" constant="60" id="Qlk-rb-lIN"/>
+                                            <constraint firstAttribute="trailing" secondItem="CRN-RE-YV0" secondAttribute="trailing" constant="60" id="fOI-xb-pCc"/>
+                                            <constraint firstItem="XnB-iZ-CYT" firstAttribute="leading" secondItem="Mpb-hk-WrZ" secondAttribute="leading" constant="60" id="lXr-bd-Odv"/>
+                                            <constraint firstItem="CRN-RE-YV0" firstAttribute="leading" secondItem="Mpb-hk-WrZ" secondAttribute="leading" constant="60" id="q6A-lf-toi"/>
+                                            <constraint firstAttribute="height" constant="109" id="tyn-sk-ibS"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6kR-Mo-osi" secondAttribute="bottom" id="byt-Qh-yoZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6kR-Mo-osi" secondAttribute="trailing" id="uBg-hl-864"/>
+                            <constraint firstItem="6kR-Mo-osi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="uIJ-mG-JR8"/>
+                            <constraint firstItem="6kR-Mo-osi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wfl-wE-0Tg"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="eO2-sb-UM9"/>
                     <connections>
@@ -67,15 +85,36 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="928.98550724637687" y="88.392857142857139"/>
+            <point key="canvasLocation" x="927.69230769230762" y="88.151658767772503"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="a1P-qe-gE2">
             <objects>
                 <viewController id="Pty-hA-Agp" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="44l-SE-XP6">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r15-5n-Pu3">
+                                <rect key="frame" x="134" y="175" width="147" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password" borderStyle="roundedRect" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yuf-IW-F4p">
+                                <rect key="frame" x="134" y="227" width="147" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vHf-j3-5pv">
+                                <rect key="frame" x="186" y="293" width="42" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Log In"/>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="FfA-Di-Sx5"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
@@ -83,23 +122,77 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eKX-OT-D94" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1785" y="405"/>
+            <point key="canvasLocation" x="1784.057971014493" y="404.46428571428572"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Wek-X7-9Ue">
             <objects>
                 <viewController id="TTH-0e-RoK" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9i6-c1-ooD">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="69" translatesAutoresizingMaskIntoConstraints="NO" id="sMM-et-PBF">
+                                <rect key="frame" x="0.0" y="88" width="375" height="690"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GetStartedImage" translatesAutoresizingMaskIntoConstraints="NO" id="7QT-cy-euS">
+                                        <rect key="frame" x="53" y="0.0" width="269.33333333333331" height="202.33333333333334"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reach new markets" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WSg-d1-S7Q">
+                                        <rect key="frame" x="45" y="271.33333333333331" width="285.33333333333331" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Easily create your account and connect with buyers from around the world" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dCz-Sv-iHW">
+                                        <rect key="frame" x="0.0" y="376.33333333333331" width="375" height="101"/>
+                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="24"/>
+                                        <color key="textColor" name="BrandGrey"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="hRg-3t-zOm">
+                                        <rect key="frame" x="26.666666666666657" y="546.33333333333337" width="322" height="143.66666666666663"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ku7-e6-TAV">
+                                                <rect key="frame" x="0.0" y="49" width="58" height="46"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                                <state key="normal" title="Skip">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.33000000000000002" translatesAutoresizingMaskIntoConstraints="NO" id="uXt-cW-Vvx">
+                                                <rect key="frame" x="84" y="70" width="150" height="4"/>
+                                                <color key="tintColor" name="BrandGreen"/>
+                                            </progressView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1nx-aV-sA9">
+                                                <rect key="frame" x="260" y="49" width="62" height="46"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                                <state key="normal" title="Next">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="VPM-ss-uP6"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="VPM-ss-uP6" firstAttribute="bottom" secondItem="sMM-et-PBF" secondAttribute="bottom" id="B7q-YU-kTH"/>
+                            <constraint firstItem="sMM-et-PBF" firstAttribute="top" secondItem="VPM-ss-uP6" secondAttribute="top" id="Xj2-iN-RXR"/>
+                            <constraint firstItem="sMM-et-PBF" firstAttribute="leading" secondItem="VPM-ss-uP6" secondAttribute="leading" id="tGz-G4-2RI"/>
+                            <constraint firstAttribute="trailing" secondItem="sMM-et-PBF" secondAttribute="trailing" id="zVA-fY-tGh"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ili-1N-z7R"/>
+                    <connections>
+                        <segue destination="W9t-ML-fRR" kind="show" id="OeJ-Hh-gjT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gVr-o1-1ah" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1787" y="-306"/>
+            <point key="canvasLocation" x="1786.9565217391305" y="-306.02678571428572"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="dK3-or-h8g">
@@ -107,7 +200,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="f6W-z7-1R4" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="6Io-Hy-H6O">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
@@ -120,10 +213,147 @@
             </objects>
             <point key="canvasLocation" x="18.840579710144929" y="88.392857142857139"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="SHR-OO-HPV">
+            <objects>
+                <viewController id="W9t-ML-fRR" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2PV-AA-OeY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="69" translatesAutoresizingMaskIntoConstraints="NO" id="Afs-Sa-PEg">
+                                <rect key="frame" x="0.0" y="88" width="375" height="690"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GetStartedImage" translatesAutoresizingMaskIntoConstraints="NO" id="Eay-Ql-bRP">
+                                        <rect key="frame" x="53" y="0.0" width="269.33333333333331" height="202.33333333333334"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reach new markets" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EbS-Lz-bBc">
+                                        <rect key="frame" x="45" y="271.33333333333331" width="285.33333333333331" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Easily create your account and connect with buyers from around the world" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pgI-Fg-clK">
+                                        <rect key="frame" x="0.0" y="376.33333333333331" width="375" height="101"/>
+                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="24"/>
+                                        <color key="textColor" name="BrandGrey"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="ivq-PP-0Ka">
+                                        <rect key="frame" x="26.666666666666657" y="546.33333333333337" width="322" height="143.66666666666663"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u5s-VU-ug5">
+                                                <rect key="frame" x="0.0" y="49" width="58" height="46"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                                <state key="normal" title="Skip">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.33000001311302185" translatesAutoresizingMaskIntoConstraints="NO" id="yXV-vz-Hy2">
+                                                <rect key="frame" x="84" y="70" width="150" height="4"/>
+                                                <color key="tintColor" name="BrandGreen"/>
+                                            </progressView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2H5-3H-am0">
+                                                <rect key="frame" x="260" y="49" width="62" height="46"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                                <state key="normal" title="Next">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cYf-i6-Wf0"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Afs-Sa-PEg" firstAttribute="top" secondItem="cYf-i6-Wf0" secondAttribute="top" id="AAR-a7-dp2"/>
+                            <constraint firstItem="cYf-i6-Wf0" firstAttribute="bottom" secondItem="Afs-Sa-PEg" secondAttribute="bottom" id="BAm-gU-rkS"/>
+                            <constraint firstItem="Afs-Sa-PEg" firstAttribute="leading" secondItem="cYf-i6-Wf0" secondAttribute="leading" id="WU6-JQ-uoh"/>
+                            <constraint firstAttribute="trailing" secondItem="Afs-Sa-PEg" secondAttribute="trailing" id="yBK-df-BkX"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="wIs-vv-4Lg"/>
+                    <connections>
+                        <segue destination="Jy0-Id-cTn" kind="show" id="dwa-ar-Zmq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X9G-a2-ZdS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2531" y="-306"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="xTG-Q4-WqY">
+            <objects>
+                <viewController id="Jy0-Id-cTn" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="C7k-A4-VXo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="69" translatesAutoresizingMaskIntoConstraints="NO" id="2ph-tC-1Ke">
+                                <rect key="frame" x="0.0" y="88" width="375" height="690"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GetStartedImage" translatesAutoresizingMaskIntoConstraints="NO" id="YDi-gh-7wy">
+                                        <rect key="frame" x="53" y="0.0" width="269.33333333333331" height="202.33333333333334"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reach new markets" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NFb-Se-gRP">
+                                        <rect key="frame" x="45" y="271.33333333333331" width="285.33333333333331" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Easily create your account and connect with buyers from around the world" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hy1-Ty-NjY">
+                                        <rect key="frame" x="0.0" y="376.33333333333331" width="375" height="101"/>
+                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="24"/>
+                                        <color key="textColor" name="BrandGrey"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="52E-nv-rxu">
+                                        <rect key="frame" x="26.666666666666657" y="546.33333333333337" width="322" height="143.66666666666663"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n1c-s6-gtt">
+                                                <rect key="frame" x="0.0" y="49" width="58" height="46"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                                <state key="normal" title="Skip">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.33000001311302185" translatesAutoresizingMaskIntoConstraints="NO" id="aGC-1T-jVC">
+                                                <rect key="frame" x="84" y="70" width="150" height="4"/>
+                                                <color key="tintColor" name="BrandGreen"/>
+                                            </progressView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rsf-9G-Vfq">
+                                                <rect key="frame" x="260" y="49" width="62" height="46"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                                <state key="normal" title="Next">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Cvn-Ym-he4"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2ph-tC-1Ke" firstAttribute="leading" secondItem="Cvn-Ym-he4" secondAttribute="leading" id="GJw-kW-epz"/>
+                            <constraint firstItem="Cvn-Ym-he4" firstAttribute="bottom" secondItem="2ph-tC-1Ke" secondAttribute="bottom" id="Lnj-lh-2Tt"/>
+                            <constraint firstAttribute="trailing" secondItem="2ph-tC-1Ke" secondAttribute="trailing" id="Rxr-Bs-a4k"/>
+                            <constraint firstItem="2ph-tC-1Ke" firstAttribute="top" secondItem="Cvn-Ym-he4" secondAttribute="top" id="hpq-Qc-6mT"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="EOJ-UM-vdE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gfx-1b-Pp0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3289" y="-306"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="GetStartedImage" width="269" height="202"/>
-        <image name="LogoSuppliers" width="161.5" height="48.5"/>
+        <image name="GetStartedImage" width="269.33334350585938" height="202.33332824707031"/>
+        <image name="LogoSuppliers" width="161.66667175292969" height="48.666667938232422"/>
         <namedColor name="BrandGreen">
             <color red="0.33824411030000001" green="0.73818546529999995" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
