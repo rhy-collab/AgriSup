@@ -1,0 +1,6 @@
+framework module Pods_AgriSup_AgriSupUITests {
+  umbrella header "Pods-AgriSup-AgriSupUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

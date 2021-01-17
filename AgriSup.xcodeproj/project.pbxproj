@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11A1F77525B3AD1000A2D171 /* Supplier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A1F77425B3AD1000A2D171 /* Supplier.swift */; };
+		11A1F78025B3BE7400A2D171 /* SupplierBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A1F77F25B3BE7400A2D171 /* SupplierBuilder.swift */; };
 		11CA934225B1FD1800CE9380 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CA934125B1FD1800CE9380 /* Constants.swift */; };
 		11CA936125B2002700CE9380 /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11CA934F25B2002700CE9380 /* Poppins-Light.ttf */; };
 		11CA936225B2002700CE9380 /* Poppins-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11CA935025B2002700CE9380 /* Poppins-ThinItalic.ttf */; };
@@ -34,6 +36,9 @@
 		8E4BD11425AE856A00D75379 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E4BD11225AE856A00D75379 /* LaunchScreen.storyboard */; };
 		8E4BD11F25AE856A00D75379 /* AgriSupTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4BD11E25AE856A00D75379 /* AgriSupTests.swift */; };
 		8E4BD12A25AE856A00D75379 /* AgriSupUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4BD12925AE856A00D75379 /* AgriSupUITests.swift */; };
+		9735B3B993069C5E8E55AF83 /* Pods_AgriSupTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A15DA66EC93BFD2A8CFDA43 /* Pods_AgriSupTests.framework */; };
+		98714EABD7F0CD0CBE91BB8F /* Pods_AgriSup_AgriSupUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35206CCF6B80CDF5999B9F18 /* Pods_AgriSup_AgriSupUITests.framework */; };
+		AFAC3AA35EC7FB69EEC51BF2 /* Pods_AgriSup.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8D7831E0A75202168BD2064 /* Pods_AgriSup.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +59,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		11A1F77425B3AD1000A2D171 /* Supplier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Supplier.swift; sourceTree = "<group>"; };
+		11A1F77F25B3BE7400A2D171 /* SupplierBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupplierBuilder.swift; sourceTree = "<group>"; };
 		11CA934125B1FD1800CE9380 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		11CA934F25B2002700CE9380 /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.ttf"; sourceTree = "<group>"; };
 		11CA935025B2002700CE9380 /* Poppins-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ThinItalic.ttf"; sourceTree = "<group>"; };
@@ -73,6 +80,10 @@
 		11CA935E25B2002700CE9380 /* Poppins-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLight.ttf"; sourceTree = "<group>"; };
 		11CA935F25B2002700CE9380 /* Poppins-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
 		11CA936025B2002700CE9380 /* Poppins-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBold.ttf"; sourceTree = "<group>"; };
+		35206CCF6B80CDF5999B9F18 /* Pods_AgriSup_AgriSupUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AgriSup_AgriSupUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A15DA66EC93BFD2A8CFDA43 /* Pods_AgriSupTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AgriSupTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		73051376F4D0BBB9928A3ADA /* Pods-AgriSup-AgriSupUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgriSup-AgriSupUITests.debug.xcconfig"; path = "Target Support Files/Pods-AgriSup-AgriSupUITests/Pods-AgriSup-AgriSupUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		838143402306D3EE6D6576D4 /* Pods-AgriSup.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgriSup.release.xcconfig"; path = "Target Support Files/Pods-AgriSup/Pods-AgriSup.release.xcconfig"; sourceTree = "<group>"; };
 		8E4BD10425AE856900D75379 /* AgriSup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AgriSup.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E4BD10725AE856900D75379 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E4BD10925AE856900D75379 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -87,6 +98,11 @@
 		8E4BD12525AE856A00D75379 /* AgriSupUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AgriSupUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E4BD12925AE856A00D75379 /* AgriSupUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgriSupUITests.swift; sourceTree = "<group>"; };
 		8E4BD12B25AE856A00D75379 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F65E87D2078A18BE01A1BED /* Pods-AgriSupTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgriSupTests.debug.xcconfig"; path = "Target Support Files/Pods-AgriSupTests/Pods-AgriSupTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A5BA2FE6D27CD380A9D01C30 /* Pods-AgriSup.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgriSup.debug.xcconfig"; path = "Target Support Files/Pods-AgriSup/Pods-AgriSup.debug.xcconfig"; sourceTree = "<group>"; };
+		C9A496BF628A68883F25C12F /* Pods-AgriSup-AgriSupUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgriSup-AgriSupUITests.release.xcconfig"; path = "Target Support Files/Pods-AgriSup-AgriSupUITests/Pods-AgriSup-AgriSupUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E8D7831E0A75202168BD2064 /* Pods_AgriSup.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AgriSup.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9FB75517F3E59B12244DF43 /* Pods-AgriSupTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgriSupTests.release.xcconfig"; path = "Target Support Files/Pods-AgriSupTests/Pods-AgriSupTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFAC3AA35EC7FB69EEC51BF2 /* Pods_AgriSup.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9735B3B993069C5E8E55AF83 /* Pods_AgriSupTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,12 +126,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98714EABD7F0CD0CBE91BB8F /* Pods_AgriSup_AgriSupUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		11A1F77325B3ACFF00A2D171 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				11A1F77425B3AD1000A2D171 /* Supplier.swift */,
+				11A1F77F25B3BE7400A2D171 /* SupplierBuilder.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		11CA934625B1FDB800CE9380 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -155,6 +183,16 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		73ED876FF1DBC287BC969B4C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E8D7831E0A75202168BD2064 /* Pods_AgriSup.framework */,
+				35206CCF6B80CDF5999B9F18 /* Pods_AgriSup_AgriSupUITests.framework */,
+				6A15DA66EC93BFD2A8CFDA43 /* Pods_AgriSupTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8E4BD0FB25AE856900D75379 = {
 			isa = PBXGroup;
 			children = (
@@ -162,6 +200,8 @@
 				8E4BD11D25AE856A00D75379 /* AgriSupTests */,
 				8E4BD12825AE856A00D75379 /* AgriSupUITests */,
 				8E4BD10525AE856900D75379 /* Products */,
+				B314ECBE56B2027B29F52590 /* Pods */,
+				73ED876FF1DBC287BC969B4C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -178,6 +218,7 @@
 		8E4BD10625AE856900D75379 /* AgriSup */ = {
 			isa = PBXGroup;
 			children = (
+				11A1F77325B3ACFF00A2D171 /* Models */,
 				11CA934E25B2000C00CE9380 /* Fonts */,
 				8E4BD10725AE856900D75379 /* AppDelegate.swift */,
 				8E4BD10925AE856900D75379 /* SceneDelegate.swift */,
@@ -209,6 +250,20 @@
 			path = AgriSupUITests;
 			sourceTree = "<group>";
 		};
+		B314ECBE56B2027B29F52590 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A5BA2FE6D27CD380A9D01C30 /* Pods-AgriSup.debug.xcconfig */,
+				838143402306D3EE6D6576D4 /* Pods-AgriSup.release.xcconfig */,
+				73051376F4D0BBB9928A3ADA /* Pods-AgriSup-AgriSupUITests.debug.xcconfig */,
+				C9A496BF628A68883F25C12F /* Pods-AgriSup-AgriSupUITests.release.xcconfig */,
+				9F65E87D2078A18BE01A1BED /* Pods-AgriSupTests.debug.xcconfig */,
+				E9FB75517F3E59B12244DF43 /* Pods-AgriSupTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -216,9 +271,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8E4BD12E25AE856A00D75379 /* Build configuration list for PBXNativeTarget "AgriSup" */;
 			buildPhases = (
+				5293E6758647D61D539EF78C /* [CP] Check Pods Manifest.lock */,
 				8E4BD10025AE856900D75379 /* Sources */,
 				8E4BD10125AE856900D75379 /* Frameworks */,
 				8E4BD10225AE856900D75379 /* Resources */,
+				5431C94DF180853F76BE77D4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -233,6 +290,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8E4BD13125AE856A00D75379 /* Build configuration list for PBXNativeTarget "AgriSupTests" */;
 			buildPhases = (
+				37D133BE4F31CEED5EC92BEB /* [CP] Check Pods Manifest.lock */,
 				8E4BD11625AE856A00D75379 /* Sources */,
 				8E4BD11725AE856A00D75379 /* Frameworks */,
 				8E4BD11825AE856A00D75379 /* Resources */,
@@ -251,9 +309,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8E4BD13425AE856A00D75379 /* Build configuration list for PBXNativeTarget "AgriSupUITests" */;
 			buildPhases = (
+				26741343A9244592E106F9F3 /* [CP] Check Pods Manifest.lock */,
 				8E4BD12125AE856A00D75379 /* Sources */,
 				8E4BD12225AE856A00D75379 /* Frameworks */,
 				8E4BD12325AE856A00D75379 /* Resources */,
+				4A89DB0926F599DF929A4D17 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -352,6 +412,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		26741343A9244592E106F9F3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AgriSup-AgriSupUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		37D133BE4F31CEED5EC92BEB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AgriSupTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4A89DB0926F599DF929A4D17 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AgriSup-AgriSupUITests/Pods-AgriSup-AgriSupUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AgriSup-AgriSupUITests/Pods-AgriSup-AgriSupUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AgriSup-AgriSupUITests/Pods-AgriSup-AgriSupUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5293E6758647D61D539EF78C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AgriSup-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5431C94DF180853F76BE77D4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AgriSup/Pods-AgriSup-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AgriSup/Pods-AgriSup-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AgriSup/Pods-AgriSup-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8E4BD10025AE856900D75379 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -359,8 +522,10 @@
 			files = (
 				8E4BD10C25AE856900D75379 /* ViewController.swift in Sources */,
 				8E4BD10825AE856900D75379 /* AppDelegate.swift in Sources */,
+				11A1F77525B3AD1000A2D171 /* Supplier.swift in Sources */,
 				8E4BD10A25AE856900D75379 /* SceneDelegate.swift in Sources */,
 				11CA934225B1FD1800CE9380 /* Constants.swift in Sources */,
+				11A1F78025B3BE7400A2D171 /* SupplierBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -533,12 +698,14 @@
 		};
 		8E4BD12F25AE856A00D75379 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5BA2FE6D27CD380A9D01C30 /* Pods-AgriSup.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A98625ZYA4;
 				INFOPLIST_FILE = AgriSup/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -552,12 +719,14 @@
 		};
 		8E4BD13025AE856A00D75379 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 838143402306D3EE6D6576D4 /* Pods-AgriSup.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A98625ZYA4;
 				INFOPLIST_FILE = AgriSup/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -571,6 +740,7 @@
 		};
 		8E4BD13225AE856A00D75379 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F65E87D2078A18BE01A1BED /* Pods-AgriSupTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -593,6 +763,7 @@
 		};
 		8E4BD13325AE856A00D75379 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9FB75517F3E59B12244DF43 /* Pods-AgriSupTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -615,6 +786,7 @@
 		};
 		8E4BD13525AE856A00D75379 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73051376F4D0BBB9928A3ADA /* Pods-AgriSup-AgriSupUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -635,6 +807,7 @@
 		};
 		8E4BD13625AE856A00D75379 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9A496BF628A68883F25C12F /* Pods-AgriSup-AgriSupUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

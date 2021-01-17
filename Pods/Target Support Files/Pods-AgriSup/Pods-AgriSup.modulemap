@@ -1,0 +1,6 @@
+framework module Pods_AgriSup {
+  umbrella header "Pods-AgriSup-umbrella.h"
+
+  export *
+  module * { export * }
+}
