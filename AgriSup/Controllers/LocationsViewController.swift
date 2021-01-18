@@ -1,5 +1,5 @@
 //
-//  TestViewController.swift
+//  LocationsViewController.swift
 //  AgriSup
 //
 //  Created by Sonney Patel on 18/01/2021.
@@ -7,11 +7,11 @@
 
 import UIKit
 
-class DaysViewController: UIViewController, UITableViewDataSource {
+class LocationsViewController: UIViewController, UITableViewDataSource {
     
     @IBOutlet weak var tableView: UITableView!
     
-    var things = ["Monday", "Tuesday", "Wednesday", "Thursday","Friday","Saturday", "Sunday"]
+    var things = ["Hobart", "Melbourne", "Sydney", "Perth"]
     
     
     
