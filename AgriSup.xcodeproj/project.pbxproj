@@ -15,6 +15,9 @@
 		11A1F7AA25B5C8B600A2D171 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 11A1F7A725B5C8B600A2D171 /* GoogleService-Info.plist */; };
 		11A1F7C825B5CBD000A2D171 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A1F7C725B5CBD000A2D171 /* RegisterViewController.swift */; };
 		11A1F7CD25B5DB0400A2D171 /* PopupWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A1F7CC25B5DB0400A2D171 /* PopupWindow.swift */; };
+		11A1F80725B617E600A2D171 /* ReuseableCheckboxCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A1F80525B617E600A2D171 /* ReuseableCheckboxCell.swift */; };
+		11A1F80825B617E600A2D171 /* ReuseableCheckboxCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11A1F80625B617E600A2D171 /* ReuseableCheckboxCell.xib */; };
+		11A1F80D25B618F400A2D171 /* DaysViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A1F80C25B618F400A2D171 /* DaysViewController.swift */; };
 		11CA934225B1FD1800CE9380 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CA934125B1FD1800CE9380 /* Constants.swift */; };
 		11CA936125B2002700CE9380 /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11CA934F25B2002700CE9380 /* Poppins-Light.ttf */; };
 		11CA936225B2002700CE9380 /* Poppins-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11CA935025B2002700CE9380 /* Poppins-ThinItalic.ttf */; };
@@ -72,6 +75,9 @@
 		11A1F7A725B5C8B600A2D171 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		11A1F7C725B5CBD000A2D171 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		11A1F7CC25B5DB0400A2D171 /* PopupWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupWindow.swift; sourceTree = "<group>"; };
+		11A1F80525B617E600A2D171 /* ReuseableCheckboxCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReuseableCheckboxCell.swift; sourceTree = "<group>"; };
+		11A1F80625B617E600A2D171 /* ReuseableCheckboxCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReuseableCheckboxCell.xib; sourceTree = "<group>"; };
+		11A1F80C25B618F400A2D171 /* DaysViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysViewController.swift; sourceTree = "<group>"; };
 		11CA934125B1FD1800CE9380 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		11CA934F25B2002700CE9380 /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.ttf"; sourceTree = "<group>"; };
 		11CA935025B2002700CE9380 /* Poppins-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ThinItalic.ttf"; sourceTree = "<group>"; };
@@ -159,6 +165,7 @@
 			children = (
 				8E4BD10B25AE856900D75379 /* ViewController.swift */,
 				11A1F7C725B5CBD000A2D171 /* RegisterViewController.swift */,
+				11A1F80C25B618F400A2D171 /* DaysViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -168,6 +175,8 @@
 			children = (
 				8E4BD10D25AE856900D75379 /* Main.storyboard */,
 				11A1F7CC25B5DB0400A2D171 /* PopupWindow.swift */,
+				11A1F80525B617E600A2D171 /* ReuseableCheckboxCell.swift */,
+				11A1F80625B617E600A2D171 /* ReuseableCheckboxCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -407,6 +416,7 @@
 				11CA937025B2002700CE9380 /* Poppins-ExtraLight.ttf in Resources */,
 				11CA936625B2002700CE9380 /* Poppins-SemiBold.ttf in Resources */,
 				11CA936125B2002700CE9380 /* Poppins-Light.ttf in Resources */,
+				11A1F80825B617E600A2D171 /* ReuseableCheckboxCell.xib in Resources */,
 				11A1F7A825B5C8B600A2D171 /* GoogleService-Info.plist in Resources */,
 				11CA936525B2002700CE9380 /* Poppins-Regular.ttf in Resources */,
 				11CA936725B2002700CE9380 /* Poppins-Medium.ttf in Resources */,
@@ -547,6 +557,8 @@
 				8E4BD10A25AE856900D75379 /* SceneDelegate.swift in Sources */,
 				11CA934225B1FD1800CE9380 /* Constants.swift in Sources */,
 				11A1F78025B3BE7400A2D171 /* SupplierBuilder.swift in Sources */,
+				11A1F80725B617E600A2D171 /* ReuseableCheckboxCell.swift in Sources */,
+				11A1F80D25B618F400A2D171 /* DaysViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
