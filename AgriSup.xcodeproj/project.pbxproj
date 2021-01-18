@@ -3,12 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		11A1F77525B3AD1000A2D171 /* Supplier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A1F77425B3AD1000A2D171 /* Supplier.swift */; };
 		11A1F78025B3BE7400A2D171 /* SupplierBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A1F77F25B3BE7400A2D171 /* SupplierBuilder.swift */; };
+		11A1F79D25B40E2600A2D171 /* AuthenticationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11A1F79C25B40E2600A2D171 /* AuthenticationServices.framework */; };
+		11A1F7A825B5C8B600A2D171 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 11A1F7A725B5C8B600A2D171 /* GoogleService-Info.plist */; };
+		11A1F7A925B5C8B600A2D171 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 11A1F7A725B5C8B600A2D171 /* GoogleService-Info.plist */; };
+		11A1F7AA25B5C8B600A2D171 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 11A1F7A725B5C8B600A2D171 /* GoogleService-Info.plist */; };
+		11A1F7C825B5CBD000A2D171 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A1F7C725B5CBD000A2D171 /* RegisterViewController.swift */; };
+		11A1F7CD25B5DB0400A2D171 /* PopupWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A1F7CC25B5DB0400A2D171 /* PopupWindow.swift */; };
 		11CA934225B1FD1800CE9380 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CA934125B1FD1800CE9380 /* Constants.swift */; };
 		11CA936125B2002700CE9380 /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11CA934F25B2002700CE9380 /* Poppins-Light.ttf */; };
 		11CA936225B2002700CE9380 /* Poppins-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11CA935025B2002700CE9380 /* Poppins-ThinItalic.ttf */; };
@@ -61,6 +67,11 @@
 /* Begin PBXFileReference section */
 		11A1F77425B3AD1000A2D171 /* Supplier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Supplier.swift; sourceTree = "<group>"; };
 		11A1F77F25B3BE7400A2D171 /* SupplierBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupplierBuilder.swift; sourceTree = "<group>"; };
+		11A1F79B25B40E2600A2D171 /* AgriSup.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AgriSup.entitlements; sourceTree = "<group>"; };
+		11A1F79C25B40E2600A2D171 /* AuthenticationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AuthenticationServices.framework; path = System/Library/Frameworks/AuthenticationServices.framework; sourceTree = SDKROOT; };
+		11A1F7A725B5C8B600A2D171 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		11A1F7C725B5CBD000A2D171 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		11A1F7CC25B5DB0400A2D171 /* PopupWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupWindow.swift; sourceTree = "<group>"; };
 		11CA934125B1FD1800CE9380 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		11CA934F25B2002700CE9380 /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.ttf"; sourceTree = "<group>"; };
 		11CA935025B2002700CE9380 /* Poppins-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ThinItalic.ttf"; sourceTree = "<group>"; };
@@ -110,6 +121,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11A1F79D25B40E2600A2D171 /* AuthenticationServices.framework in Frameworks */,
 				AFAC3AA35EC7FB69EEC51BF2 /* Pods_AgriSup.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -146,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				8E4BD10B25AE856900D75379 /* ViewController.swift */,
+				11A1F7C725B5CBD000A2D171 /* RegisterViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -154,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				8E4BD10D25AE856900D75379 /* Main.storyboard */,
+				11A1F7CC25B5DB0400A2D171 /* PopupWindow.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -186,6 +200,7 @@
 		73ED876FF1DBC287BC969B4C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				11A1F79C25B40E2600A2D171 /* AuthenticationServices.framework */,
 				E8D7831E0A75202168BD2064 /* Pods_AgriSup.framework */,
 				35206CCF6B80CDF5999B9F18 /* Pods_AgriSup_AgriSupUITests.framework */,
 				6A15DA66EC93BFD2A8CFDA43 /* Pods_AgriSupTests.framework */,
@@ -218,6 +233,7 @@
 		8E4BD10625AE856900D75379 /* AgriSup */ = {
 			isa = PBXGroup;
 			children = (
+				11A1F79B25B40E2600A2D171 /* AgriSup.entitlements */,
 				11A1F77325B3ACFF00A2D171 /* Models */,
 				11CA934E25B2000C00CE9380 /* Fonts */,
 				8E4BD10725AE856900D75379 /* AppDelegate.swift */,
@@ -228,6 +244,7 @@
 				8E4BD11225AE856A00D75379 /* LaunchScreen.storyboard */,
 				8E4BD11525AE856A00D75379 /* Info.plist */,
 				11CA934125B1FD1800CE9380 /* Constants.swift */,
+				11A1F7A725B5C8B600A2D171 /* GoogleService-Info.plist */,
 			);
 			path = AgriSup;
 			sourceTree = "<group>";
@@ -260,7 +277,6 @@
 				9F65E87D2078A18BE01A1BED /* Pods-AgriSupTests.debug.xcconfig */,
 				E9FB75517F3E59B12244DF43 /* Pods-AgriSupTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -391,6 +407,7 @@
 				11CA937025B2002700CE9380 /* Poppins-ExtraLight.ttf in Resources */,
 				11CA936625B2002700CE9380 /* Poppins-SemiBold.ttf in Resources */,
 				11CA936125B2002700CE9380 /* Poppins-Light.ttf in Resources */,
+				11A1F7A825B5C8B600A2D171 /* GoogleService-Info.plist in Resources */,
 				11CA936525B2002700CE9380 /* Poppins-Regular.ttf in Resources */,
 				11CA936725B2002700CE9380 /* Poppins-Medium.ttf in Resources */,
 			);
@@ -400,6 +417,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11A1F7A925B5C8B600A2D171 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,6 +425,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11A1F7AA25B5C8B600A2D171 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -520,8 +539,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11A1F7CD25B5DB0400A2D171 /* PopupWindow.swift in Sources */,
 				8E4BD10C25AE856900D75379 /* ViewController.swift in Sources */,
 				8E4BD10825AE856900D75379 /* AppDelegate.swift in Sources */,
+				11A1F7C825B5CBD000A2D171 /* RegisterViewController.swift in Sources */,
 				11A1F77525B3AD1000A2D171 /* Supplier.swift in Sources */,
 				8E4BD10A25AE856900D75379 /* SceneDelegate.swift in Sources */,
 				11CA934225B1FD1800CE9380 /* Constants.swift in Sources */,
@@ -702,15 +723,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AgriSup/AgriSup.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = A98625ZYA4;
+				DEVELOPMENT_TEAM = V6YY85C33X;
 				INFOPLIST_FILE = AgriSup/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.rhys.AgriSup;
+				PRODUCT_BUNDLE_IDENTIFIER = com.agrimarkets.AgriSup;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -723,15 +745,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AgriSup/AgriSup.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = A98625ZYA4;
+				DEVELOPMENT_TEAM = V6YY85C33X;
 				INFOPLIST_FILE = AgriSup/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.rhys.AgriSup;
+				PRODUCT_BUNDLE_IDENTIFIER = com.agrimarkets.AgriSup;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
