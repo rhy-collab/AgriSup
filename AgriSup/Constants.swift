@@ -26,6 +26,7 @@ struct K {
         static let toDeliveryCityInfo = "toDeliveryCityInfo"
         static let toFinancialInfo = "toFinancialInfo"
         static let toFinalView = "toFinalView"
+        static let toMainPage = "toMainPage"
         
         
     }

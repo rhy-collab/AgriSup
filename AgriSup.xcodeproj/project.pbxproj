@@ -22,6 +22,7 @@
 		11B6721325B8BACE00A72CB6 /* LicenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B6721225B8BACE00A72CB6 /* LicenseViewController.swift */; };
 		11B6721825B8BAFF00A72CB6 /* DeliveryDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B6721725B8BAFF00A72CB6 /* DeliveryDetailsViewController.swift */; };
 		11B6721D25B8BB2200A72CB6 /* FinancialDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B6721C25B8BB2200A72CB6 /* FinancialDetailsViewController.swift */; };
+		11B6722225B8D45200A72CB6 /* FinalSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B6722125B8D45200A72CB6 /* FinalSetupViewController.swift */; };
 		11CA934225B1FD1800CE9380 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CA934125B1FD1800CE9380 /* Constants.swift */; };
 		11CA936125B2002700CE9380 /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11CA934F25B2002700CE9380 /* Poppins-Light.ttf */; };
 		11CA936225B2002700CE9380 /* Poppins-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11CA935025B2002700CE9380 /* Poppins-ThinItalic.ttf */; };
@@ -86,6 +87,7 @@
 		11B6721225B8BACE00A72CB6 /* LicenseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicenseViewController.swift; sourceTree = "<group>"; };
 		11B6721725B8BAFF00A72CB6 /* DeliveryDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryDetailsViewController.swift; sourceTree = "<group>"; };
 		11B6721C25B8BB2200A72CB6 /* FinancialDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinancialDetailsViewController.swift; sourceTree = "<group>"; };
+		11B6722125B8D45200A72CB6 /* FinalSetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalSetupViewController.swift; sourceTree = "<group>"; };
 		11CA934125B1FD1800CE9380 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		11CA934F25B2002700CE9380 /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.ttf"; sourceTree = "<group>"; };
 		11CA935025B2002700CE9380 /* Poppins-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ThinItalic.ttf"; sourceTree = "<group>"; };
@@ -178,6 +180,7 @@
 				11B6721225B8BACE00A72CB6 /* LicenseViewController.swift */,
 				11B6721725B8BAFF00A72CB6 /* DeliveryDetailsViewController.swift */,
 				11B6721C25B8BB2200A72CB6 /* FinancialDetailsViewController.swift */,
+				11B6722125B8D45200A72CB6 /* FinalSetupViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -567,6 +570,7 @@
 				8E4BD10825AE856900D75379 /* AppDelegate.swift in Sources */,
 				11A1F7C825B5CBD000A2D171 /* RegisterViewController.swift in Sources */,
 				11B6721325B8BACE00A72CB6 /* LicenseViewController.swift in Sources */,
+				11B6722225B8D45200A72CB6 /* FinalSetupViewController.swift in Sources */,
 				11A1F77525B3AD1000A2D171 /* Supplier.swift in Sources */,
 				11B6721D25B8BB2200A72CB6 /* FinancialDetailsViewController.swift in Sources */,
 				8E4BD10A25AE856900D75379 /* SceneDelegate.swift in Sources */,

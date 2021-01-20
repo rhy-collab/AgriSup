@@ -28,7 +28,7 @@ class DeliveryDetailsViewController: UIViewController {
            let driverBusinessName = driverBusinessName.text,
            let depotDeliveryAddress = depotDeliveryAddress.text {
             
-            
+            supplierBuilder.appendDeliveryCity(cityName: cityName)
             supplierBuilder.appendDeliveryCityInfo(cityName: cityName, driverName: driverName, driverBusinessName: driverBusinessName, driverMobile: driverPhoneNumber, depotName: depotBusinessName, depotPhoneNumber: depotPhone, depotAddress: depotDeliveryAddress)
             
             performSegue(withIdentifier: K.Segues.toFinancialInfo, sender: self)
@@ -46,7 +46,7 @@ class DeliveryDetailsViewController: UIViewController {
            let driverBusinessName = driverBusinessName.text,
            let depotDeliveryAddress = depotDeliveryAddress.text {
             
-            
+            supplierBuilder.appendDeliveryCity(cityName: cityName)
             supplierBuilder.appendDeliveryCityInfo(cityName: cityName, driverName: driverName, driverBusinessName: driverBusinessName, driverMobile: driverPhoneNumber, depotName: depotBusinessName, depotPhoneNumber: depotPhone, depotAddress: depotDeliveryAddress)
             
         } else {

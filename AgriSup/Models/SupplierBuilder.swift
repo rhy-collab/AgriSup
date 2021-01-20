@@ -24,8 +24,10 @@ class SupplierBuilder {
     var farmingLicense: String = ""
     var driversLicense: String = ""
     var deliveryDates: [String] = []
+    var deliveryCities: [String] = []
     var deliveryCityInfo: [DeliveryCityInfo] = []
     var financialInfo: Supplier.FinancialInfo = Supplier.FinancialInfo(accountName: "", bsb: "", accountNumber: "")
+    var products: [Supplier.Products] = []
     
     
     func setEmail(email: String) {
@@ -48,6 +50,10 @@ class SupplierBuilder {
         self.deliveryDates = deliveryDates
     }
     
+    func appendDeliveryCity(cityName: String) {
+        deliveryCities.append(cityName)
+    }
+    
     func appendDeliveryCityInfo(cityName: String, driverName: String, driverBusinessName: String, driverMobile: String, depotName: String, depotPhoneNumber: String, depotAddress: String){
         let transportProvider: TransportProvider = TransportProvider(name: driverName, businessName: driverBusinessName, mobileNumber: driverMobile)
         let depotProvider: DepotProvider = DepotProvider(businessName: depotName, mobileNumber: depotPhoneNumber, address: depotAddress)
@@ -59,6 +65,13 @@ class SupplierBuilder {
     
     func setFinancialInfo(accountName: String, bsb: String, accountNumber: String) {
         self.financialInfo = Supplier.FinancialInfo(accountName: accountName, bsb: bsb, accountNumber: accountNumber)
+    }
+    
+    func build() -> Supplier {
+        
+        let credentials = Supplier.Credentials(abn: abn, farmingLicense: farmingLicense, drivingLicense: driversLicense)
+        
+        return Supplier(firstName: firstName, lastName: lastName, mobileNumber: mobileNumber, photo: [""], deliveryDates: deliveryDates, credentials: credentials, deliveryCities: deliveryCities, deliveryCityInfo: deliveryCityInfo, financialInfo: financialInfo , Products: products)
     }
     
 }
