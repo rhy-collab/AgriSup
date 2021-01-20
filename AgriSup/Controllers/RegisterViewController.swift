@@ -36,7 +36,7 @@ class RegisterViewController: UIViewController {
                     if let e = error {
                         self.errorPopUpDisplayed(e.localizedDescription)
                     } else {
-                        self.performSegue(withIdentifier: K.Segues.REGISTER, sender: self)
+                        self.performSegue(withIdentifier: "toNameInfo", sender: self)
                     }
                 }
             }
@@ -48,7 +48,4 @@ class RegisterViewController: UIViewController {
         self.present(popUpWindow, animated: true, completion: nil)
     }
     
-    
-    @IBAction func skipPressed(_ sender: UIButton) {
-    }
 }

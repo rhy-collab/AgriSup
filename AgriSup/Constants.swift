@@ -18,8 +18,16 @@ struct K {
         static let REGISTER_TO_GET_STARTED = "RegisterToGetStarted"
         static let REGISTER_TO_GET_STARTED_2 = "RegisterToGetStarted2"
         
-        //From email and password register to account setup
-        static let REGISTER = "RegisterToApp"
+        
+        static let toNameInfo = "toNameInfo"
+        static let toLicenseInfo = "toLicenseInfo"
+        static let toPhotoInfo = "toPhotoInfo"
+        static let toDeliveryDayInfo = "toDeliveryDayInfo"
+        static let toDeliveryCityInfo = "toDeliveryCityInfo"
+        static let toFinancialInfo = "toFinancialInfo"
+        static let toFinalView = "toFinalView"
+        
+        
     }
     
 }

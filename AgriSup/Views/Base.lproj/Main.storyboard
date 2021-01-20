@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="j0M-C7-GsQ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="f6W-z7-1R4">
     <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -182,6 +182,9 @@
                                         <state key="normal" title="Next">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="nextPressed:" destination="zNI-R4-AAV" eventType="touchUpInside" id="9sR-aq-hj5"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -235,22 +238,23 @@
                     <navigationItem key="navigationItem" id="D9v-5s-kH8"/>
                     <connections>
                         <outlet property="tableView" destination="dlb-6o-3pi" id="PaP-O1-RG5"/>
+                        <segue destination="j0M-C7-GsQ" kind="show" identifier="toDeliveryCityInfo" id="c4d-Ka-1b8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b77-T8-gef" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="8919" y="-306"/>
         </scene>
-        <!--View Controller-->
+        <!--Delivery Details View Controller-->
         <scene sceneID="qn3-jd-Pwa">
             <objects>
-                <viewController id="j0M-C7-GsQ" sceneMemberID="viewController">
+                <viewController id="j0M-C7-GsQ" customClass="DeliveryDetailsViewController" customModule="AgriSup" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="D5Z-Ku-cBb">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="hNE-9P-cxH">
-                                <rect key="frame" x="20" y="44" width="388" height="782"/>
+                                <rect key="frame" x="20" y="88" width="388" height="738"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Doing great! Add the details of your delivery locations" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jTB-qG-k2k">
                                         <rect key="frame" x="0.0" y="0.0" width="388" height="107.66666666666667"/>
@@ -259,7 +263,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j23-Sf-ajg">
-                                        <rect key="frame" x="0.0" y="127.66666666666669" width="388" height="654.33333333333326"/>
+                                        <rect key="frame" x="0.0" y="127.66666666666669" width="388" height="610.33333333333326"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="HcK-gM-Hzb">
                                                 <rect key="frame" x="0.0" y="0.0" width="371.66666666666669" height="541"/>
@@ -297,7 +301,7 @@
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Depot Details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bwa-5P-RKk">
-                                                        <rect key="frame" x="0.0" y="296.66666666666663" width="371.66666666666669" height="20.333333333333314"/>
+                                                        <rect key="frame" x="0.0" y="296.66666666666674" width="371.66666666666669" height="20.333333333333314"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -323,6 +327,9 @@
                                                         <state key="normal" title="Click to add another city + ">
                                                             <color key="titleColor" name="BrandGreen"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="clickToAddAnotherCityPressed:" destination="j0M-C7-GsQ" eventType="touchUpInside" id="XzV-Vs-H3m"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -344,6 +351,9 @@
                                 <state key="normal" title="Next">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="nextPressed:" destination="j0M-C7-GsQ" eventType="touchUpInside" id="t30-Ei-ASQ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="PHp-mY-3sq"/>
@@ -357,10 +367,21 @@
                             <constraint firstItem="hNE-9P-cxH" firstAttribute="leading" secondItem="PHp-mY-3sq" secondAttribute="leading" constant="20" id="ny4-SR-2le"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="hyV-XX-MNQ"/>
+                    <connections>
+                        <outlet property="cityName" destination="1vx-ON-d4k" id="ghu-Xk-4DN"/>
+                        <outlet property="depotBusinessName" destination="xUW-nH-lzP" id="EnT-D0-Iym"/>
+                        <outlet property="depotDeliveryAddress" destination="PIp-6Q-kZe" id="Bq2-0j-lfO"/>
+                        <outlet property="depotPhoneNumber" destination="nbr-tS-JGb" id="CZj-Vg-q5O"/>
+                        <outlet property="driverBusinessName" destination="s14-GW-e7Z" id="n17-5f-P62"/>
+                        <outlet property="driverName" destination="PW9-HH-tF0" id="Ay7-c7-Wed"/>
+                        <outlet property="driverPhoneNumber" destination="5ug-dS-zKc" id="1zZ-Fu-pEP"/>
+                        <segue destination="lfX-DI-nPy" kind="show" identifier="toFinancialInfo" id="1di-XB-Hf6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Xh-YT-AG4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="10268.691588785046" y="-297.40820734341253"/>
+            <point key="canvasLocation" x="9782" y="-306"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="SHR-OO-HPV">
@@ -429,29 +450,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="69" translatesAutoresizingMaskIntoConstraints="NO" id="2ph-tC-1Ke">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="76" translatesAutoresizingMaskIntoConstraints="NO" id="2ph-tC-1Ke">
                                 <rect key="frame" x="0.0" y="148" width="428" height="744"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Online_transaction" translatesAutoresizingMaskIntoConstraints="NO" id="YDi-gh-7wy">
                                         <rect key="frame" x="58.666666666666657" y="0.0" width="310.66666666666674" height="160"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get paid" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NFb-Se-gRP">
-                                        <rect key="frame" x="153" y="229" width="122" height="36"/>
+                                        <rect key="frame" x="153" y="236" width="122" height="36"/>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let us do the chasing, so you've got time to do more important things" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hy1-Ty-NjY">
-                                        <rect key="frame" x="0.0" y="334" width="428" height="67.333333333333314"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hy1-Ty-NjY">
+                                        <rect key="frame" x="0.0" y="348" width="428" height="67.333333333333314"/>
+                                        <string key="text">Let us do the chasing, so you've got 
+time to do more important things</string>
                                         <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="24"/>
                                         <color key="textColor" name="BrandGrey"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="52E-nv-rxu">
-                                        <rect key="frame" x="183" y="470.33333333333337" width="62" height="273.66666666666663"/>
+                                        <rect key="frame" x="183" y="491.33333333333343" width="62" height="252.66666666666669"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rsf-9G-Vfq">
-                                                <rect key="frame" x="0.0" y="114" width="62" height="46"/>
+                                                <rect key="frame" x="0.0" y="103.33333333333326" width="62" height="46"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
                                                 <state key="normal" title="Next">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -602,10 +625,10 @@
             </objects>
             <point key="canvasLocation" x="4938" y="-306"/>
         </scene>
-        <!--View Controller-->
+        <!--Name View Controller-->
         <scene sceneID="FFx-aR-tEG">
             <objects>
-                <viewController storyboardIdentifier="SupplierInfo" useStoryboardIdentifierAsRestorationIdentifier="YES" id="KN2-3N-uft" customClass="ViewController" customModule="AgriSup" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SupplierInfo" useStoryboardIdentifierAsRestorationIdentifier="YES" id="KN2-3N-uft" customClass="NameViewController" customModule="AgriSup" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WUX-av-otZ">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -625,19 +648,19 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="F6g-ij-8Ex">
                                         <rect key="frame" x="40" y="429.66666666666663" width="348" height="177"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="First Name" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fAz-pr-ejR">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fAz-pr-ejR">
                                                 <rect key="frame" x="0.0" y="0.0" width="348" height="49"/>
                                                 <color key="textColor" name="BrandGrey"/>
                                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="28"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Last Name" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Py-Eq-rcE">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Py-Eq-rcE">
                                                 <rect key="frame" x="0.0" y="64" width="348" height="49"/>
                                                 <color key="textColor" name="BrandGrey"/>
                                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="28"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Mobile number" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HOI-C0-AB1">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mobile number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HOI-C0-AB1">
                                                 <rect key="frame" x="0.0" y="128" width="348" height="49"/>
                                                 <color key="textColor" name="BrandGrey"/>
                                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="28"/>
@@ -655,7 +678,7 @@
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="getStartedButtonPressed:" destination="KN2-3N-uft" eventType="touchUpInside" id="vh0-Td-HuU"/>
+                                                    <action selector="nextPressed:" destination="KN2-3N-uft" eventType="touchUpInside" id="GgI-CF-4jz"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -678,20 +701,20 @@
                     </view>
                     <navigationItem key="navigationItem" id="fB7-vo-wIP"/>
                     <connections>
-                        <outlet property="firstName" destination="fAz-pr-ejR" id="Ic0-fP-t6Q"/>
-                        <outlet property="lastName" destination="8Py-Eq-rcE" id="wFY-JJ-ahF"/>
-                        <outlet property="supplierMobileNumber" destination="HOI-C0-AB1" id="hdH-9k-5Rz"/>
-                        <segue destination="Is4-1A-giD" kind="show" identifier="one" id="xFc-JF-hc3"/>
+                        <outlet property="firstNameTextField" destination="fAz-pr-ejR" id="TtC-IC-Zu7"/>
+                        <outlet property="lastNameTextField" destination="8Py-Eq-rcE" id="BtK-vC-nFX"/>
+                        <outlet property="mobileNumberTextField" destination="HOI-C0-AB1" id="PL6-Z0-ca5"/>
+                        <segue destination="Is4-1A-giD" kind="show" identifier="toLicenseInfo" id="xFc-JF-hc3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jFL-Us-8lO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="6538" y="-306"/>
         </scene>
-        <!--View Controller-->
+        <!--License View Controller-->
         <scene sceneID="m0E-mH-4wF">
             <objects>
-                <viewController storyboardIdentifier="SupplierInfoImportant" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Is4-1A-giD" customClass="ViewController" customModule="AgriSup" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SupplierInfoImportant" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Is4-1A-giD" customClass="LicenseViewController" customModule="AgriSup" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ULy-fx-efI">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -709,22 +732,22 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="5VM-Z7-b4E">
-                                        <rect key="frame" x="40" y="409.66666666666669" width="348" height="176.00000000000006"/>
+                                        <rect key="frame" x="40" y="409.66666666666669" width="348" height="177.00000000000006"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="ABN" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MBv-hQ-kne">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ABN" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MBv-hQ-kne">
                                                 <rect key="frame" x="0.0" y="0.0" width="348" height="49"/>
                                                 <color key="textColor" name="BrandGrey"/>
                                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="28"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Farming License" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZRO-c4-6YC">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Farming License" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZRO-c4-6YC">
                                                 <rect key="frame" x="0.0" y="63.999999999999943" width="348" height="49"/>
                                                 <color key="textColor" name="BrandGrey"/>
                                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="28"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Drivers License Number" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cif-cj-iLG">
-                                                <rect key="frame" x="0.0" y="127.99999999999994" width="348" height="48"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Drivers License Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cif-cj-iLG">
+                                                <rect key="frame" x="0.0" y="127.99999999999994" width="348" height="49"/>
                                                 <color key="textColor" name="BrandGrey"/>
                                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="28"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -732,16 +755,16 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="Szd-zg-WOn">
-                                        <rect key="frame" x="183" y="654.66666666666663" width="62" height="149.33333333333337"/>
+                                        <rect key="frame" x="183" y="655.66666666666663" width="62" height="148.33333333333337"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y3S-nl-39w">
-                                                <rect key="frame" x="0.0" y="51.666666666666742" width="62" height="46"/>
+                                                <rect key="frame" x="0.0" y="51.333333333333371" width="62" height="46"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
                                                 <state key="normal" title="Next">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="getStartedButtonPressed:" destination="Is4-1A-giD" eventType="touchUpInside" id="haG-Wn-bnq"/>
+                                                    <action selector="nextPressed:" destination="Is4-1A-giD" eventType="touchUpInside" id="W9d-el-ZJL"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -764,7 +787,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="EvI-ge-M2k"/>
                     <connections>
-                        <segue destination="1hr-2E-hIF" kind="show" identifier="two" id="Uji-Zl-eUW"/>
+                        <outlet property="abnTextField" destination="MBv-hQ-kne" id="F3m-aJ-HRF"/>
+                        <outlet property="driversLicenseTextField" destination="cif-cj-iLG" id="LLO-kr-jw7"/>
+                        <outlet property="farmingLicenseField" destination="ZRO-c4-6YC" id="4Ho-Cg-paT"/>
+                        <segue destination="1hr-2E-hIF" kind="show" identifier="toPhotoInfo" id="Uji-Zl-eUW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AIF-KV-nE1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -822,7 +848,7 @@
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="zNI-R4-AAV" kind="show" id="XfO-ri-3et"/>
+                                                    <segue destination="zNI-R4-AAV" kind="show" identifier="toDeliveryDayInfo" id="XfO-ri-3et"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -858,7 +884,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="69" translatesAutoresizingMaskIntoConstraints="NO" id="kNN-Bi-UVK">
-                                <rect key="frame" x="0.0" y="44" width="428" height="848"/>
+                                <rect key="frame" x="0.0" y="88" width="428" height="804"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login" translatesAutoresizingMaskIntoConstraints="NO" id="pQV-h3-1gy">
                                         <rect key="frame" x="46.666666666666657" y="0.0" width="334.66666666666674" height="200"/>
@@ -888,10 +914,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="We2-WC-KiM">
-                                        <rect key="frame" x="183" y="624" width="62" height="224"/>
+                                        <rect key="frame" x="183" y="624" width="62" height="180"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gpE-GG-GB0">
-                                                <rect key="frame" x="0.0" y="89" width="62" height="46"/>
+                                                <rect key="frame" x="0.0" y="67" width="62" height="46"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
                                                 <state key="normal" title="Next">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -922,21 +948,21 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tRu-m2-ckE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="12798" y="-306"/>
+            <point key="canvasLocation" x="11602" y="-306"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="VxG-Yo-yjh">
             <objects>
                 <viewController id="Sj5-F5-2YB" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8gJ-eZ-1SY">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="69" translatesAutoresizingMaskIntoConstraints="NO" id="di3-Ul-e3o">
-                                <rect key="frame" x="0.0" y="0.0" width="428" height="838"/>
+                                <rect key="frame" x="0.0" y="88" width="428" height="804"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Main Home Page" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tta-tZ-Lqd">
-                                        <rect key="frame" x="93" y="0.0" width="242" height="838"/>
+                                        <rect key="frame" x="93" y="0.0" width="242" height="804"/>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -957,7 +983,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q4Q-ol-jj6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="13918" y="124"/>
+            <point key="canvasLocation" x="12537" y="88"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="PV5-wb-gD8">
@@ -1038,23 +1064,23 @@
                         <outlet property="confirmPasswordTextField" destination="YnZ-Ug-sTv" id="v9a-7P-9E7"/>
                         <outlet property="emailTextField" destination="a5g-5l-kz0" id="Oud-pB-6W3"/>
                         <outlet property="passwordTextField" destination="veh-KS-6qo" id="vqW-vt-zla"/>
-                        <segue destination="KN2-3N-uft" kind="show" identifier="RegisterToApp" id="0Aa-2p-gYa"/>
+                        <segue destination="KN2-3N-uft" kind="show" identifier="toNameInfo" id="0Aa-2p-gYa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7cY-z4-Zyb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5753" y="-306"/>
         </scene>
-        <!--View Controller-->
+        <!--Financial Details View Controller-->
         <scene sceneID="YpV-fG-aYC">
             <objects>
-                <viewController id="lfX-DI-nPy" customClass="ViewController" customModule="AgriSup" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="lfX-DI-nPy" customClass="FinancialDetailsViewController" customModule="AgriSup" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="khi-WI-EFG">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="69" translatesAutoresizingMaskIntoConstraints="NO" id="0P8-Jm-7aY">
-                                <rect key="frame" x="0.0" y="44" width="428" height="848"/>
+                                <rect key="frame" x="0.0" y="88" width="428" height="804"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login" translatesAutoresizingMaskIntoConstraints="NO" id="ja7-d6-bge">
                                         <rect key="frame" x="46.666666666666657" y="0.0" width="334.66666666666674" height="200"/>
@@ -1068,19 +1094,19 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="LYu-uk-OOM">
                                         <rect key="frame" x="40" y="409.66666666666669" width="348" height="177.00000000000006"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Business name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Buo-Ms-CvI">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Account Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Buo-Ms-CvI">
                                                 <rect key="frame" x="0.0" y="0.0" width="348" height="49"/>
                                                 <color key="textColor" name="BrandGrey"/>
                                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="28"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mobile Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dBd-Gy-qly">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="BSB" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dBd-Gy-qly">
                                                 <rect key="frame" x="0.0" y="63.999999999999943" width="348" height="49"/>
                                                 <color key="textColor" name="BrandGrey"/>
                                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="28"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Delivery Depot Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cEs-3k-Rp8">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Account Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cEs-3k-Rp8">
                                                 <rect key="frame" x="0.0" y="127.99999999999994" width="348" height="49"/>
                                                 <color key="textColor" name="BrandGrey"/>
                                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="28"/>
@@ -1089,14 +1115,17 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="W0t-vI-Dvf">
-                                        <rect key="frame" x="183" y="655.66666666666663" width="62" height="192.33333333333337"/>
+                                        <rect key="frame" x="183" y="655.66666666666663" width="62" height="148.33333333333337"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MRj-S7-omz">
-                                                <rect key="frame" x="0.0" y="73.333333333333371" width="62" height="46"/>
+                                                <rect key="frame" x="0.0" y="51.333333333333371" width="62" height="46"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
                                                 <state key="normal" title="Next">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="nextPressed:" destination="lfX-DI-nPy" eventType="touchUpInside" id="dx8-lu-g0d"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -1117,10 +1146,16 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="MgX-K0-eMw"/>
+                    <connections>
+                        <outlet property="accountNameTextField" destination="Buo-Ms-CvI" id="iH1-WS-9co"/>
+                        <outlet property="accountNumberTextField" destination="cEs-3k-Rp8" id="WJX-zu-MM8"/>
+                        <outlet property="bsbTextField" destination="dBd-Gy-qly" id="7Px-B8-Xyx"/>
+                        <segue destination="2CJ-xi-raI" kind="show" identifier="toFinalView" id="sce-cs-F4k"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jmF-BV-VYi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="12021" y="-306"/>
+            <point key="canvasLocation" x="10695" y="-306"/>
         </scene>
     </scenes>
     <resources>
