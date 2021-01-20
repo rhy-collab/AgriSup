@@ -13,6 +13,8 @@ struct K {
     static let cellIdentifier = "ReusableCell"
     static let cellNibName = "ReuseableCheckboxCell"
     
+    static let supplierCollection = "suppliers"
+    
     struct Segues {
         static let LOGIN_TO_MAIN_VIEW = "LoginToMainView"
         static let REGISTER_TO_GET_STARTED = "RegisterToGetStarted"

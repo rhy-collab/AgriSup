@@ -18,7 +18,7 @@ class FinalSetupViewController: UIViewController {
         
         let supplier = supplierBuilder.build()
 
-        db.collection("suppliers")
+        db.collection(K.supplierCollection)
             .document(supplier.email!)
             .setData(supplier.createDic()!) { err in
                 if let err = err {
@@ -27,17 +27,5 @@ class FinalSetupViewController: UIViewController {
                     print("Document printed successfully")
                 }
             }
-        
-//        db.collection("suppliers").addDocument(data: supplier.createDic()!) { (error) in
-//            if let e = error {
-//                print("There was an issue saving data to FireStore, \(e)")
-//            } else {
-//                print("Successfully saved data")
-//
-//                DispatchQueue.main.async {
-//                    self.performSegue(withIdentifier: K.Segues.toMainPage, sender: self)
-//                }
-//            }
-//        }
     }
 }
