@@ -18,7 +18,6 @@
 		11A1F80725B617E600A2D171 /* ReuseableCheckboxCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A1F80525B617E600A2D171 /* ReuseableCheckboxCell.swift */; };
 		11A1F80825B617E600A2D171 /* ReuseableCheckboxCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11A1F80625B617E600A2D171 /* ReuseableCheckboxCell.xib */; };
 		11A1F85925B6312500A2D171 /* DaysViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A1F85825B6312500A2D171 /* DaysViewController.swift */; };
-		11A1F85E25B6399300A2D171 /* LocationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A1F85D25B6399300A2D171 /* LocationsViewController.swift */; };
 		11CA934225B1FD1800CE9380 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CA934125B1FD1800CE9380 /* Constants.swift */; };
 		11CA936125B2002700CE9380 /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11CA934F25B2002700CE9380 /* Poppins-Light.ttf */; };
 		11CA936225B2002700CE9380 /* Poppins-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11CA935025B2002700CE9380 /* Poppins-ThinItalic.ttf */; };
@@ -79,7 +78,6 @@
 		11A1F80525B617E600A2D171 /* ReuseableCheckboxCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReuseableCheckboxCell.swift; sourceTree = "<group>"; };
 		11A1F80625B617E600A2D171 /* ReuseableCheckboxCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReuseableCheckboxCell.xib; sourceTree = "<group>"; };
 		11A1F85825B6312500A2D171 /* DaysViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysViewController.swift; sourceTree = "<group>"; };
-		11A1F85D25B6399300A2D171 /* LocationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewController.swift; sourceTree = "<group>"; };
 		11CA934125B1FD1800CE9380 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		11CA934F25B2002700CE9380 /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.ttf"; sourceTree = "<group>"; };
 		11CA935025B2002700CE9380 /* Poppins-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ThinItalic.ttf"; sourceTree = "<group>"; };
@@ -168,7 +166,6 @@
 				8E4BD10B25AE856900D75379 /* ViewController.swift */,
 				11A1F7C725B5CBD000A2D171 /* RegisterViewController.swift */,
 				11A1F85825B6312500A2D171 /* DaysViewController.swift */,
-				11A1F85D25B6399300A2D171 /* LocationsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -556,7 +553,6 @@
 				8E4BD10C25AE856900D75379 /* ViewController.swift in Sources */,
 				8E4BD10825AE856900D75379 /* AppDelegate.swift in Sources */,
 				11A1F7C825B5CBD000A2D171 /* RegisterViewController.swift in Sources */,
-				11A1F85E25B6399300A2D171 /* LocationsViewController.swift in Sources */,
 				11A1F77525B3AD1000A2D171 /* Supplier.swift in Sources */,
 				8E4BD10A25AE856900D75379 /* SceneDelegate.swift in Sources */,
 				11CA934225B1FD1800CE9380 /* Constants.swift in Sources */,

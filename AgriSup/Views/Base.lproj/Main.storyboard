@@ -27,16 +27,16 @@
                                 <rect key="frame" x="0.0" y="88" width="428" height="804"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GetStartedImage" translatesAutoresizingMaskIntoConstraints="NO" id="SBo-sO-UAt">
-                                        <rect key="frame" x="0.0" y="0.0" width="428" height="271.33333333333331"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="428" height="268.33333333333331"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tbC-8l-Y3j">
-                                        <rect key="frame" x="0.0" y="340.33333333333331" width="428" height="43.666666666666686"/>
+                                        <rect key="frame" x="0.0" y="337.33333333333331" width="428" height="52"/>
                                         <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="28"/>
                                         <color key="textColor" name="BrandGrey"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LogoSuppliers" translatesAutoresizingMaskIntoConstraints="NO" id="PXv-Lk-Ndf">
-                                        <rect key="frame" x="0.0" y="453" width="428" height="173"/>
+                                        <rect key="frame" x="0.0" y="458.33333333333343" width="428" height="167.66666666666669"/>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="Mpb-hk-WrZ">
                                         <rect key="frame" x="0.0" y="695" width="428" height="109"/>
@@ -108,27 +108,27 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Easily create your account and connect with buyers from around the world" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dCz-Sv-iHW">
-                                        <rect key="frame" x="0.0" y="394" width="428" height="56"/>
+                                        <rect key="frame" x="10.666666666666657" y="394" width="406.66666666666674" height="101"/>
                                         <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="24"/>
                                         <color key="textColor" name="BrandGrey"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="hRg-3t-zOm">
-                                        <rect key="frame" x="78.666666666666686" y="519" width="271" height="285"/>
+                                        <rect key="frame" x="78.666666666666686" y="564" width="271" height="240"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ku7-e6-TAV">
-                                                <rect key="frame" x="0.0" y="119.66666666666663" width="58" height="46"/>
+                                                <rect key="frame" x="0.0" y="97" width="58" height="46"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
                                                 <state key="normal" title="Skip">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                             </button>
                                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.33000001311302185" translatesAutoresizingMaskIntoConstraints="NO" id="mwU-bt-BvS">
-                                                <rect key="frame" x="84" y="140.66666666666663" width="99" height="4"/>
+                                                <rect key="frame" x="84" y="118" width="99" height="4"/>
                                                 <color key="tintColor" name="BrandGreen"/>
                                             </progressView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1nx-aV-sA9">
-                                                <rect key="frame" x="209" y="119.66666666666663" width="62" height="46"/>
+                                                <rect key="frame" x="209" y="97" width="62" height="46"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
                                                 <state key="normal" title="Next">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -204,9 +204,6 @@
                                         <state key="normal" title="Next">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
-                                        <connections>
-                                            <segue destination="bgm-A7-wrL" kind="show" id="Afw-Oq-PXc"/>
-                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -287,27 +284,27 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Intelligent supply chain management delivers your products globally" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pgI-Fg-clK">
-                                        <rect key="frame" x="14" y="394" width="400" height="56"/>
+                                        <rect key="frame" x="47.666666666666657" y="394" width="332.66666666666674" height="101"/>
                                         <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="24"/>
                                         <color key="textColor" name="BrandGrey"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="ivq-PP-0Ka">
-                                        <rect key="frame" x="53" y="519" width="322" height="285"/>
+                                        <rect key="frame" x="53" y="564" width="322" height="240"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u5s-VU-ug5">
-                                                <rect key="frame" x="0.0" y="119.66666666666663" width="58" height="46"/>
+                                                <rect key="frame" x="0.0" y="97" width="58" height="46"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
                                                 <state key="normal" title="Skip">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                             </button>
                                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.66000000000000003" translatesAutoresizingMaskIntoConstraints="NO" id="yXV-vz-Hy2">
-                                                <rect key="frame" x="84" y="140.66666666666663" width="150" height="4"/>
+                                                <rect key="frame" x="84" y="118" width="150" height="4"/>
                                                 <color key="tintColor" name="BrandGreen"/>
                                             </progressView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2H5-3H-am0">
-                                                <rect key="frame" x="260" y="119.66666666666663" width="62" height="46"/>
+                                                <rect key="frame" x="260" y="97" width="62" height="46"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
                                                 <state key="normal" title="Next">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -357,27 +354,27 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let us do the chasing, so you've got time to do more important things" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hy1-Ty-NjY">
-                                        <rect key="frame" x="16" y="334" width="396.33333333333331" height="56"/>
+                                        <rect key="frame" x="0.0" y="334" width="428" height="67.333333333333314"/>
                                         <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="24"/>
                                         <color key="textColor" name="BrandGrey"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="52E-nv-rxu">
-                                        <rect key="frame" x="53.666666666666657" y="459" width="321" height="285"/>
+                                        <rect key="frame" x="53.666666666666657" y="470.33333333333337" width="321" height="273.66666666666663"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n1c-s6-gtt">
-                                                <rect key="frame" x="0.0" y="119.66666666666663" width="58" height="46"/>
+                                                <rect key="frame" x="0.0" y="114" width="58" height="46"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
                                                 <state key="normal" title="Skip">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                             </button>
                                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="aGC-1T-jVC">
-                                                <rect key="frame" x="84" y="140.66666666666663" width="109" height="4"/>
+                                                <rect key="frame" x="84" y="135" width="109" height="4"/>
                                                 <color key="tintColor" name="BrandGreen"/>
                                             </progressView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rsf-9G-Vfq">
-                                                <rect key="frame" x="219" y="119.66666666666663" width="102" height="46"/>
+                                                <rect key="frame" x="219" y="114" width="102" height="46"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
                                                 <state key="normal" title="Sign Up">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -427,27 +424,27 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Just fill out what you can. Hit Skip if you can't answer any of the questions" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MsR-uY-lbP">
-                                        <rect key="frame" x="10.333333333333343" y="409.66666666666669" width="407.33333333333326" height="56"/>
+                                        <rect key="frame" x="3.3333333333333428" y="409.66666666666669" width="421.33333333333326" height="101"/>
                                         <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="24"/>
                                         <color key="textColor" name="BrandGrey"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="q2u-L8-uKN">
-                                        <rect key="frame" x="53" y="534.66666666666663" width="322" height="269.33333333333337"/>
+                                        <rect key="frame" x="53" y="579.66666666666663" width="322" height="224.33333333333337"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6jr-Tw-dSH">
-                                                <rect key="frame" x="0.0" y="111.66666666666674" width="58" height="46"/>
+                                                <rect key="frame" x="0.0" y="89.333333333333371" width="58" height="46"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
                                                 <state key="normal" title="Skip">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                             </button>
                                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.33000001311302185" translatesAutoresizingMaskIntoConstraints="NO" id="pcj-4R-Xha">
-                                                <rect key="frame" x="84" y="132.66666666666674" width="150" height="4"/>
+                                                <rect key="frame" x="84" y="110.33333333333337" width="150" height="4"/>
                                                 <color key="tintColor" name="BrandGreen"/>
                                             </progressView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GbF-p6-9yJ">
-                                                <rect key="frame" x="260" y="111.66666666666674" width="62" height="46"/>
+                                                <rect key="frame" x="260" y="89.333333333333371" width="62" height="46"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
                                                 <state key="normal" title="Next">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -497,7 +494,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rPU-Ca-LGP">
-                                        <rect key="frame" x="108.66666666666667" y="429.66666666666663" width="210.66666666666663" height="112"/>
+                                        <rect key="frame" x="99.666666666666671" y="429.66666666666663" width="228.66666666666663" height="134.66666666666663"/>
                                         <string key="text">1. Personal Details 
 2. Business Details
 3. Transport Details
@@ -507,21 +504,21 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="Pdc-qE-ZnZ">
-                                        <rect key="frame" x="53" y="610.66666666666663" width="322" height="193.33333333333337"/>
+                                        <rect key="frame" x="53" y="633.33333333333337" width="322" height="170.66666666666663"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G4L-gK-YN2">
-                                                <rect key="frame" x="0.0" y="73.666666666666742" width="58" height="46"/>
+                                                <rect key="frame" x="0.0" y="62.333333333333258" width="58" height="46"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
                                                 <state key="normal" title="Skip">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                             </button>
                                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.33000001311302185" translatesAutoresizingMaskIntoConstraints="NO" id="vlE-gV-Jpq">
-                                                <rect key="frame" x="84" y="94.666666666666742" width="150" height="4"/>
+                                                <rect key="frame" x="84" y="83.333333333333258" width="150" height="4"/>
                                                 <color key="tintColor" name="BrandGreen"/>
                                             </progressView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m0j-0e-9yA">
-                                                <rect key="frame" x="260" y="73.666666666666742" width="62" height="46"/>
+                                                <rect key="frame" x="260" y="62.333333333333258" width="62" height="46"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
                                                 <state key="normal" title="Next">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -571,22 +568,22 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="F6g-ij-8Ex">
-                                        <rect key="frame" x="40" y="429.66666666666663" width="348" height="157"/>
+                                        <rect key="frame" x="40" y="429.66666666666663" width="348" height="177"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="First Name" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fAz-pr-ejR">
-                                                <rect key="frame" x="0.0" y="0.0" width="348" height="42.333333333333336"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="348" height="49"/>
                                                 <color key="textColor" name="BrandGrey"/>
                                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="28"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Last Name" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Py-Eq-rcE">
-                                                <rect key="frame" x="0.0" y="57.333333333333371" width="348" height="42.333333333333343"/>
+                                                <rect key="frame" x="0.0" y="64" width="348" height="49"/>
                                                 <color key="textColor" name="BrandGrey"/>
                                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="28"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Mobile number" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HOI-C0-AB1">
-                                                <rect key="frame" x="0.0" y="114.66666666666673" width="348" height="42.333333333333329"/>
+                                                <rect key="frame" x="0.0" y="128" width="348" height="49"/>
                                                 <color key="textColor" name="BrandGrey"/>
                                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="28"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -594,21 +591,21 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="a4e-LB-vI6">
-                                        <rect key="frame" x="53" y="655.66666666666663" width="322" height="148.33333333333337"/>
+                                        <rect key="frame" x="53" y="675.66666666666663" width="322" height="128.33333333333337"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ieW-9h-SSX">
-                                                <rect key="frame" x="0.0" y="51.333333333333371" width="58" height="46"/>
+                                                <rect key="frame" x="0.0" y="41.333333333333371" width="58" height="46"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
                                                 <state key="normal" title="Skip">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                             </button>
                                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.33000001311302185" translatesAutoresizingMaskIntoConstraints="NO" id="bRC-ZS-QUu">
-                                                <rect key="frame" x="84" y="72.333333333333371" width="150" height="4"/>
+                                                <rect key="frame" x="84" y="62.333333333333371" width="150" height="4"/>
                                                 <color key="tintColor" name="BrandGreen"/>
                                             </progressView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3xV-eD-r1G">
-                                                <rect key="frame" x="260" y="51.333333333333371" width="62" height="46"/>
+                                                <rect key="frame" x="260" y="41.333333333333371" width="62" height="46"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
                                                 <state key="normal" title="Next">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -668,22 +665,22 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="5VM-Z7-b4E">
-                                        <rect key="frame" x="40" y="409.66666666666669" width="348" height="157.00000000000006"/>
+                                        <rect key="frame" x="40" y="409.66666666666669" width="348" height="176.00000000000006"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="ABN" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MBv-hQ-kne">
-                                                <rect key="frame" x="0.0" y="0.0" width="348" height="42.333333333333336"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="348" height="49"/>
                                                 <color key="textColor" name="BrandGrey"/>
                                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="28"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Farming License" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZRO-c4-6YC">
-                                                <rect key="frame" x="0.0" y="57.333333333333314" width="348" height="42.333333333333343"/>
+                                                <rect key="frame" x="0.0" y="63.999999999999943" width="348" height="49"/>
                                                 <color key="textColor" name="BrandGrey"/>
                                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="28"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Drivers License Number" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cif-cj-iLG">
-                                                <rect key="frame" x="0.0" y="114.66666666666667" width="348" height="42.333333333333329"/>
+                                                <rect key="frame" x="0.0" y="127.99999999999994" width="348" height="48"/>
                                                 <color key="textColor" name="BrandGrey"/>
                                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="28"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -691,21 +688,21 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="Szd-zg-WOn">
-                                        <rect key="frame" x="53" y="635.66666666666663" width="322" height="168.33333333333337"/>
+                                        <rect key="frame" x="53" y="654.66666666666663" width="322" height="149.33333333333337"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tZ0-sx-MrU">
-                                                <rect key="frame" x="0.0" y="61.333333333333371" width="58" height="46"/>
+                                                <rect key="frame" x="0.0" y="51.666666666666742" width="58" height="46"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
                                                 <state key="normal" title="Skip">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                             </button>
                                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.66000000000000003" translatesAutoresizingMaskIntoConstraints="NO" id="hSg-yS-GqU">
-                                                <rect key="frame" x="84" y="82.333333333333371" width="150" height="4"/>
+                                                <rect key="frame" x="84" y="72.666666666666742" width="150" height="4"/>
                                                 <color key="tintColor" name="BrandGreen"/>
                                             </progressView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y3S-nl-39w">
-                                                <rect key="frame" x="260" y="61.333333333333371" width="62" height="46"/>
+                                                <rect key="frame" x="260" y="51.666666666666742" width="62" height="46"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
                                                 <state key="normal" title="Next">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -831,190 +828,6 @@
             <point key="canvasLocation" x="8121" y="-306"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="aal-CE-c4L">
-            <objects>
-                <viewController id="wUi-Ef-Egf" customClass="ViewController" customModule="AgriSup" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="cvv-jX-7wz">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="69" translatesAutoresizingMaskIntoConstraints="NO" id="IT3-Z7-aVE">
-                                <rect key="frame" x="0.0" y="88" width="428" height="804"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login" translatesAutoresizingMaskIntoConstraints="NO" id="t6a-IK-51a">
-                                        <rect key="frame" x="46.666666666666657" y="0.0" width="334.66666666666674" height="200"/>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LM4-Ba-bse">
-                                        <rect key="frame" x="66" y="269" width="296.33333333333331" height="107.66666666666669"/>
-                                        <string key="text">Doing great!
-Who is your primary transport provider?</string>
-                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
-                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="yEi-5V-jKc">
-                                        <rect key="frame" x="40" y="445.66666666666663" width="348" height="157"/>
-                                        <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dUz-dk-qE7">
-                                                <rect key="frame" x="0.0" y="0.0" width="348" height="42.333333333333336"/>
-                                                <color key="textColor" name="BrandGrey"/>
-                                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="28"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                            </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Business name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="et3-NS-8u9">
-                                                <rect key="frame" x="0.0" y="57.333333333333371" width="348" height="42.333333333333343"/>
-                                                <color key="textColor" name="BrandGrey"/>
-                                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="28"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                            </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mobile Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9UW-c1-OYK">
-                                                <rect key="frame" x="0.0" y="114.66666666666673" width="348" height="42.333333333333329"/>
-                                                <color key="textColor" name="BrandGrey"/>
-                                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="28"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                            </textField>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="7Nl-qp-Vew">
-                                        <rect key="frame" x="53" y="671.66666666666663" width="322" height="132.33333333333337"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NQ9-sR-eYt">
-                                                <rect key="frame" x="0.0" y="43.333333333333371" width="58" height="46"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
-                                                <state key="normal" title="Skip">
-                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                            </button>
-                                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.6600000262260437" translatesAutoresizingMaskIntoConstraints="NO" id="SbL-WZ-gNx">
-                                                <rect key="frame" x="84" y="64.333333333333371" width="150" height="4"/>
-                                                <color key="tintColor" name="BrandGreen"/>
-                                            </progressView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f47-BZ-b9c">
-                                                <rect key="frame" x="260" y="43.333333333333371" width="62" height="46"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
-                                                <state key="normal" title="Next">
-                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                                <connections>
-                                                    <segue destination="co5-I4-wc0" kind="show" id="ijR-SP-wPd"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                    </stackView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="yEi-5V-jKc" secondAttribute="trailing" constant="40" id="mkc-P4-1L8"/>
-                                    <constraint firstItem="yEi-5V-jKc" firstAttribute="leading" secondItem="IT3-Z7-aVE" secondAttribute="leading" constant="40" id="x2e-P7-c7h"/>
-                                </constraints>
-                            </stackView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="ve6-49-YPD"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="IT3-Z7-aVE" secondAttribute="trailing" id="SBz-Jx-qwd"/>
-                            <constraint firstItem="IT3-Z7-aVE" firstAttribute="leading" secondItem="ve6-49-YPD" secondAttribute="leading" id="YEl-Jn-HiZ"/>
-                            <constraint firstItem="IT3-Z7-aVE" firstAttribute="top" secondItem="ve6-49-YPD" secondAttribute="top" id="ngf-2f-BWe"/>
-                            <constraint firstItem="ve6-49-YPD" firstAttribute="bottom" secondItem="IT3-Z7-aVE" secondAttribute="bottom" id="pnX-zh-aXJ"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="Afa-wH-iXz"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="l7X-oC-ZHF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="10493" y="-306"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="yK8-4k-0KG">
-            <objects>
-                <viewController id="co5-I4-wc0" customClass="ViewController" customModule="AgriSup" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="gpv-HY-P43">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="69" translatesAutoresizingMaskIntoConstraints="NO" id="KV7-cg-zVC">
-                                <rect key="frame" x="0.0" y="88" width="428" height="804"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login" translatesAutoresizingMaskIntoConstraints="NO" id="nxX-yF-OsY">
-                                        <rect key="frame" x="46.666666666666657" y="0.0" width="334.66666666666674" height="200"/>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your depot details so we can help distribute your product" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9S8-AT-MdT">
-                                        <rect key="frame" x="4" y="269" width="420" height="71.666666666666686"/>
-                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
-                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="alG-jc-IVn">
-                                        <rect key="frame" x="40" y="409.66666666666669" width="348" height="157.00000000000006"/>
-                                        <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Business name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dsL-yG-6CC">
-                                                <rect key="frame" x="0.0" y="0.0" width="348" height="42.333333333333336"/>
-                                                <color key="textColor" name="BrandGrey"/>
-                                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="28"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                            </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mobile Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OzY-cv-P1P">
-                                                <rect key="frame" x="0.0" y="57.333333333333314" width="348" height="42.333333333333343"/>
-                                                <color key="textColor" name="BrandGrey"/>
-                                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="28"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                            </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Delivery Depot Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gcs-T6-dF6">
-                                                <rect key="frame" x="0.0" y="114.66666666666667" width="348" height="42.333333333333329"/>
-                                                <color key="textColor" name="BrandGrey"/>
-                                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="28"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                            </textField>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="MBn-Ub-yNo">
-                                        <rect key="frame" x="53" y="635.66666666666663" width="322" height="168.33333333333337"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eud-Jv-ZHJ">
-                                                <rect key="frame" x="0.0" y="61.333333333333371" width="58" height="46"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
-                                                <state key="normal" title="Skip">
-                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                            </button>
-                                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.6600000262260437" translatesAutoresizingMaskIntoConstraints="NO" id="dfR-Tq-Q5I">
-                                                <rect key="frame" x="84" y="82.333333333333371" width="150" height="4"/>
-                                                <color key="tintColor" name="BrandGreen"/>
-                                            </progressView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Xd-VI-A7Y">
-                                                <rect key="frame" x="260" y="61.333333333333371" width="62" height="46"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
-                                                <state key="normal" title="Next">
-                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                                <connections>
-                                                    <segue destination="lfX-DI-nPy" kind="show" id="ncT-xS-pzH"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                    </stackView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="alG-jc-IVn" firstAttribute="leading" secondItem="KV7-cg-zVC" secondAttribute="leading" constant="40" id="tGT-zx-cko"/>
-                                    <constraint firstAttribute="trailing" secondItem="alG-jc-IVn" secondAttribute="trailing" constant="40" id="xwh-1V-16x"/>
-                                </constraints>
-                            </stackView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="974-9m-tvm"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="KV7-cg-zVC" firstAttribute="top" secondItem="974-9m-tvm" secondAttribute="top" id="QKI-ns-jD2"/>
-                            <constraint firstItem="KV7-cg-zVC" firstAttribute="leading" secondItem="974-9m-tvm" secondAttribute="leading" id="RNB-Kq-qQT"/>
-                            <constraint firstItem="974-9m-tvm" firstAttribute="bottom" secondItem="KV7-cg-zVC" secondAttribute="bottom" id="Y7X-sw-TvO"/>
-                            <constraint firstAttribute="trailing" secondItem="KV7-cg-zVC" secondAttribute="trailing" id="qQC-TW-lMz"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="pkH-j3-rBM"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="QBK-OD-QrT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="11263" y="-306"/>
-        </scene>
-        <!--View Controller-->
         <scene sceneID="EpO-hX-J0s">
             <objects>
                 <viewController id="2CJ-xi-raI" customClass="ViewController" customModule="AgriSup" customModuleProvider="target" sceneMemberID="viewController">
@@ -1035,16 +848,16 @@ Who is your primary transport provider?</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="rLH-Uj-9sh">
-                                        <rect key="frame" x="40" y="374" width="348" height="162"/>
+                                        <rect key="frame" x="40" y="374" width="348" height="181"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The next section is the Add Product walkthrough. It'll take approximately 5 minutes" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="11B-C3-Yq2">
-                                                <rect key="frame" x="0.0" y="0.0" width="348" height="70"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="348" height="84"/>
                                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="20"/>
                                                 <color key="textColor" name="BrandGrey"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rFf-BI-83e">
-                                                <rect key="frame" x="0.0" y="120" width="348" height="42"/>
+                                                <rect key="frame" x="0.0" y="134" width="348" height="47"/>
                                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="25"/>
                                                 <state key="normal" title="Take me to my account → ">
                                                     <color key="titleColor" name="BrandGreen"/>
@@ -1053,21 +866,21 @@ Who is your primary transport provider?</string>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="We2-WC-KiM">
-                                        <rect key="frame" x="53" y="605" width="322" height="243"/>
+                                        <rect key="frame" x="53" y="624" width="322" height="224"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3q9-fq-dJq">
-                                                <rect key="frame" x="0.0" y="98.666666666666629" width="58" height="46"/>
+                                                <rect key="frame" x="0.0" y="89" width="58" height="46"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
                                                 <state key="normal" title="Skip">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                             </button>
                                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.6600000262260437" translatesAutoresizingMaskIntoConstraints="NO" id="F5T-2m-JRG">
-                                                <rect key="frame" x="84" y="119.66666666666663" width="150" height="4"/>
+                                                <rect key="frame" x="84" y="110" width="150" height="4"/>
                                                 <color key="tintColor" name="BrandGreen"/>
                                             </progressView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gpE-GG-GB0">
-                                                <rect key="frame" x="260" y="98.666666666666629" width="62" height="46"/>
+                                                <rect key="frame" x="260" y="89" width="62" height="46"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
                                                 <state key="normal" title="Next">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1156,22 +969,22 @@ Who is your primary transport provider?</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Zxg-Kg-P93">
-                                        <rect key="frame" x="40" y="501.33333333333331" width="348" height="154.33333333333331"/>
+                                        <rect key="frame" x="40" y="501.33333333333337" width="348" height="175"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a5g-5l-kz0">
-                                                <rect key="frame" x="0.0" y="0.0" width="348" height="42.333333333333336"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="348" height="49"/>
                                                 <color key="textColor" name="BrandGrey"/>
                                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="28"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="veh-KS-6qo">
-                                                <rect key="frame" x="0.0" y="57.333333333333258" width="348" height="41"/>
+                                                <rect key="frame" x="0.0" y="64" width="348" height="48"/>
                                                 <color key="textColor" name="BrandGrey"/>
                                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="28"/>
                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YnZ-Ug-sTv">
-                                                <rect key="frame" x="0.0" y="113.33333333333326" width="348" height="41"/>
+                                                <rect key="frame" x="0.0" y="127" width="348" height="48"/>
                                                 <color key="textColor" name="BrandGrey"/>
                                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="28"/>
                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
@@ -1179,10 +992,10 @@ Who is your primary transport provider?</string>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="fcE-Y4-GUz">
-                                        <rect key="frame" x="53" y="724.66666666666663" width="322" height="79.333333333333371"/>
+                                        <rect key="frame" x="53" y="745.33333333333337" width="322" height="58.666666666666629"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="16X-XQ-vYp">
-                                                <rect key="frame" x="0.0" y="16.666666666666742" width="58" height="46"/>
+                                                <rect key="frame" x="0.0" y="6.3333333333332575" width="58" height="46"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
                                                 <state key="normal" title="Skip">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1192,11 +1005,11 @@ Who is your primary transport provider?</string>
                                                 </connections>
                                             </button>
                                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.33000001311302185" translatesAutoresizingMaskIntoConstraints="NO" id="hy7-h7-G4K">
-                                                <rect key="frame" x="84" y="37.666666666666742" width="150" height="4"/>
+                                                <rect key="frame" x="84" y="27.333333333333258" width="150" height="4"/>
                                                 <color key="tintColor" name="BrandGreen"/>
                                             </progressView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XHZ-80-KuS">
-                                                <rect key="frame" x="260" y="16.666666666666742" width="62" height="46"/>
+                                                <rect key="frame" x="260" y="6.3333333333332575" width="62" height="46"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
                                                 <state key="normal" title="Next">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1244,7 +1057,7 @@ Who is your primary transport provider?</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="69" translatesAutoresizingMaskIntoConstraints="NO" id="0P8-Jm-7aY">
-                                <rect key="frame" x="0.0" y="88" width="428" height="804"/>
+                                <rect key="frame" x="0.0" y="44" width="428" height="848"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login" translatesAutoresizingMaskIntoConstraints="NO" id="ja7-d6-bge">
                                         <rect key="frame" x="46.666666666666657" y="0.0" width="334.66666666666674" height="200"/>
@@ -1256,22 +1069,22 @@ Who is your primary transport provider?</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="LYu-uk-OOM">
-                                        <rect key="frame" x="40" y="409.66666666666669" width="348" height="157.00000000000006"/>
+                                        <rect key="frame" x="40" y="409.66666666666669" width="348" height="177.00000000000006"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Business name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Buo-Ms-CvI">
-                                                <rect key="frame" x="0.0" y="0.0" width="348" height="42.333333333333336"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="348" height="49"/>
                                                 <color key="textColor" name="BrandGrey"/>
                                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="28"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mobile Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dBd-Gy-qly">
-                                                <rect key="frame" x="0.0" y="57.333333333333314" width="348" height="42.333333333333343"/>
+                                                <rect key="frame" x="0.0" y="63.999999999999943" width="348" height="49"/>
                                                 <color key="textColor" name="BrandGrey"/>
                                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="28"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Delivery Depot Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cEs-3k-Rp8">
-                                                <rect key="frame" x="0.0" y="114.66666666666667" width="348" height="42.333333333333329"/>
+                                                <rect key="frame" x="0.0" y="127.99999999999994" width="348" height="49"/>
                                                 <color key="textColor" name="BrandGrey"/>
                                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="28"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -1279,21 +1092,21 @@ Who is your primary transport provider?</string>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="W0t-vI-Dvf">
-                                        <rect key="frame" x="53" y="635.66666666666663" width="322" height="168.33333333333337"/>
+                                        <rect key="frame" x="53" y="655.66666666666663" width="322" height="192.33333333333337"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ikz-dN-6yl">
-                                                <rect key="frame" x="0.0" y="61.333333333333371" width="58" height="46"/>
+                                                <rect key="frame" x="0.0" y="73.333333333333371" width="58" height="46"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
                                                 <state key="normal" title="Skip">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                             </button>
                                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.6600000262260437" translatesAutoresizingMaskIntoConstraints="NO" id="QIx-ve-1OF">
-                                                <rect key="frame" x="84" y="82.333333333333371" width="150" height="4"/>
+                                                <rect key="frame" x="84" y="94.333333333333371" width="150" height="4"/>
                                                 <color key="tintColor" name="BrandGreen"/>
                                             </progressView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MRj-S7-omz">
-                                                <rect key="frame" x="260" y="61.333333333333371" width="62" height="46"/>
+                                                <rect key="frame" x="260" y="73.333333333333371" width="62" height="46"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
                                                 <state key="normal" title="Next">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1322,96 +1135,6 @@ Who is your primary transport provider?</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jmF-BV-VYi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="12021" y="-306"/>
-        </scene>
-        <!--Locations View Controller-->
-        <scene sceneID="uqf-ll-6gt">
-            <objects>
-                <viewController id="bgm-A7-wrL" customClass="LocationsViewController" customModule="AgriSup" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="3ux-Tx-1Ys">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="kGy-DG-5tS">
-                                <rect key="frame" x="53" y="798" width="322" height="46"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EGA-vc-86T">
-                                        <rect key="frame" x="0.0" y="0.0" width="58" height="46"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
-                                        <state key="normal" title="Skip">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                    </button>
-                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.6600000262260437" translatesAutoresizingMaskIntoConstraints="NO" id="sPc-H6-L8l">
-                                        <rect key="frame" x="94" y="21" width="130" height="4"/>
-                                        <color key="tintColor" name="BrandGreen"/>
-                                    </progressView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wtk-wb-YS5">
-                                        <rect key="frame" x="260" y="0.0" width="62" height="46"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
-                                        <state key="normal" title="Next">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="wUi-Ef-Egf" kind="show" id="9rT-8I-j9J"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsMultipleSelection="YES" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cMZ-hl-QkS">
-                                <rect key="frame" x="31" y="276.66666666666674" width="366" height="479.33333333333326"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="basicStyle" textLabel="0yc-SE-5xi" style="IBUITableViewCellStyleDefault" id="QDs-eT-Zxc">
-                                        <rect key="frame" x="0.0" y="28" width="366" height="43.666667938232422"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QDs-eT-Zxc" id="8TX-Kf-57R">
-                                            <rect key="frame" x="0.0" y="0.0" width="366" height="43.666667938232422"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0yc-SE-5xi">
-                                                    <rect key="frame" x="20" y="0.0" width="326" height="43.666667938232422"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Which cities can you deliver to?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1z1-Ht-7ik">
-                                <rect key="frame" x="25" y="155" width="378" height="71.666666666666686"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="432-dm-BRc"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="kGy-DG-5tS" firstAttribute="leading" secondItem="432-dm-BRc" secondAttribute="leading" constant="53" id="2eZ-tl-FAs"/>
-                            <constraint firstItem="cMZ-hl-QkS" firstAttribute="leading" secondItem="432-dm-BRc" secondAttribute="leading" constant="31" id="56g-YN-DZ8"/>
-                            <constraint firstItem="cMZ-hl-QkS" firstAttribute="top" secondItem="1z1-Ht-7ik" secondAttribute="bottom" constant="50" id="5qk-W8-O6G"/>
-                            <constraint firstItem="1z1-Ht-7ik" firstAttribute="top" secondItem="432-dm-BRc" secondAttribute="top" constant="67" id="JYe-pF-9IX"/>
-                            <constraint firstItem="kGy-DG-5tS" firstAttribute="top" secondItem="cMZ-hl-QkS" secondAttribute="bottom" constant="42" id="Kp0-FP-CcO"/>
-                            <constraint firstItem="432-dm-BRc" firstAttribute="trailing" secondItem="1z1-Ht-7ik" secondAttribute="trailing" constant="25" id="QiP-bG-GzV"/>
-                            <constraint firstItem="432-dm-BRc" firstAttribute="bottom" secondItem="kGy-DG-5tS" secondAttribute="bottom" constant="48" id="Twr-EQ-N8A"/>
-                            <constraint firstItem="1z1-Ht-7ik" firstAttribute="leading" secondItem="432-dm-BRc" secondAttribute="leading" constant="25" id="UDh-kX-MLu"/>
-                            <constraint firstItem="432-dm-BRc" firstAttribute="trailing" secondItem="cMZ-hl-QkS" secondAttribute="trailing" constant="31" id="fCR-mM-7KU"/>
-                            <constraint firstItem="1z1-Ht-7ik" firstAttribute="centerX" secondItem="3ux-Tx-1Ys" secondAttribute="centerX" id="hRu-4j-DNB"/>
-                            <constraint firstItem="cMZ-hl-QkS" firstAttribute="centerX" secondItem="3ux-Tx-1Ys" secondAttribute="centerX" id="jdP-Ei-Y7b"/>
-                            <constraint firstItem="432-dm-BRc" firstAttribute="trailing" secondItem="kGy-DG-5tS" secondAttribute="trailing" constant="53" id="u1j-Cw-A3h"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="SAZ-Ua-0D9"/>
-                    <connections>
-                        <outlet property="tableView" destination="cMZ-hl-QkS" id="N4n-UE-hRH"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bnl-RM-HdJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="9693" y="-306"/>
         </scene>
     </scenes>
     <resources>
