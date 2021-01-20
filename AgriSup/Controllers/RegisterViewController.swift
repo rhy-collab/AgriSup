@@ -15,6 +15,8 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var confirmPasswordTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
+    var supplierBuilder = SupplierBuilder.builder
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,6 +38,7 @@ class RegisterViewController: UIViewController {
                     if let e = error {
                         self.errorPopUpDisplayed(e.localizedDescription)
                     } else {
+                        self.supplierBuilder.setEmail(email: email)
                         self.performSegue(withIdentifier: "toNameInfo", sender: self)
                     }
                 }

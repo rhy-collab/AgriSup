@@ -13,6 +13,7 @@ struct Supplier: Codable {
     let firstName: String?
     let lastName: String?
     let mobileNumber: String?
+    let email: String?
     let photo: [String]?
     let deliveryDates: [String]?//enum?
     let credentials: Credentials

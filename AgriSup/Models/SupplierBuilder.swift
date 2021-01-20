@@ -71,7 +71,7 @@ class SupplierBuilder {
         
         let credentials = Supplier.Credentials(abn: abn, farmingLicense: farmingLicense, drivingLicense: driversLicense)
         
-        return Supplier(firstName: firstName, lastName: lastName, mobileNumber: mobileNumber, photo: [""], deliveryDates: deliveryDates, credentials: credentials, deliveryCities: deliveryCities, deliveryCityInfo: deliveryCityInfo, financialInfo: financialInfo , Products: products)
+        return Supplier(firstName: firstName, lastName: lastName, mobileNumber: mobileNumber,email: email, photo: [""], deliveryDates: deliveryDates, credentials: credentials, deliveryCities: deliveryCities, deliveryCityInfo: deliveryCityInfo, financialInfo: financialInfo , Products: products)
     }
     
 }
