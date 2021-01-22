@@ -8,7 +8,6 @@
 import UIKit
 import Firebase
 
-// test
 
 class ViewController: UIViewController {
     @IBOutlet weak var supplierMobileNumber: UITextField!
