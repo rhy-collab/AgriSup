@@ -11,9 +11,8 @@ import FirebaseStorage
 class PictureViewController: UIViewController{
     
     var supplierBuilder: SupplierBuilder = SupplierBuilder.builder
-    
     var imagePicker: UIImagePickerController!
-    
+    var firebaseService = FirebaseService()
     
     @IBOutlet weak var imageView: UIImageView!
     
@@ -41,44 +40,20 @@ class PictureViewController: UIViewController{
         present(alert, animated: true, completion: nil)
         
     }
-    @IBAction func takeAPhotoPressed(_ sender: UIButton) {
-        
-        imagePicker = UIImagePickerController()
-        imagePicker.delegate = self
-        imagePicker.sourceType = .camera
-        present(imagePicker, animated: true, completion: nil)
-    }
-    
     
     @IBAction func nextPressed(_ sender: UIButton) {
         if let image = imageView.image {
+            
             let data = image.jpegData(compressionQuality: 1.0)!
             let imageName = "\(supplierBuilder.email)-premises"
-            let imageRef = Storage
-                .storage()
-                .reference()
-                .child("Pictures")
-                .child(imageName)
             
-            imageRef.putData(data, metadata: nil) { (metadata, error) in
-                if let error = error {
-                    print("Failed to upload to Firebase \(error.localizedDescription)")
-                } else {
-                    imageRef.downloadURL { (url, error) in
-                        if let error = error {
-                            print("Failed to download url for image \(error.localizedDescription)")
-                        } else {
-                            guard let url = url else {
-                                print("Something else went wrong")
-                                return
-                            }
-                            
-                            self.supplierBuilder.appendPhotoURL(url: url.absoluteString)
-                        }
-                    }
-                }
+            let photoURL = firebaseService.addPhoto(data: data, imageName: imageName)
+            
+            if let safePhotoURL = photoURL {
+                self.supplierBuilder.appendPhotoURL(url: safePhotoURL.absoluteString)
+            } else {
+                print("There was an error parsing the photoUrl")
             }
-            
             
             self.performSegue(withIdentifier: K.Segues.toDeliveryDayInfo, sender: self)
         } else {
@@ -89,6 +64,7 @@ class PictureViewController: UIViewController{
     
 }
 
+//MARK: - ImagePickerDelegates
 
 extension PictureViewController:  UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     

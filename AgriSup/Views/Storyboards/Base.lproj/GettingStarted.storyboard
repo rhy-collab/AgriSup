@@ -879,81 +879,6 @@ time to do more important things</string>
             </objects>
             <point key="canvasLocation" x="7309" y="-306"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="tLk-qT-H5H">
-            <objects>
-                <viewController id="1hr-2E-hIF" customClass="ViewController" customModule="AgriSup" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="CKC-Hu-3jY">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="69" translatesAutoresizingMaskIntoConstraints="NO" id="QjT-qm-2U9">
-                                <rect key="frame" x="0.0" y="44" width="428" height="848"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="detailed" translatesAutoresizingMaskIntoConstraints="NO" id="vqO-xW-hjE">
-                                        <rect key="frame" x="45" y="0.0" width="338.33333333333331" height="200.33333333333334"/>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We need a few photos of your workplace next!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pT9-WM-ihY">
-                                        <rect key="frame" x="0.0" y="269.33333333333331" width="428" height="71.666666666666686"/>
-                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
-                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Xh6-lG-3GT">
-                                        <rect key="frame" x="40" y="410" width="348" height="126"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ZX-1x-vrw">
-                                                <rect key="frame" x="0.0" y="0.0" width="348" height="48"/>
-                                                <color key="backgroundColor" name="BrandGreen"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
-                                                <state key="normal" title="Take a Photo">
-                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                </state>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0rH-6d-7of">
-                                                <rect key="frame" x="0.0" y="78" width="348" height="48"/>
-                                                <color key="backgroundColor" name="BrandGreen"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
-                                                <state key="normal" title="Upload a photo">
-                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                </state>
-                                            </button>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="M5H-3v-akh">
-                                        <rect key="frame" x="183" y="605" width="62" height="243"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zXs-dh-1g5">
-                                                <rect key="frame" x="0.0" y="98.666666666666629" width="62" height="46"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
-                                                <state key="normal" title="Next">
-                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                            </button>
-                                        </subviews>
-                                    </stackView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="Xh6-lG-3GT" firstAttribute="leading" secondItem="QjT-qm-2U9" secondAttribute="leading" constant="40" id="bfd-81-VzM"/>
-                                    <constraint firstAttribute="trailing" secondItem="Xh6-lG-3GT" secondAttribute="trailing" constant="40" id="mdh-ic-J1I"/>
-                                </constraints>
-                            </stackView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="i5q-1b-pyy"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="QjT-qm-2U9" firstAttribute="leading" secondItem="i5q-1b-pyy" secondAttribute="leading" id="2Ez-Vi-gQZ"/>
-                            <constraint firstItem="QjT-qm-2U9" firstAttribute="top" secondItem="i5q-1b-pyy" secondAttribute="top" id="5ti-iH-9GL"/>
-                            <constraint firstAttribute="trailing" secondItem="QjT-qm-2U9" secondAttribute="trailing" id="INe-yz-HHv"/>
-                            <constraint firstItem="i5q-1b-pyy" firstAttribute="bottom" secondItem="QjT-qm-2U9" secondAttribute="bottom" id="VyP-Cu-KBc"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="zxW-L6-5Gw"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="55P-OF-f2J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="8120" y="-939"/>
-        </scene>
         <!--Final Setup View Controller-->
         <scene sceneID="EpO-hX-J0s">
             <objects>
@@ -1216,7 +1141,7 @@ time to do more important things</string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Z18-AV-5Zl"/>
+        <segue reference="JIi-dv-SCH"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Aircraft" width="347.66665649414062" height="220"/>
@@ -1227,7 +1152,6 @@ time to do more important things</string>
         <image name="Online_transaction" width="310.66665649414062" height="160"/>
         <image name="Security" width="246.33332824707031" height="220"/>
         <image name="Setup_wizard" width="246.66667175292969" height="220"/>
-        <image name="detailed" width="338.33334350585938" height="200.33332824707031"/>
         <image name="instant_support" width="281.33334350585938" height="220"/>
         <image name="login" width="334.66665649414062" height="200"/>
         <namedColor name="BrandGreen">

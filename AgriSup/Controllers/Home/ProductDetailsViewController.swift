@@ -15,25 +15,23 @@ class ProductDetailsViewController: UIViewController {
     @IBOutlet weak var leadTimeTextField: UITextField!
     @IBOutlet weak var leadTimeUnitsPicker: UISegmentedControl!
     @IBOutlet weak var samplesBooleanPicker: UISegmentedControl!
-
     @IBOutlet weak var sampleUnitsTextField: UITextField!
     @IBOutlet weak var pricePerUnitTextField: UITextField!
     @IBOutlet weak var currencyTextField: UITextField!
     
-    var productBuilder: ProductBuilder = ProductBuilder.builder
-    
     let db = Firestore.firestore()
+    let firebaseService = FirebaseService()
+    
+    var productBuilder: ProductBuilder = ProductBuilder.builder
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        firebaseService.delegate = self
     }
     
     @IBAction func createProductButtonPressed(_ sender: UIButton) {
         
         let supplierID: String = UserDefaults.standard.value(forKey: K.UserDefaults.email) as? String ?? "None"
-        
         
         let offerSamples = samplesBooleanPicker.titleForSegment(at: samplesBooleanPicker.selectedSegmentIndex)
         
@@ -56,46 +54,31 @@ class ProductDetailsViewController: UIViewController {
                 sampleUnitsInt = Int(sampleUnits)!
             }
             
-        
             productBuilder.setOrderRequirements(unit: units, minOrderQuantity: minOrders, leadTime: leadTime, leadTimeUnits: safeLeadTimeUnits, samples: safeOffersSamples, sampleUnits: sampleUnitsInt, unitPrice: pricePerUnit, currency: currency)
             
             productBuilder.setSupplierID(supplierID: supplierID)
             
+            
             let product: Product = productBuilder.build()
-            
-            
-            // add it to firebase
-            
-            let productRef = db.collection(K.productCollection)
-                .addDocument(data: product.createDic()!) { (error) in
-                if let e = error {
-                    print("There was an issue saving data to FireStore, \(e)")
-                } else {
-                    print("Successfully saved data")
-                }
-            }
-            
-            
-            let supplierRef = db.collection(K.supplierCollection).document(product.supplierId)
-//
-            supplierRef.updateData([
-                "productIDs": FieldValue.arrayUnion([productRef])
-            ]) { err in
-                if let err = err {
-                    print("Error saving productId to firebase supplier collection \(err)")
-                } else {
-                    print("Success saving productid to firebase supplier collection")
-                }
-            }
+            firebaseService.addProduct(product: product)
         } else {
             errorPopUpDisplayed("Missing fields, couldn't add product")
         }
         
     }
     
+
     func errorPopUpDisplayed(_ text: String) {
         let popUpWindow = PopUpWindow(title: "Error in sign up", text: text, buttontext: "OK")
         self.present(popUpWindow, animated: true, completion: nil)
     }
     
+}
+
+//MARK: - FirebaseServiceDelegate
+
+extension ProductDetailsViewController: FirebaseServiceDelegate {
+    func handleError(error: Error) {
+        errorPopUpDisplayed(error.localizedDescription)
+    }
 }

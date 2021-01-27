@@ -26,6 +26,7 @@
 		11AC5A7225C0A8F8006A7E09 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AC5A7125C0A8F8006A7E09 /* Product.swift */; };
 		11AC5A7725C0AEE2006A7E09 /* ProductBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AC5A7625C0AEE2006A7E09 /* ProductBuilder.swift */; };
 		11AC5A7C25C0C998006A7E09 /* ProductDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AC5A7B25C0C998006A7E09 /* ProductDetailsViewController.swift */; };
+		11AC5AB025C1FD12006A7E09 /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AC5AAF25C1FD12006A7E09 /* FirebaseService.swift */; };
 		11B6720E25B8BAA600A72CB6 /* NameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B6720D25B8BAA600A72CB6 /* NameViewController.swift */; };
 		11B6721325B8BACE00A72CB6 /* LicenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B6721225B8BACE00A72CB6 /* LicenseViewController.swift */; };
 		11B6721825B8BAFF00A72CB6 /* DeliveryDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B6721725B8BAFF00A72CB6 /* DeliveryDetailsViewController.swift */; };
@@ -100,6 +101,7 @@
 		11AC5A7125C0A8F8006A7E09 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		11AC5A7625C0AEE2006A7E09 /* ProductBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductBuilder.swift; sourceTree = "<group>"; };
 		11AC5A7B25C0C998006A7E09 /* ProductDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsViewController.swift; sourceTree = "<group>"; };
+		11AC5AAF25C1FD12006A7E09 /* FirebaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseService.swift; sourceTree = "<group>"; };
 		11B6720D25B8BAA600A72CB6 /* NameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameViewController.swift; sourceTree = "<group>"; };
 		11B6721225B8BACE00A72CB6 /* LicenseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicenseViewController.swift; sourceTree = "<group>"; };
 		11B6721725B8BAFF00A72CB6 /* DeliveryDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryDetailsViewController.swift; sourceTree = "<group>"; };
@@ -253,6 +255,14 @@
 			name = "Reuseable Views";
 			sourceTree = "<group>";
 		};
+		11AC5AAE25C1FCFC006A7E09 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				11AC5AAF25C1FD12006A7E09 /* FirebaseService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		11CA934625B1FDB800CE9380 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -332,6 +342,7 @@
 		8E4BD10625AE856900D75379 /* AgriSup */ = {
 			isa = PBXGroup;
 			children = (
+				11AC5AAE25C1FCFC006A7E09 /* Services */,
 				11A1F79B25B40E2600A2D171 /* AgriSup.entitlements */,
 				11A1F77325B3ACFF00A2D171 /* Models */,
 				11CA934E25B2000C00CE9380 /* Fonts */,
@@ -650,6 +661,7 @@
 				8E4BD10825AE856900D75379 /* AppDelegate.swift in Sources */,
 				11A1F7C825B5CBD000A2D171 /* RegisterViewController.swift in Sources */,
 				11B6721325B8BACE00A72CB6 /* LicenseViewController.swift in Sources */,
+				11AC5AB025C1FD12006A7E09 /* FirebaseService.swift in Sources */,
 				11B6722225B8D45200A72CB6 /* FinalSetupViewController.swift in Sources */,
 				11A1F77525B3AD1000A2D171 /* Supplier.swift in Sources */,
 				11B6721D25B8BB2200A72CB6 /* FinancialDetailsViewController.swift in Sources */,

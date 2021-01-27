@@ -11,23 +11,29 @@ import Firebase
 class FinalSetupViewController: UIViewController {
     
     let db = Firestore.firestore()
-
     var supplierBuilder = SupplierBuilder.builder
+    let firebaseService = FirebaseService()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        firebaseService.delegate = self
+    }
     
     @IBAction func nextPressed(_ sender: UIButton) {
-        
         let supplier = supplierBuilder.build()
-
-        db.collection(K.supplierCollection)
-            .document(supplier.email)
-            .setData(supplier.createDic()!) { err in
-                if let err = err {
-                    print("There was an error writing your document...ooops...\(err)")
-                } else {
-                    print("Document printed successfully")
-                }
-            }
-        
+        firebaseService.addSupplier(supplier: supplier)
         self.performSegue(withIdentifier: K.Segues.toMainPage , sender: self)
+    }
+    
+    func errorPopUpDisplayed(_ text: String) {
+        let popUpWindow = PopUpWindow(title: "Error in sign up", text: text, buttontext: "OK")
+        self.present(popUpWindow, animated: true, completion: nil)
+    }
+}
+
+//MARK: - Extension FirebaseServiceDelegate
+extension FinalSetupViewController: FirebaseServiceDelegate {
+    func handleError(error: Error) {
+        errorPopUpDisplayed(error.localizedDescription)
     }
 }
