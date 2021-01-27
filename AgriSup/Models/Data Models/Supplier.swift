@@ -10,17 +10,17 @@ import Foundation
 
 struct Supplier: Codable {
     
-    let firstName: String?
-    let lastName: String?
-    let mobileNumber: String?
-    let email: String?
-    let photo: [String]?
-    let deliveryDates: [String]?//enum?
+    let firstName: String
+    let lastName: String
+    let mobileNumber: String
+    let email: String
+    let photo: [String]
+    let deliveryDates: [String]//enum?
     let credentials: Credentials
     let deliveryCities: [String]
     let deliveryCityInfo: [DeliveryCityInfo]
-    let financialInfo: FinancialInfo?
-    let Products: [Products]?
+    let financialInfo: FinancialInfo
+    var productIDs: [String]
     
     func createDic() -> [String: Any]? {
         guard let dic = self.dictionary else {
@@ -28,6 +28,10 @@ struct Supplier: Codable {
         }
         
         return dic
+    }
+    
+    func appendProductID(productId: String) {
+        self.productIDs
     }
     
     struct Credentials: Codable {
@@ -58,27 +62,6 @@ struct Supplier: Codable {
             return dic
         }
     }
-    
-    struct Products: Codable {
-        let name: String?
-        let unit: String?
-        let minOrderQuantity: Int?
-        let leadTime: Int?
-        let leadTimeUnits: String? //enum
-        let samples: Bool?
-        let sampleUnits: Int?
-        let unitPrice: Double?
-        let currency: String? //enum
-        
-        func createDic() -> [String: Any]? {
-            guard let dic = self.dictionary else {
-                return nil
-            }
-            
-            return dic
-        }
-    }
-    
     
 }
 

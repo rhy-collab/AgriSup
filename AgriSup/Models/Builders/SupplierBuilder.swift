@@ -9,7 +9,6 @@ import Foundation
 
 class SupplierBuilder {
     
-    
     //Use this instance only
     static let builder = SupplierBuilder()
     
@@ -27,7 +26,8 @@ class SupplierBuilder {
     var deliveryCities: [String] = []
     var deliveryCityInfo: [DeliveryCityInfo] = []
     var financialInfo: Supplier.FinancialInfo = Supplier.FinancialInfo(accountName: "", bsb: "", accountNumber: "")
-    var products: [Supplier.Products] = []
+    var photos: [String] = []
+    var productIDs : [String]? = []
     
     
     func setEmail(email: String) {
@@ -54,6 +54,10 @@ class SupplierBuilder {
         deliveryCities.append(cityName)
     }
     
+    func appendPhotoURL(url: String) {
+        photos.append(url)
+    }
+    
     func appendDeliveryCityInfo(cityName: String, driverName: String, driverBusinessName: String, driverMobile: String, depotName: String, depotPhoneNumber: String, depotAddress: String){
         let transportProvider: TransportProvider = TransportProvider(name: driverName, businessName: driverBusinessName, mobileNumber: driverMobile)
         let depotProvider: DepotProvider = DepotProvider(businessName: depotName, mobileNumber: depotPhoneNumber, address: depotAddress)
@@ -71,7 +75,7 @@ class SupplierBuilder {
         
         let credentials = Supplier.Credentials(abn: abn, farmingLicense: farmingLicense, drivingLicense: driversLicense)
         
-        return Supplier(firstName: firstName, lastName: lastName, mobileNumber: mobileNumber,email: email, photo: [""], deliveryDates: deliveryDates, credentials: credentials, deliveryCities: deliveryCities, deliveryCityInfo: deliveryCityInfo, financialInfo: financialInfo , Products: products)
+        return Supplier(firstName: firstName, lastName: lastName, mobileNumber: mobileNumber,email: email, photo: photos, deliveryDates: deliveryDates, credentials: credentials, deliveryCities: deliveryCities, deliveryCityInfo: deliveryCityInfo, financialInfo: financialInfo, productIDs: productIDs!)
     }
     
 }

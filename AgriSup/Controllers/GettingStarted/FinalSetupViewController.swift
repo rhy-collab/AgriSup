@@ -19,7 +19,7 @@ class FinalSetupViewController: UIViewController {
         let supplier = supplierBuilder.build()
 
         db.collection(K.supplierCollection)
-            .document(supplier.email!)
+            .document(supplier.email)
             .setData(supplier.createDic()!) { err in
                 if let err = err {
                     print("There was an error writing your document...ooops...\(err)")
@@ -27,5 +27,7 @@ class FinalSetupViewController: UIViewController {
                     print("Document printed successfully")
                 }
             }
+        
+        self.performSegue(withIdentifier: K.Segues.toMainPage , sender: self)
     }
 }

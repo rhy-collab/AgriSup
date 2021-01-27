@@ -18,11 +18,20 @@
 		11A1F80725B617E600A2D171 /* ReuseableCheckboxCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A1F80525B617E600A2D171 /* ReuseableCheckboxCell.swift */; };
 		11A1F80825B617E600A2D171 /* ReuseableCheckboxCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11A1F80625B617E600A2D171 /* ReuseableCheckboxCell.xib */; };
 		11A1F85925B6312500A2D171 /* DaysViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A1F85825B6312500A2D171 /* DaysViewController.swift */; };
+		11AC59D825BF8BE7006A7E09 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AC59D725BF8BE7006A7E09 /* HomePageViewController.swift */; };
+		11AC59F525BF93D2006A7E09 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AC59F425BF93D2006A7E09 /* MenuViewController.swift */; };
+		11AC59FA25BF9425006A7E09 /* AccountsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AC59F925BF9425006A7E09 /* AccountsViewController.swift */; };
+		11AC59FF25BF9DFB006A7E09 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11AC59FE25BF9DFB006A7E09 /* Home.storyboard */; };
+		11AC5A6525C07FBB006A7E09 /* ProductCreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AC5A6425C07FBB006A7E09 /* ProductCreationViewController.swift */; };
+		11AC5A7225C0A8F8006A7E09 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AC5A7125C0A8F8006A7E09 /* Product.swift */; };
+		11AC5A7725C0AEE2006A7E09 /* ProductBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AC5A7625C0AEE2006A7E09 /* ProductBuilder.swift */; };
+		11AC5A7C25C0C998006A7E09 /* ProductDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AC5A7B25C0C998006A7E09 /* ProductDetailsViewController.swift */; };
 		11B6720E25B8BAA600A72CB6 /* NameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B6720D25B8BAA600A72CB6 /* NameViewController.swift */; };
 		11B6721325B8BACE00A72CB6 /* LicenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B6721225B8BACE00A72CB6 /* LicenseViewController.swift */; };
 		11B6721825B8BAFF00A72CB6 /* DeliveryDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B6721725B8BAFF00A72CB6 /* DeliveryDetailsViewController.swift */; };
 		11B6721D25B8BB2200A72CB6 /* FinancialDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B6721C25B8BB2200A72CB6 /* FinancialDetailsViewController.swift */; };
 		11B6722225B8D45200A72CB6 /* FinalSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B6722125B8D45200A72CB6 /* FinalSetupViewController.swift */; };
+		11B6724B25B9AD8400A72CB6 /* PictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B6724A25B9AD8400A72CB6 /* PictureViewController.swift */; };
 		11CA934225B1FD1800CE9380 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CA934125B1FD1800CE9380 /* Constants.swift */; };
 		11CA936125B2002700CE9380 /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11CA934F25B2002700CE9380 /* Poppins-Light.ttf */; };
 		11CA936225B2002700CE9380 /* Poppins-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11CA935025B2002700CE9380 /* Poppins-ThinItalic.ttf */; };
@@ -45,7 +54,7 @@
 		8E4BD10825AE856900D75379 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4BD10725AE856900D75379 /* AppDelegate.swift */; };
 		8E4BD10A25AE856900D75379 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4BD10925AE856900D75379 /* SceneDelegate.swift */; };
 		8E4BD10C25AE856900D75379 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4BD10B25AE856900D75379 /* ViewController.swift */; };
-		8E4BD10F25AE856900D75379 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E4BD10D25AE856900D75379 /* Main.storyboard */; };
+		8E4BD10F25AE856900D75379 /* GettingStarted.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E4BD10D25AE856900D75379 /* GettingStarted.storyboard */; };
 		8E4BD11125AE856A00D75379 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E4BD11025AE856A00D75379 /* Assets.xcassets */; };
 		8E4BD11425AE856A00D75379 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E4BD11225AE856A00D75379 /* LaunchScreen.storyboard */; };
 		8E4BD11F25AE856A00D75379 /* AgriSupTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4BD11E25AE856A00D75379 /* AgriSupTests.swift */; };
@@ -83,11 +92,20 @@
 		11A1F80525B617E600A2D171 /* ReuseableCheckboxCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReuseableCheckboxCell.swift; sourceTree = "<group>"; };
 		11A1F80625B617E600A2D171 /* ReuseableCheckboxCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReuseableCheckboxCell.xib; sourceTree = "<group>"; };
 		11A1F85825B6312500A2D171 /* DaysViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysViewController.swift; sourceTree = "<group>"; };
+		11AC59D725BF8BE7006A7E09 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		11AC59F425BF93D2006A7E09 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		11AC59F925BF9425006A7E09 /* AccountsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsViewController.swift; sourceTree = "<group>"; };
+		11AC59FE25BF9DFB006A7E09 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		11AC5A6425C07FBB006A7E09 /* ProductCreationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCreationViewController.swift; sourceTree = "<group>"; };
+		11AC5A7125C0A8F8006A7E09 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		11AC5A7625C0AEE2006A7E09 /* ProductBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductBuilder.swift; sourceTree = "<group>"; };
+		11AC5A7B25C0C998006A7E09 /* ProductDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsViewController.swift; sourceTree = "<group>"; };
 		11B6720D25B8BAA600A72CB6 /* NameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameViewController.swift; sourceTree = "<group>"; };
 		11B6721225B8BACE00A72CB6 /* LicenseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicenseViewController.swift; sourceTree = "<group>"; };
 		11B6721725B8BAFF00A72CB6 /* DeliveryDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryDetailsViewController.swift; sourceTree = "<group>"; };
 		11B6721C25B8BB2200A72CB6 /* FinancialDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinancialDetailsViewController.swift; sourceTree = "<group>"; };
 		11B6722125B8D45200A72CB6 /* FinalSetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalSetupViewController.swift; sourceTree = "<group>"; };
+		11B6724A25B9AD8400A72CB6 /* PictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureViewController.swift; sourceTree = "<group>"; };
 		11CA934125B1FD1800CE9380 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		11CA934F25B2002700CE9380 /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.ttf"; sourceTree = "<group>"; };
 		11CA935025B2002700CE9380 /* Poppins-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ThinItalic.ttf"; sourceTree = "<group>"; };
@@ -115,7 +133,7 @@
 		8E4BD10725AE856900D75379 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E4BD10925AE856900D75379 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		8E4BD10B25AE856900D75379 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8E4BD10E25AE856900D75379 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8E4BD10E25AE856900D75379 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/GettingStarted.storyboard; sourceTree = "<group>"; };
 		8E4BD11025AE856A00D75379 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8E4BD11325AE856A00D75379 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8E4BD11525AE856A00D75379 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -164,13 +182,22 @@
 		11A1F77325B3ACFF00A2D171 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				11A1F77425B3AD1000A2D171 /* Supplier.swift */,
-				11A1F77F25B3BE7400A2D171 /* SupplierBuilder.swift */,
+				11AC5A4325C07488006A7E09 /* Data Models */,
+				11AC5A4425C07499006A7E09 /* Builders */,
 			);
 			path = Models;
 			sourceTree = "<group>";
 		};
-		11CA934625B1FDB800CE9380 /* Controllers */ = {
+		11AC5A3E25C07323006A7E09 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				8E4BD10D25AE856900D75379 /* GettingStarted.storyboard */,
+				11AC59FE25BF9DFB006A7E09 /* Home.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		11AC5A4225C0747C006A7E09 /* GettingStarted */ = {
 			isa = PBXGroup;
 			children = (
 				8E4BD10B25AE856900D75379 /* ViewController.swift */,
@@ -181,6 +208,56 @@
 				11B6721725B8BAFF00A72CB6 /* DeliveryDetailsViewController.swift */,
 				11B6721C25B8BB2200A72CB6 /* FinancialDetailsViewController.swift */,
 				11B6722125B8D45200A72CB6 /* FinalSetupViewController.swift */,
+				11B6724A25B9AD8400A72CB6 /* PictureViewController.swift */,
+			);
+			path = GettingStarted;
+			sourceTree = "<group>";
+		};
+		11AC5A4325C07488006A7E09 /* Data Models */ = {
+			isa = PBXGroup;
+			children = (
+				11A1F77425B3AD1000A2D171 /* Supplier.swift */,
+				11AC5A7125C0A8F8006A7E09 /* Product.swift */,
+			);
+			path = "Data Models";
+			sourceTree = "<group>";
+		};
+		11AC5A4425C07499006A7E09 /* Builders */ = {
+			isa = PBXGroup;
+			children = (
+				11A1F77F25B3BE7400A2D171 /* SupplierBuilder.swift */,
+				11AC5A7625C0AEE2006A7E09 /* ProductBuilder.swift */,
+			);
+			path = Builders;
+			sourceTree = "<group>";
+		};
+		11AC5A4825C074AA006A7E09 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				11AC59D725BF8BE7006A7E09 /* HomePageViewController.swift */,
+				11AC59F425BF93D2006A7E09 /* MenuViewController.swift */,
+				11AC59F925BF9425006A7E09 /* AccountsViewController.swift */,
+				11AC5A6425C07FBB006A7E09 /* ProductCreationViewController.swift */,
+				11AC5A7B25C0C998006A7E09 /* ProductDetailsViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		11AC5A4925C074C0006A7E09 /* Reuseable Views */ = {
+			isa = PBXGroup;
+			children = (
+				11A1F7CC25B5DB0400A2D171 /* PopupWindow.swift */,
+				11A1F80525B617E600A2D171 /* ReuseableCheckboxCell.swift */,
+				11A1F80625B617E600A2D171 /* ReuseableCheckboxCell.xib */,
+			);
+			name = "Reuseable Views";
+			sourceTree = "<group>";
+		};
+		11CA934625B1FDB800CE9380 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				11AC5A4225C0747C006A7E09 /* GettingStarted */,
+				11AC5A4825C074AA006A7E09 /* Home */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -188,10 +265,8 @@
 		11CA934A25B1FDC000CE9380 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				8E4BD10D25AE856900D75379 /* Main.storyboard */,
-				11A1F7CC25B5DB0400A2D171 /* PopupWindow.swift */,
-				11A1F80525B617E600A2D171 /* ReuseableCheckboxCell.swift */,
-				11A1F80625B617E600A2D171 /* ReuseableCheckboxCell.xib */,
+				11AC5A3E25C07323006A7E09 /* Storyboards */,
+				11AC5A4925C074C0006A7E09 /* Reuseable Views */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -424,9 +499,10 @@
 				11CA936A25B2002700CE9380 /* Poppins-ExtraBoldItalic.ttf in Resources */,
 				11CA937225B2002700CE9380 /* Poppins-ExtraBold.ttf in Resources */,
 				11CA936225B2002700CE9380 /* Poppins-ThinItalic.ttf in Resources */,
-				8E4BD10F25AE856900D75379 /* Main.storyboard in Resources */,
+				8E4BD10F25AE856900D75379 /* GettingStarted.storyboard in Resources */,
 				11CA937125B2002700CE9380 /* Poppins-ExtraLightItalic.ttf in Resources */,
 				11CA936925B2002700CE9380 /* Poppins-LightItalic.ttf in Resources */,
+				11AC59FF25BF9DFB006A7E09 /* Home.storyboard in Resources */,
 				11CA936B25B2002700CE9380 /* Poppins-BoldItalic.ttf in Resources */,
 				11CA937025B2002700CE9380 /* Poppins-ExtraLight.ttf in Resources */,
 				11CA936625B2002700CE9380 /* Poppins-SemiBold.ttf in Resources */,
@@ -565,7 +641,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				11A1F7CD25B5DB0400A2D171 /* PopupWindow.swift in Sources */,
+				11AC5A7725C0AEE2006A7E09 /* ProductBuilder.swift in Sources */,
+				11B6724B25B9AD8400A72CB6 /* PictureViewController.swift in Sources */,
 				8E4BD10C25AE856900D75379 /* ViewController.swift in Sources */,
+				11AC59D825BF8BE7006A7E09 /* HomePageViewController.swift in Sources */,
+				11AC59FA25BF9425006A7E09 /* AccountsViewController.swift in Sources */,
 				11B6721825B8BAFF00A72CB6 /* DeliveryDetailsViewController.swift in Sources */,
 				8E4BD10825AE856900D75379 /* AppDelegate.swift in Sources */,
 				11A1F7C825B5CBD000A2D171 /* RegisterViewController.swift in Sources */,
@@ -575,10 +655,14 @@
 				11B6721D25B8BB2200A72CB6 /* FinancialDetailsViewController.swift in Sources */,
 				8E4BD10A25AE856900D75379 /* SceneDelegate.swift in Sources */,
 				11B6720E25B8BAA600A72CB6 /* NameViewController.swift in Sources */,
+				11AC59F525BF93D2006A7E09 /* MenuViewController.swift in Sources */,
 				11CA934225B1FD1800CE9380 /* Constants.swift in Sources */,
 				11A1F78025B3BE7400A2D171 /* SupplierBuilder.swift in Sources */,
 				11A1F80725B617E600A2D171 /* ReuseableCheckboxCell.swift in Sources */,
 				11A1F85925B6312500A2D171 /* DaysViewController.swift in Sources */,
+				11AC5A6525C07FBB006A7E09 /* ProductCreationViewController.swift in Sources */,
+				11AC5A7225C0A8F8006A7E09 /* Product.swift in Sources */,
+				11AC5A7C25C0C998006A7E09 /* ProductDetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -614,12 +698,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		8E4BD10D25AE856900D75379 /* Main.storyboard */ = {
+		8E4BD10D25AE856900D75379 /* GettingStarted.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				8E4BD10E25AE856900D75379 /* Base */,
 			);
-			name = Main.storyboard;
+			name = GettingStarted.storyboard;
 			sourceTree = "<group>";
 		};
 		8E4BD11225AE856A00D75379 /* LaunchScreen.storyboard */ = {

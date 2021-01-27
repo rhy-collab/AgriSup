@@ -8,6 +8,7 @@ target 'AgriSup' do
   # Pods for AgriSup
   pod 'Firebase/Auth'
   pod 'Firebase/Firestore'
+  pod 'Firebase/Storage'
 
   target 'AgriSupTests' do
     inherit! :search_paths

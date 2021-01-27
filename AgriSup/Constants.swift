@@ -14,6 +14,12 @@ struct K {
     static let cellNibName = "ReuseableCheckboxCell"
     
     static let supplierCollection = "suppliers"
+    static let productCollection = "products"
+    
+    struct UserDefaults {
+        static let email = "email"
+        static let password = "password"
+    }
     
     struct Segues {
         static let LOGIN_TO_MAIN_VIEW = "LoginToMainView"
@@ -29,6 +35,11 @@ struct K {
         static let toFinancialInfo = "toFinancialInfo"
         static let toFinalView = "toFinalView"
         static let toMainPage = "toMainPage"
+        
+        static let autoLogin = "autoLogin"
+        
+        //Home page onwards
+        static let toProductOrderRequirements = "toProductOrderRequirements"
         
         
     }

@@ -29,7 +29,6 @@ class RegisterViewController: UIViewController {
         
         if let email = emailTextField.text, let password = passwordTextField.text, let confirmPassword = confirmPasswordTextField.text {
             
-            
             if ( password != confirmPassword) {
                 self.errorPopUpDisplayed("Password and confirmed Passwords do not match")
             } else {
@@ -38,6 +37,10 @@ class RegisterViewController: UIViewController {
                     if let e = error {
                         self.errorPopUpDisplayed(e.localizedDescription)
                     } else {
+                        
+                        UserDefaults.standard.setValue(email, forKey: K.UserDefaults.email)
+                        UserDefaults.standard.setValue(password, forKey: K.UserDefaults.password)
+                        
                         self.supplierBuilder.setEmail(email: email)
                         self.performSegue(withIdentifier: "toNameInfo", sender: self)
                     }
