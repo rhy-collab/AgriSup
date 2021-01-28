@@ -51,41 +51,45 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YlE-Ig-gWd">
-                                <rect key="frame" x="91" y="279" width="232" height="48"/>
-                                <color key="backgroundColor" red="0.33824411030000001" green="0.73818546529999995" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="232" id="Nfy-1u-fP8"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
-                                <state key="normal" title="Add Products">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="VCT-xJ-aZ3" kind="show" id="pi5-v7-1x4"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Get ready to sell online. Try these tips to get started" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tFq-5Z-jxO">
-                                <rect key="frame" x="33" y="144" width="349" height="74"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="17"/>
-                                <color key="textColor" name="BrandGrey"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to AgriMarkets" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BH1-Mh-wMP">
-                                <rect key="frame" x="28.666666666666657" y="91" width="357" height="36"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="39" translatesAutoresizingMaskIntoConstraints="NO" id="g8R-0Y-D8q">
+                                <rect key="frame" x="28.666666666666657" y="253.33333333333337" width="357" height="209.66666666666663"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to AgriMarkets" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BH1-Mh-wMP">
+                                        <rect key="frame" x="0.0" y="0.0" width="357" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tFq-5Z-jxO">
+                                        <rect key="frame" x="57.333333333333329" y="74.999999999999972" width="242.33333333333337" height="47.666666666666657"/>
+                                        <string key="text">Get ready to sell online.
+ Try these tips to get started</string>
+                                        <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="17"/>
+                                        <color key="textColor" name="BrandGrey"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YlE-Ig-gWd">
+                                        <rect key="frame" x="62.333333333333314" y="161.66666666666666" width="232" height="48"/>
+                                        <color key="backgroundColor" red="0.33824411030000001" green="0.73818546529999995" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="232" id="Nfy-1u-fP8"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
+                                        <state key="normal" title="Add Products">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="VCT-xJ-aZ3" kind="show" id="pi5-v7-1x4"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="3Xi-kU-w4T"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="BH1-Mh-wMP" firstAttribute="centerX" secondItem="sby-EV-VWN" secondAttribute="centerX" id="e9L-H1-OEB"/>
-                            <constraint firstItem="YlE-Ig-gWd" firstAttribute="centerX" secondItem="sby-EV-VWN" secondAttribute="centerX" id="i7O-mU-mvS"/>
-                            <constraint firstItem="BH1-Mh-wMP" firstAttribute="top" secondItem="3Xi-kU-w4T" secondAttribute="top" constant="91" id="wmP-8X-W45"/>
-                            <constraint firstItem="YlE-Ig-gWd" firstAttribute="centerX" secondItem="sby-EV-VWN" secondAttribute="centerX" id="xh0-ee-yew"/>
+                            <constraint firstItem="g8R-0Y-D8q" firstAttribute="centerX" secondItem="sby-EV-VWN" secondAttribute="centerX" id="EOT-9K-uOg"/>
+                            <constraint firstItem="g8R-0Y-D8q" firstAttribute="centerY" secondItem="sby-EV-VWN" secondAttribute="centerY" id="ogW-Xn-Kha"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" selectedImage="house" id="B9b-zK-Nbv"/>
@@ -231,7 +235,7 @@
             <objects>
                 <viewController id="EHv-ay-h7f" customClass="ProductDetailsViewController" customModule="AgriSup" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Guo-nU-bg3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="57" translatesAutoresizingMaskIntoConstraints="NO" id="mxN-50-CCz">
                                 <rect key="frame" x="20" y="0.0" width="374" height="708.66666666666663"/>
