@@ -13,7 +13,7 @@ class ProductCreationViewController: UIViewController {
     @IBOutlet weak var productDescriptionTextField: UITextField!
     @IBOutlet weak var growingMethodPicker: UISegmentedControl!
     @IBOutlet weak var sizePicker: UISegmentedControl!
-    @IBOutlet weak var qualityPicker: UISegmentedControl!
+    @IBOutlet weak var priceTextField: UITextField!
     
     var productBuilder : ProductBuilder = ProductBuilder.builder
     
@@ -29,15 +29,15 @@ class ProductCreationViewController: UIViewController {
         let growingMethod = growingMethodPicker.titleForSegment(at: growingMethodPicker.selectedSegmentIndex)
 
         let size = sizePicker.titleForSegment(at: sizePicker.selectedSegmentIndex)
-        let quality = qualityPicker.titleForSegment(at: qualityPicker.selectedSegmentIndex)
+        
+        let price = Double(priceTextField.text!) ?? 0.0
 
         if let productName = productNameTextField.text,
            let productDesc = productDescriptionTextField.text,
            let safeGrowingMethod = growingMethod,
-           let safeSize = size,
-           let safeQuality = quality {
+           let safeSize = size {
              // create product
-            productBuilder.setProductDetails(name: productName, description: productDesc, growingMethod: safeGrowingMethod, size: safeSize, quality: safeQuality)
+            productBuilder.setProductDetails(name: productName, description: productDesc, growingMethod: safeGrowingMethod, size: safeSize, price: price)
             
             self.performSegue(withIdentifier: K.Segues.toProductOrderRequirements, sender: self)
             

@@ -16,9 +16,6 @@ class ProductDetailsViewController: UIViewController {
     @IBOutlet weak var leadTimeUnitsPicker: UISegmentedControl!
     @IBOutlet weak var samplesBooleanPicker: UISegmentedControl!
     @IBOutlet weak var sampleUnitsTextField: UITextField!
-    @IBOutlet weak var pricePerUnitTextField: UITextField!
-    @IBOutlet weak var currencyTextField: UITextField!
-    
     let db = Firestore.firestore()
     let firebaseService = FirebaseService()
     
@@ -42,9 +39,7 @@ class ProductDetailsViewController: UIViewController {
            let leadTime = Int(leadTimeTextField.text!),
            let safeLeadTimeUnits = leadTimeUnits,
            let safeOffersSamples = (offerSamples == "Yes" ? true : false),
-           let sampleUnits = sampleUnitsTextField.text ,
-           let pricePerUnit = Double(pricePerUnitTextField.text ?? "0.0"),
-           let currency = currencyTextField.text {
+           let sampleUnits = sampleUnitsTextField.text {
             
             var sampleUnitsInt: Int
             
@@ -54,13 +49,15 @@ class ProductDetailsViewController: UIViewController {
                 sampleUnitsInt = Int(sampleUnits)!
             }
             
-            productBuilder.setOrderRequirements(unit: units, minOrderQuantity: minOrders, leadTime: leadTime, leadTimeUnits: safeLeadTimeUnits, samples: safeOffersSamples, sampleUnits: sampleUnitsInt, unitPrice: pricePerUnit, currency: currency)
+            productBuilder.setOrderRequirements(unit: units, minOrderQuantity: minOrders, leadTime: leadTime, leadTimeUnits: safeLeadTimeUnits, samples: safeOffersSamples, sampleUnits: sampleUnitsInt)
             
             productBuilder.setSupplierID(supplierID: supplierID)
             
             
             let product: Product = productBuilder.build()
             firebaseService.addProduct(product: product)
+            
+            self.performSegue(withIdentifier: K.Segues.toHomePage, sender: self)
         } else {
             errorPopUpDisplayed("Missing fields, couldn't add product")
         }

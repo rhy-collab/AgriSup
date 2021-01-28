@@ -40,6 +40,7 @@ struct K {
         
         //Home page onwards
         static let toProductOrderRequirements = "toProductOrderRequirements"
+        static let toHomePage = "toHomePage"
         
         
     }

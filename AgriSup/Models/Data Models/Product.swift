@@ -15,7 +15,6 @@ struct Product: Codable {
     let description: String
     let growingMethod: String
     let size: String
-    let quality: String
     
     let unit: String
     let minOrderQuantity: Int?
@@ -24,7 +23,6 @@ struct Product: Codable {
     let samples: Bool?
     let sampleUnits: Int?
     let unitPrice: Double?
-    let currency: String?
     
     func createDic() -> [String: Any]? {
         guard let dic = self.dictionary else {
