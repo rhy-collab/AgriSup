@@ -235,7 +235,7 @@
             <objects>
                 <viewController id="EHv-ay-h7f" customClass="ProductDetailsViewController" customModule="AgriSup" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Guo-nU-bg3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="57" translatesAutoresizingMaskIntoConstraints="NO" id="mxN-50-CCz">
                                 <rect key="frame" x="20" y="0.0" width="374" height="708.66666666666663"/>
@@ -249,8 +249,8 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Minimum Order Quantity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AE4-ha-Rmf">
-                                        <rect key="frame" x="0.0" y="137" width="187" height="20.333333333333343"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Minimum Order Quantity per product order" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AE4-ha-Rmf">
+                                        <rect key="frame" x="0.0" y="137" width="326" height="20.333333333333343"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -273,8 +273,8 @@
                                             </textField>
                                         </subviews>
                                     </stackView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lead time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oe0-bF-pId">
-                                        <rect key="frame" x="0.0" y="305.33333333333331" width="74.666666666666671" height="20.333333333333314"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Days you can deliver after order recieved" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oe0-bF-pId">
+                                        <rect key="frame" x="0.0" y="305.33333333333331" width="315" height="20.333333333333314"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20.333333333333314" id="PDc-VA-u16"/>
                                         </constraints>
@@ -501,7 +501,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="pi5-v7-1x4"/>
         <segue reference="wSs-rs-pFf"/>
     </inferredMetricsTieBreakers>
     <resources>
