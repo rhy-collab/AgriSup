@@ -42,7 +42,7 @@ class RegisterViewController: UIViewController {
                         UserDefaults.standard.setValue(password, forKey: K.UserDefaults.password)
                         
                         self.supplierBuilder.setEmail(email: email)
-                        self.performSegue(withIdentifier: "toNameInfo", sender: self)
+                        self.performSegue(withIdentifier: K.Segues.toBuySellInfo, sender: self)
                     }
                 }
             }
