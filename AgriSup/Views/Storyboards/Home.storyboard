@@ -52,7 +52,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="39" translatesAutoresizingMaskIntoConstraints="NO" id="g8R-0Y-D8q">
-                                <rect key="frame" x="28.666666666666657" y="253.33333333333337" width="357" height="209.66666666666663"/>
+                                <rect key="frame" x="28.666666666666657" y="257.33333333333331" width="357" height="201.66666666666669"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to AgriMarkets" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BH1-Mh-wMP">
                                         <rect key="frame" x="0.0" y="0.0" width="357" height="36"/>
@@ -61,7 +61,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tFq-5Z-jxO">
-                                        <rect key="frame" x="57.333333333333329" y="74.999999999999972" width="242.33333333333337" height="47.666666666666657"/>
+                                        <rect key="frame" x="71.999999999999986" y="75" width="212.66666666666663" height="39.666666666666657"/>
                                         <string key="text">Get ready to sell online.
  Try these tips to get started</string>
                                         <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="17"/>
@@ -69,7 +69,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YlE-Ig-gWd">
-                                        <rect key="frame" x="62.333333333333314" y="161.66666666666666" width="232" height="48"/>
+                                        <rect key="frame" x="62.333333333333314" y="153.66666666666669" width="232" height="48"/>
                                         <color key="backgroundColor" red="0.33824411030000001" green="0.73818546529999995" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="232" id="Nfy-1u-fP8"/>
@@ -108,7 +108,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="cOa-PA-Pm4">
-                                <rect key="frame" x="20" y="34.333333333333314" width="374" height="661.66666666666674"/>
+                                <rect key="frame" x="20" y="38.333333333333314" width="374" height="657.66666666666674"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add a new product!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cQW-FT-ATK">
                                         <rect key="frame" x="0.0" y="0.0" width="283.33333333333331" height="36"/>
@@ -117,7 +117,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please add your products one at a time " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cyg-cS-Edt">
-                                        <rect key="frame" x="0.0" y="59" width="340.33333333333331" height="48"/>
+                                        <rect key="frame" x="0.0" y="59" width="303.66666666666669" height="48"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="48" id="wLl-VP-ltd"/>
                                         </constraints>
@@ -187,7 +187,7 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="95S-ei-xIa">
-                                        <rect key="frame" x="0.0" y="625.66666666666663" width="374" height="36"/>
+                                        <rect key="frame" x="0.0" y="625.66666666666663" width="374" height="32"/>
                                         <color key="backgroundColor" name="BrandGreen"/>
                                         <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="17"/>
                                         <state key="normal" title="To Product Order Info">

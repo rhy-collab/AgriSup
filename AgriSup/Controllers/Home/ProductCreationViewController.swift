@@ -41,9 +41,16 @@ class ProductCreationViewController: UIViewController {
             
             self.performSegue(withIdentifier: K.Segues.toProductOrderRequirements, sender: self)
             
+        } else  {
+            errorPopUpDisplayed("One or more fields are missing values, please try again")
         }
 
            
+    }
+    
+    func errorPopUpDisplayed(_ text: String) {
+        let popUpWindow = PopUpWindow(title: "Error in sign up", text: text, buttontext: "OK")
+        self.present(popUpWindow, animated: true, completion: nil)
     }
 
     
