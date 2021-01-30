@@ -725,7 +725,7 @@ time to do more important things</string>
                                                 </constraints>
                                                 <color key="textColor" name="BrandGrey"/>
                                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="28"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Py-Eq-rcE">
                                                 <rect key="frame" x="0.0" y="62.999999999999943" width="295" height="48"/>
@@ -734,7 +734,7 @@ time to do more important things</string>
                                                 </constraints>
                                                 <color key="textColor" name="BrandGrey"/>
                                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="28"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mobile number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HOI-C0-AB1">
                                                 <rect key="frame" x="0.0" y="125.99999999999994" width="295" height="48"/>
