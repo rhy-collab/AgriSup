@@ -102,10 +102,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="YQB-3q-qgb">
-                                <rect key="frame" x="0.0" y="88" width="418" height="690"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="690"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We need a few photos of your workplace next!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vp3-ce-KsN">
-                                        <rect key="frame" x="0.0" y="0.0" width="418" height="110"/>
+                                        <rect key="frame" x="7.3333333333333428" y="0.0" width="360.33333333333326" height="110"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="110" id="SOJ-lE-E8P"/>
                                             <constraint firstAttribute="width" constant="418" id="f0L-2Q-Bj1"/>
@@ -115,10 +115,10 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PBC-IU-BXU">
-                                        <rect key="frame" x="86.666666666666686" y="160" width="245" height="270"/>
+                                        <rect key="frame" x="65" y="160" width="245" height="270"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fm4-XS-SkS">
-                                        <rect key="frame" x="34" y="480" width="350" height="80"/>
+                                        <rect key="frame" x="12.666666666666657" y="480" width="350" height="80"/>
                                         <color key="backgroundColor" red="0.33824411030000001" green="0.73818546529999995" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="80" id="GCa-He-sey"/>
@@ -133,7 +133,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MPk-W0-Tfw">
-                                        <rect key="frame" x="178" y="610" width="62" height="80"/>
+                                        <rect key="frame" x="156.66666666666666" y="610" width="62" height="80"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="80" id="ENR-7b-nfK"/>
                                         </constraints>
@@ -987,8 +987,8 @@ time to do more important things</string>
                                             <constraint firstAttribute="height" constant="106.5" id="vQN-B0-Jsi"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We're going to setup your login details first. Provide your email address and set your password" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GsH-nQ-Kne">
-                                        <rect key="frame" x="0.0" y="175.66666666666669" width="375" height="143.33333333333331"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add your email address and password to setup your login details 👍" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GsH-nQ-Kne">
+                                        <rect key="frame" x="14" y="175.66666666666669" width="347" height="143.33333333333331"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="143.5" id="fDz-Wy-lot"/>
                                         </constraints>
@@ -1178,10 +1178,10 @@ time to do more important things</string>
                                 <rect key="frame" x="0.0" y="88" width="375" height="690"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="instant_support" translatesAutoresizingMaskIntoConstraints="NO" id="2i0-e9-EZt">
-                                        <rect key="frame" x="47" y="0.0" width="281.33333333333331" height="373"/>
+                                        <rect key="frame" x="47" y="0.0" width="281.33333333333331" height="343"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are you looking to buy or sell?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="98d-5o-3ki">
-                                        <rect key="frame" x="23" y="386" width="329" height="166"/>
+                                        <rect key="frame" x="23" y="356" width="329" height="196"/>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
