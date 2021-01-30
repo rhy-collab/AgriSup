@@ -27,16 +27,16 @@
                                 <rect key="frame" x="0.0" y="88" width="375" height="690"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GetStartedImage" translatesAutoresizingMaskIntoConstraints="NO" id="SBo-sO-UAt">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="285.66666666666669"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="282"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tbC-8l-Y3j">
-                                        <rect key="frame" x="0.0" y="317.66666666666669" width="375" height="46"/>
+                                        <rect key="frame" x="0.0" y="314" width="375" height="54.666666666666686"/>
                                         <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="28"/>
                                         <color key="textColor" name="BrandGrey"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LogoSuppliers" translatesAutoresizingMaskIntoConstraints="NO" id="PXv-Lk-Ndf">
-                                        <rect key="frame" x="0.0" y="395.66666666666669" width="375" height="153.33333333333331"/>
+                                        <rect key="frame" x="0.0" y="400.66666666666669" width="375" height="148.33333333333331"/>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="Mpb-hk-WrZ">
                                         <rect key="frame" x="0.0" y="581" width="375" height="109"/>
@@ -486,13 +486,13 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Intelligent supply chain management delivers your products globally" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pgI-Fg-clK">
-                                        <rect key="frame" x="42.333333333333343" y="394" width="290.33333333333326" height="84"/>
+                                        <rect key="frame" x="21.333333333333343" y="394" width="332.66666666666663" height="101"/>
                                         <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="24"/>
                                         <color key="textColor" name="BrandGrey"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2H5-3H-am0">
-                                        <rect key="frame" x="156.66666666666666" y="547" width="62" height="143"/>
+                                        <rect key="frame" x="156.66666666666666" y="564" width="62" height="126"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
                                         <state key="normal" title="Next">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -540,7 +540,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hy1-Ty-NjY">
-                                        <rect key="frame" x="11.333333333333343" y="348" width="352.33333333333326" height="84"/>
+                                        <rect key="frame" x="37.666666666666657" y="348" width="300" height="134.66666666666663"/>
                                         <string key="text">Let us do the chasing, so you've got 
 time to do more important things</string>
                                         <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="24"/>
@@ -548,7 +548,7 @@ time to do more important things</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rsf-9G-Vfq">
-                                        <rect key="frame" x="156.66666666666666" y="508" width="62" height="172"/>
+                                        <rect key="frame" x="156.66666666666666" y="558.66666666666663" width="62" height="121.33333333333337"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
                                         <state key="normal" title="Next">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -589,20 +589,20 @@ time to do more important things</string>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Content_team" translatesAutoresizingMaskIntoConstraints="NO" id="UIv-vK-Tjs">
                                         <rect key="frame" x="28.333333333333343" y="0.0" width="318.33333333333326" height="200"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We're going to need a few details to setup your account" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EvP-KL-Adw">
-                                        <rect key="frame" x="0.0" y="254.99999999999997" width="375" height="107.66666666666666"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We need a few details to setup your account" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EvP-KL-Adw">
+                                        <rect key="frame" x="9.3333333333333428" y="254.99999999999997" width="356.66666666666663" height="71.666666666666657"/>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Just fill out what you can. Hit Skip if you can't answer any of the questions" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MsR-uY-lbP">
-                                        <rect key="frame" x="2" y="417.66666666666669" width="371.33333333333331" height="84"/>
+                                        <rect key="frame" x="4.3333333333333428" y="381.66666666666669" width="366.33333333333326" height="101"/>
                                         <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="24"/>
                                         <color key="textColor" name="BrandGrey"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GbF-p6-9yJ">
-                                        <rect key="frame" x="156.66666666666666" y="556.66666666666663" width="62" height="133.33333333333337"/>
+                                        <rect key="frame" x="156.66666666666666" y="537.66666666666663" width="62" height="152.33333333333337"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
                                         <state key="normal" title="Next">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -653,7 +653,7 @@ time to do more important things</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rPU-Ca-LGP">
-                                        <rect key="frame" x="82.333333333333329" y="379.66666666666669" width="210.66666666666669" height="112"/>
+                                        <rect key="frame" x="73.333333333333329" y="379.66666666666669" width="228.66666666666669" height="134.66666666666669"/>
                                         <string key="text">1. Personal Details 
 2. Business Details
 3. Transport Details
@@ -663,10 +663,10 @@ time to do more important things</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="Pdc-qE-ZnZ">
-                                        <rect key="frame" x="156.66666666666666" y="535.66666666666663" width="62" height="154.33333333333337"/>
+                                        <rect key="frame" x="156.66666666666666" y="558.33333333333337" width="62" height="131.66666666666663"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m0j-0e-9yA">
-                                                <rect key="frame" x="0.0" y="54.333333333333371" width="62" height="46"/>
+                                                <rect key="frame" x="0.0" y="43" width="62" height="46"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
                                                 <state key="normal" title="Next">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -896,16 +896,16 @@ time to do more important things</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="rLH-Uj-9sh">
-                                        <rect key="frame" x="40" y="332" width="295" height="180"/>
+                                        <rect key="frame" x="40" y="332" width="295" height="194"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The next section is the Add Product walkthrough. It'll take approximately 5 minutes" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="11B-C3-Yq2">
-                                                <rect key="frame" x="0.0" y="0.0" width="295" height="70"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="295" height="84"/>
                                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="20"/>
                                                 <color key="textColor" name="BrandGrey"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rFf-BI-83e">
-                                                <rect key="frame" x="0.0" y="120" width="295" height="60"/>
+                                                <rect key="frame" x="0.0" y="134" width="295" height="60"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="yKn-hG-hyC"/>
                                                 </constraints>
@@ -921,10 +921,10 @@ time to do more important things</string>
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="We2-WC-KiM">
-                                        <rect key="frame" x="156.66666666666666" y="560" width="62" height="130"/>
+                                        <rect key="frame" x="156.66666666666666" y="574" width="62" height="116"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gpE-GG-GB0">
-                                                <rect key="frame" x="0.0" y="42" width="62" height="46"/>
+                                                <rect key="frame" x="0.0" y="35" width="62" height="46"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
                                                 <state key="normal" title="Next">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
