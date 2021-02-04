@@ -20,6 +20,9 @@ class FinalSetupViewController: UIViewController {
     }
     
     @IBAction func nextPressed(_ sender: UIButton) {
+        let inviteCode = Int.random(in: 100000...999999)
+        supplierBuilder.setInviteCode(inviteCode: inviteCode)
+        
         let supplier = supplierBuilder.build()
         firebaseService.addSupplier(supplier: supplier)
         self.performSegue(withIdentifier: K.Segues.toMainPage , sender: self)

@@ -28,6 +28,7 @@ class SupplierBuilder {
     var financialInfo: Supplier.FinancialInfo = Supplier.FinancialInfo(accountName: "", bsb: "", accountNumber: "")
     var photos: [String] = []
     var productIDs : [String]? = []
+    var inviteCode: Int = 0
     
     
     func setEmail(email: String) {
@@ -71,11 +72,15 @@ class SupplierBuilder {
         self.financialInfo = Supplier.FinancialInfo(accountName: accountName, bsb: bsb, accountNumber: accountNumber)
     }
     
+    func setInviteCode(inviteCode: Int) {
+        self.inviteCode = inviteCode
+    }
+    
     func build() -> Supplier {
         
         let credentials = Supplier.Credentials(abn: abn, farmingLicense: farmingLicense, drivingLicense: driversLicense)
         
-        return Supplier(firstName: firstName, lastName: lastName, mobileNumber: mobileNumber,email: email, photo: photos, deliveryDates: deliveryDates, credentials: credentials, deliveryCities: deliveryCities, deliveryCityInfo: deliveryCityInfo, financialInfo: financialInfo, productIDs: productIDs!)
+        return Supplier(firstName: firstName, lastName: lastName, mobileNumber: mobileNumber,email: email, photo: photos, deliveryDates: deliveryDates, credentials: credentials, deliveryCities: deliveryCities, deliveryCityInfo: deliveryCityInfo, financialInfo: financialInfo, productIDs: productIDs!, inviteCode: inviteCode)
     }
     
 }

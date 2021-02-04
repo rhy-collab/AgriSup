@@ -13,12 +13,24 @@ protocol FirebaseServiceDelegate {
     func handleError(error: Error)
 }
 
+
+protocol FirebaseServiceQuerySearchDelegate {
+    func handleResult(querySnapshot: QuerySnapshot)
+}
+
+protocol FirebaseServiceDocumentSearchDelegate {
+    func handleResult(documentSnapshot: DocumentSnapshot)
+}
+
 //MARK: - FirebaseService
 class FirebaseService {
     
     var db = Firestore.firestore()
+    var parsingHelper = ParsingHelper()
 
     var delegate: FirebaseServiceDelegate?
+    var searchQueryDelegate: FirebaseServiceQuerySearchDelegate?
+    var searchDocumentDelegate: FirebaseServiceDocumentSearchDelegate?
     
     func addProduct(product: Product) {
         //add product to product collection
@@ -88,6 +100,41 @@ class FirebaseService {
         }
         
         return resultURL
+    }
+    
+    
+    func searchProducts(productName: String) {
+        let productRef = db.collection(K.productCollection)
+        productRef
+            .whereField("name", isEqualTo: productName)
+            .getDocuments { (querySnapshot, error) in
+                if let err = error {
+                    print("There was an error retrieving documents \(err)")
+                } else {
+                    if let safeQuerySnapshot = querySnapshot {
+                        self.searchQueryDelegate?.handleResult(querySnapshot: safeQuerySnapshot)
+                    }
+                }
+            }
+    }
+    
+    
+    func searchSuppliers(supplierID: String) {
+        let supplierRef = db.collection(K.supplierCollection)
+        
+        supplierRef
+            .document(supplierID)
+            .getDocument { (documentSnapshot, error) in
+                if let error = error {
+                    print("There was an error retrieving document \(error)")
+                } else {
+                    print("Successfully got the document")
+                    if let safeDocumentSnapshot = documentSnapshot{
+                        print("Successfully safely got the document")
+                        self.searchDocumentDelegate?.handleResult(documentSnapshot: safeDocumentSnapshot)
+                    }
+                }
+            }
     }
     
 }

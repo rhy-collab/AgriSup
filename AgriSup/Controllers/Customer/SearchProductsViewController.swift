@@ -8,25 +8,38 @@
 import UIKit
 import Firebase
 
-class SearchProductsViewController:  UIViewController, UITableViewDelegate, UITableViewDataSource {
-    
-    
+class SearchProductsViewController:  UIViewController{
     
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
     
     var db = Firestore.firestore()
     var productResults : [Product] = []
+    var firebaseService = FirebaseService()
+    var parseHelper = ParsingHelper()
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        firebaseService.searchQueryDelegate = self
         searchBar.delegate = self
         tableView.delegate = self
         tableView.dataSource = self
         
-        // Do any additional setup after loading the view.
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destinationVC = segue.destination as! ProductInfoViewController
+        if let indexpath = tableView.indexPathForSelectedRow {
+            destinationVC.product = productResults[indexpath.row]
+        }
+    }
+    
+}
+
+//MARK: - TableView Delegates
+
+extension SearchProductsViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return productResults.count
@@ -49,67 +62,33 @@ class SearchProductsViewController:  UIViewController, UITableViewDelegate, UITa
         self.performSegue(withIdentifier: "toProductInfoPage", sender: self)
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let destinationVC = segue.destination as! ProductInfoViewController
-        if let indexpath = tableView.indexPathForSelectedRow {
-            destinationVC.product = productResults[indexpath.row]
-        }
-    }
-    
-    
 }
 
+//MARK: - Search Bar Delegate
 extension SearchProductsViewController: UISearchBarDelegate {
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        
-        print("search bar button clicked")
-        //get the data
-        
-        let productRef = db.collection(K.productCollection)
-        
         if let searchText = searchBar.text {
-            productRef
-                .whereField("name", isEqualTo: searchText)
-                .getDocuments { (querySnapshot, error) in
-                    if let err = error {
-                        print("There was an error retrieving documents \(err)")
-                    } else {
-                        self.productResults = []
-                        for document in querySnapshot!.documents {
-                            print(document.data())
-                            let product = self.parseData(data: document.data())
-                            self.productResults.append(product)
-                            
-                        }
-                        
-                        print(self.productResults)
-                        DispatchQueue.main.async{
-                            self.tableView.reloadData()
-                        }
-                    }
-                }
+            firebaseService.searchProducts(productName: searchText)
         }
     }
     
+}
+
+//MARK: - Firebase Search Delegate
+extension SearchProductsViewController:  FirebaseServiceQuerySearchDelegate {
     
-    func parseData(data: [String: Any]) -> Product {
-        let supplierID = data["supplierId"] as! String
-        let name = data["name"] as! String
-        let description = data["description"] as! String
-        let growingMethod = data["growingMethod"] as! String
-        let size = data["size"] as! String
-        let unit = data["unit"] as! String
-        let minOrderQuantity = data["minOrderQuantity"] as! Int
-        let leadTime = data["leadTime"] as! Int
-        let leadTimeUnits = data["leadTimeUnits"] as! String
-        let samples = data["samples"] as! Bool
-        let sampleUnits = data["sampleUnits"] as! Int
-        let unitPrice = data["unitPrice"] as! Double
+    func handleResult(querySnapshot: QuerySnapshot) {
+        self.productResults = []
+        for document in querySnapshot.documents {
+            print(document.data())
+            let product = parseHelper.parseDataToProduct(data: document.data())
+            self.productResults.append(product)
+        }
         
-        return Product(supplierId: supplierID, name: name, description: description, growingMethod: growingMethod, size: size, unit: unit, minOrderQuantity: minOrderQuantity, leadTime: leadTime, leadTimeUnits: leadTimeUnits, samples: samples, sampleUnits: sampleUnits, unitPrice: unitPrice)
+        print(self.productResults)
+        DispatchQueue.main.async{
+            self.tableView.reloadData()
+        }
     }
-    
-    
-    
 }
