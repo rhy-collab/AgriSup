@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1126FE5A25CB543300D0B4F3 /* FarmLyncGettingStarted.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1126FE5925CB543300D0B4F3 /* FarmLyncGettingStarted.storyboard */; };
+		1143862A25CB7A100051BA02 /* InviteCustomerMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1143862925CB7A100051BA02 /* InviteCustomerMessageViewController.swift */; };
+		1181A74225C496E4005E3986 /* SearchProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1181A74125C496E4005E3986 /* SearchProductsViewController.swift */; };
+		1181A74725C49995005E3986 /* ProductInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1181A74625C49995005E3986 /* ProductInfoViewController.swift */; };
 		11A1F77525B3AD1000A2D171 /* Supplier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A1F77425B3AD1000A2D171 /* Supplier.swift */; };
 		11A1F78025B3BE7400A2D171 /* SupplierBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A1F77F25B3BE7400A2D171 /* SupplierBuilder.swift */; };
 		11A1F79D25B40E2600A2D171 /* AuthenticationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11A1F79C25B40E2600A2D171 /* AuthenticationServices.framework */; };
@@ -28,6 +32,7 @@
 		11AC5A7C25C0C998006A7E09 /* ProductDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AC5A7B25C0C998006A7E09 /* ProductDetailsViewController.swift */; };
 		11AC5AB025C1FD12006A7E09 /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AC5AAF25C1FD12006A7E09 /* FirebaseService.swift */; };
 		11AC5B5125C47241006A7E09 /* ToBuySellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AC5B5025C47241006A7E09 /* ToBuySellViewController.swift */; };
+		11AC5B5725C48635006A7E09 /* Customer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11AC5B5625C48635006A7E09 /* Customer.storyboard */; };
 		11B6720E25B8BAA600A72CB6 /* NameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B6720D25B8BAA600A72CB6 /* NameViewController.swift */; };
 		11B6721325B8BACE00A72CB6 /* LicenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B6721225B8BACE00A72CB6 /* LicenseViewController.swift */; };
 		11B6721825B8BAFF00A72CB6 /* DeliveryDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B6721725B8BAFF00A72CB6 /* DeliveryDetailsViewController.swift */; };
@@ -84,6 +89,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1126FE5925CB543300D0B4F3 /* FarmLyncGettingStarted.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FarmLyncGettingStarted.storyboard; sourceTree = "<group>"; };
+		1143862925CB7A100051BA02 /* InviteCustomerMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteCustomerMessageViewController.swift; sourceTree = "<group>"; };
+		1181A74125C496E4005E3986 /* SearchProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchProductsViewController.swift; sourceTree = "<group>"; };
+		1181A74625C49995005E3986 /* ProductInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductInfoViewController.swift; sourceTree = "<group>"; };
 		11A1F77425B3AD1000A2D171 /* Supplier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Supplier.swift; sourceTree = "<group>"; };
 		11A1F77F25B3BE7400A2D171 /* SupplierBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupplierBuilder.swift; sourceTree = "<group>"; };
 		11A1F79B25B40E2600A2D171 /* AgriSup.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AgriSup.entitlements; sourceTree = "<group>"; };
@@ -104,6 +113,7 @@
 		11AC5A7B25C0C998006A7E09 /* ProductDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsViewController.swift; sourceTree = "<group>"; };
 		11AC5AAF25C1FD12006A7E09 /* FirebaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseService.swift; sourceTree = "<group>"; };
 		11AC5B5025C47241006A7E09 /* ToBuySellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToBuySellViewController.swift; sourceTree = "<group>"; };
+		11AC5B5625C48635006A7E09 /* Customer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Customer.storyboard; sourceTree = "<group>"; };
 		11B6720D25B8BAA600A72CB6 /* NameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameViewController.swift; sourceTree = "<group>"; };
 		11B6721225B8BACE00A72CB6 /* LicenseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicenseViewController.swift; sourceTree = "<group>"; };
 		11B6721725B8BAFF00A72CB6 /* DeliveryDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryDetailsViewController.swift; sourceTree = "<group>"; };
@@ -197,6 +207,8 @@
 			children = (
 				8E4BD10D25AE856900D75379 /* GettingStarted.storyboard */,
 				11AC59FE25BF9DFB006A7E09 /* Home.storyboard */,
+				11AC5B5625C48635006A7E09 /* Customer.storyboard */,
+				1126FE5925CB543300D0B4F3 /* FarmLyncGettingStarted.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -244,6 +256,7 @@
 				11AC59F925BF9425006A7E09 /* AccountsViewController.swift */,
 				11AC5A6425C07FBB006A7E09 /* ProductCreationViewController.swift */,
 				11AC5A7B25C0C998006A7E09 /* ProductDetailsViewController.swift */,
+				1143862925CB7A100051BA02 /* InviteCustomerMessageViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -266,9 +279,19 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		11AC5B5525C4861E006A7E09 /* Customer */ = {
+			isa = PBXGroup;
+			children = (
+				1181A74125C496E4005E3986 /* SearchProductsViewController.swift */,
+				1181A74625C49995005E3986 /* ProductInfoViewController.swift */,
+			);
+			path = Customer;
+			sourceTree = "<group>";
+		};
 		11CA934625B1FDB800CE9380 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				11AC5B5525C4861E006A7E09 /* Customer */,
 				11AC5A4225C0747C006A7E09 /* GettingStarted */,
 				11AC5A4825C074AA006A7E09 /* Home */,
 			);
@@ -501,6 +524,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11AC5B5725C48635006A7E09 /* Customer.storyboard in Resources */,
 				8E4BD11425AE856A00D75379 /* LaunchScreen.storyboard in Resources */,
 				11CA936825B2002700CE9380 /* Poppins-MediumItalic.ttf in Resources */,
 				11CA936425B2002700CE9380 /* Poppins-BlackItalic.ttf in Resources */,
@@ -513,6 +537,7 @@
 				11CA936A25B2002700CE9380 /* Poppins-ExtraBoldItalic.ttf in Resources */,
 				11CA937225B2002700CE9380 /* Poppins-ExtraBold.ttf in Resources */,
 				11CA936225B2002700CE9380 /* Poppins-ThinItalic.ttf in Resources */,
+				1126FE5A25CB543300D0B4F3 /* FarmLyncGettingStarted.storyboard in Resources */,
 				8E4BD10F25AE856900D75379 /* GettingStarted.storyboard in Resources */,
 				11CA937125B2002700CE9380 /* Poppins-ExtraLightItalic.ttf in Resources */,
 				11CA936925B2002700CE9380 /* Poppins-LightItalic.ttf in Resources */,
@@ -654,10 +679,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1181A74725C49995005E3986 /* ProductInfoViewController.swift in Sources */,
 				11A1F7CD25B5DB0400A2D171 /* PopupWindow.swift in Sources */,
 				11AC5A7725C0AEE2006A7E09 /* ProductBuilder.swift in Sources */,
 				11B6724B25B9AD8400A72CB6 /* PictureViewController.swift in Sources */,
 				8E4BD10C25AE856900D75379 /* ViewController.swift in Sources */,
+				1143862A25CB7A100051BA02 /* InviteCustomerMessageViewController.swift in Sources */,
 				11AC59D825BF8BE7006A7E09 /* HomePageViewController.swift in Sources */,
 				11AC59FA25BF9425006A7E09 /* AccountsViewController.swift in Sources */,
 				11B6721825B8BAFF00A72CB6 /* DeliveryDetailsViewController.swift in Sources */,
@@ -678,6 +705,7 @@
 				11AC5A6525C07FBB006A7E09 /* ProductCreationViewController.swift in Sources */,
 				11AC5B5125C47241006A7E09 /* ToBuySellViewController.swift in Sources */,
 				11AC5A7225C0A8F8006A7E09 /* Product.swift in Sources */,
+				1181A74225C496E4005E3986 /* SearchProductsViewController.swift in Sources */,
 				11AC5A7C25C0C998006A7E09 /* ProductDetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

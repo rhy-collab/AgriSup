@@ -10,6 +10,9 @@ import Foundation
 
 struct Supplier: Codable {
     
+    
+    
+    
     let firstName: String
     let lastName: String
     let mobileNumber: String

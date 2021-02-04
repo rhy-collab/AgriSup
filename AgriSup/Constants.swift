@@ -26,6 +26,8 @@ struct K {
         static let REGISTER_TO_GET_STARTED = "RegisterToGetStarted"
         static let REGISTER_TO_GET_STARTED_2 = "RegisterToGetStarted2"
         
+        static let straightToSearch = "straightToSearch"
+        
         static let toBuySellInfo = "toBuySellInfo"
         static let toCustomerStoryboard = "toCustomerStoryboard"
         static let toNameInfo = "toNameInfo"
