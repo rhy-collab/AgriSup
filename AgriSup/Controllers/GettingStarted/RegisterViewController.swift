@@ -27,7 +27,9 @@ class RegisterViewController: UIViewController {
         
         //confirm password == confirmpassword
         
-        if let email = emailTextField.text, let password = passwordTextField.text, let confirmPassword = confirmPasswordTextField.text {
+        if let email = emailTextField.text,
+           let password = passwordTextField.text,
+           let confirmPassword = confirmPasswordTextField.text {
             
             if ( password != confirmPassword) {
                 self.errorPopUpDisplayed("Password and confirmed Passwords do not match")
