@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1126FE5A25CB543300D0B4F3 /* FarmLyncGettingStarted.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1126FE5925CB543300D0B4F3 /* FarmLyncGettingStarted.storyboard */; };
 		1143862A25CB7A100051BA02 /* InviteCustomerMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1143862925CB7A100051BA02 /* InviteCustomerMessageViewController.swift */; };
 		1143862F25CB868C0051BA02 /* ParsingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1143862E25CB868C0051BA02 /* ParsingHelper.swift */; };
 		1181A74225C496E4005E3986 /* SearchProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1181A74125C496E4005E3986 /* SearchProductsViewController.swift */; };
@@ -90,7 +89,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1126FE5925CB543300D0B4F3 /* FarmLyncGettingStarted.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FarmLyncGettingStarted.storyboard; sourceTree = "<group>"; };
 		1143862925CB7A100051BA02 /* InviteCustomerMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteCustomerMessageViewController.swift; sourceTree = "<group>"; };
 		1143862E25CB868C0051BA02 /* ParsingHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParsingHelper.swift; sourceTree = "<group>"; };
 		1181A74125C496E4005E3986 /* SearchProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchProductsViewController.swift; sourceTree = "<group>"; };
@@ -210,7 +208,6 @@
 				8E4BD10D25AE856900D75379 /* GettingStarted.storyboard */,
 				11AC59FE25BF9DFB006A7E09 /* Home.storyboard */,
 				11AC5B5625C48635006A7E09 /* Customer.storyboard */,
-				1126FE5925CB543300D0B4F3 /* FarmLyncGettingStarted.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -540,7 +537,6 @@
 				11CA936A25B2002700CE9380 /* Poppins-ExtraBoldItalic.ttf in Resources */,
 				11CA937225B2002700CE9380 /* Poppins-ExtraBold.ttf in Resources */,
 				11CA936225B2002700CE9380 /* Poppins-ThinItalic.ttf in Resources */,
-				1126FE5A25CB543300D0B4F3 /* FarmLyncGettingStarted.storyboard in Resources */,
 				8E4BD10F25AE856900D75379 /* GettingStarted.storyboard in Resources */,
 				11CA937125B2002700CE9380 /* Poppins-ExtraLightItalic.ttf in Resources */,
 				11CA936925B2002700CE9380 /* Poppins-LightItalic.ttf in Resources */,

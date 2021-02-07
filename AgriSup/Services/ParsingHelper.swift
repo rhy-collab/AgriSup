@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Firebase
 
 
 class ParsingHelper {
@@ -49,7 +50,16 @@ class ParsingHelper {
         let email = "TestEmail" //must get from document index
         let inviteCode = 123456 // must flush collections and have everyone get an invite code
         let mobileNumber = data["mobileNumber"] as! String
-        let productIDs = data["productIDs"] as! [String]
+        let documentReferenceProductIds = data["productIDs"] as! [DocumentReference]
+        
+        let photos  = data["photo"] as! [String]
+        
+        //nasty
+        var productIDs: [String] = []
+        
+        documentReferenceProductIds.forEach { (documentReference) in
+            productIDs.append(documentReference.path)
+        }
         
         let deliveryCityInfoDTO = data["deliveryCityInfo"] as! [[String: Any]]
         
@@ -76,7 +86,7 @@ class ParsingHelper {
             deliveryCityInfos.append(deliveryCityInfo)
         }
         
-        return Supplier(firstName: firstName, lastName: lastName, mobileNumber: mobileNumber, email: email, photo: [""], deliveryDates: deliveryDates, credentials: credentials, deliveryCities: deliveryCities, deliveryCityInfo: deliveryCityInfos, financialInfo: financialInfo, productIDs: productIDs, inviteCode: inviteCode)
+        return Supplier(firstName: firstName, lastName: lastName, mobileNumber: mobileNumber, email: email, photo: photos, deliveryDates: deliveryDates, credentials: credentials, deliveryCities: deliveryCities, deliveryCityInfo: deliveryCityInfos, financialInfo: financialInfo, productIDs: productIDs, inviteCode: inviteCode)
         
     }
 }

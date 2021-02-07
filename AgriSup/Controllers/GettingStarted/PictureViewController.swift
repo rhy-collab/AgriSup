@@ -47,13 +47,17 @@ class PictureViewController: UIViewController{
             let data = image.jpegData(compressionQuality: 1.0)!
             let imageName = "\(supplierBuilder.email)-premises"
             
-            let photoURL = firebaseService.addPhoto(data: data, imageName: imageName)
+
+            let photoURL = self.firebaseService.addPhoto(data: data, imageName: imageName)
             
             if let safePhotoURL = photoURL {
                 self.supplierBuilder.appendPhotoURL(url: safePhotoURL.absoluteString)
             } else {
                 print("There was an error parsing the photoUrl")
             }
+
+            
+
             
             self.performSegue(withIdentifier: K.Segues.toDeliveryDayInfo, sender: self)
         } else {

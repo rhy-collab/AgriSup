@@ -22,6 +22,10 @@ protocol FirebaseServiceDocumentSearchDelegate {
     func handleResult(documentSnapshot: DocumentSnapshot)
 }
 
+protocol FirebaseServicePhotoDelegate {
+    func handleResult(url: URL)
+}
+
 //MARK: - FirebaseService
 class FirebaseService {
     
