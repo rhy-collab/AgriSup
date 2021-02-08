@@ -35,6 +35,8 @@ class FirebaseService {
     var delegate: FirebaseServiceDelegate?
     var searchQueryDelegate: FirebaseServiceQuerySearchDelegate?
     var searchDocumentDelegate: FirebaseServiceDocumentSearchDelegate?
+    var photoDelegate: FirebaseServicePhotoDelegate?
+    
     
     func addProduct(product: Product) {
         //add product to product collection
@@ -75,15 +77,15 @@ class FirebaseService {
             }
     }
     
-    func addPhoto(data: Data, imageName: String) -> URL? {
+    func addPhoto(data: Data, imageName: String){
         
         let imageRef = Storage
             .storage()
             .reference()
             .child("Pictures")
             .child(imageName)
+
         
-        var resultURL: URL?
         imageRef.putData(data, metadata: nil) { (metadata, error) in
             if let error = error {
                 print("Failed to upload to Firebase \(error.localizedDescription)")
@@ -97,13 +99,12 @@ class FirebaseService {
                             return
                         }
                         //place url of photo in supplier
-                        return resultURL = url
+                        
+                        self.photoDelegate?.handleResult(url: url)
                     }
                 }
             }
         }
-        
-        return resultURL
     }
     
     

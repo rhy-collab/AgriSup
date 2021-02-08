@@ -8,7 +8,18 @@
 import UIKit
 import FirebaseStorage
 
-class PictureViewController: UIViewController{
+class PictureViewController: UIViewController, FirebaseServicePhotoDelegate{
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        firebaseService.photoDelegate = self
+    }
+    func handleResult(url: URL) {
+        self.supplierBuilder.appendPhotoURL(url: url.absoluteString)
+        self.performSegue(withIdentifier: K.Segues.toDeliveryDayInfo, sender: self)
+    }
+    
     
     var supplierBuilder: SupplierBuilder = SupplierBuilder.builder
     var imagePicker: UIImagePickerController!
@@ -48,18 +59,8 @@ class PictureViewController: UIViewController{
             let imageName = "\(supplierBuilder.email)-premises"
             
 
-            let photoURL = self.firebaseService.addPhoto(data: data, imageName: imageName)
+            self.firebaseService.addPhoto(data: data, imageName: imageName)
             
-            if let safePhotoURL = photoURL {
-                self.supplierBuilder.appendPhotoURL(url: safePhotoURL.absoluteString)
-            } else {
-                print("There was an error parsing the photoUrl")
-            }
-
-            
-
-            
-            self.performSegue(withIdentifier: K.Segues.toDeliveryDayInfo, sender: self)
         } else {
             //present alert
             print("There was an error, no image was selected")

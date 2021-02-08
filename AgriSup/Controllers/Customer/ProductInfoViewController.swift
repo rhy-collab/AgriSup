@@ -30,6 +30,8 @@ class ProductInfoViewController: UIViewController {
     var firebaseService = FirebaseService()
     var parseHelper = ParsingHelper()
     
+    
+    //TODO preload supplier on previous page in prepare?
     var supplier: Supplier? {
         didSet {
             loadSupplier()
@@ -60,8 +62,19 @@ class ProductInfoViewController: UIViewController {
         minOrderQuantityLabel.text = String((product?.minOrderQuantity)!)
         
         
-        //remove
-//        imageStringLabel.text = supplier?.photo[0]
+        //TODO Extract into service method call - retrievePhotos
+        if let url = URL(string: (supplier?.photo[0])!) {
+            let task = URLSession.shared.dataTask(with: url) { data, response, error in
+                guard let data = data, error == nil else { return }
+                
+                DispatchQueue.main.async { /// execute on main thread
+                    self.supplierImage.image = UIImage(data: data)
+                }
+            }
+            
+            task.resume()
+        }
+        imageStringLabel.text = supplier?.photo[0]
         
     }
     
