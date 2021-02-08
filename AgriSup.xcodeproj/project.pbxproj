@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1143862A25CB7A100051BA02 /* InviteCustomerMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1143862925CB7A100051BA02 /* InviteCustomerMessageViewController.swift */; };
 		1143862F25CB868C0051BA02 /* ParsingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1143862E25CB868C0051BA02 /* ParsingHelper.swift */; };
+		1158C01425D18D5700966133 /* PhotoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1158C01325D18D5700966133 /* PhotoService.swift */; };
 		1181A74225C496E4005E3986 /* SearchProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1181A74125C496E4005E3986 /* SearchProductsViewController.swift */; };
 		1181A74725C49995005E3986 /* ProductInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1181A74625C49995005E3986 /* ProductInfoViewController.swift */; };
 		11A1F77525B3AD1000A2D171 /* Supplier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A1F77425B3AD1000A2D171 /* Supplier.swift */; };
@@ -91,6 +92,7 @@
 /* Begin PBXFileReference section */
 		1143862925CB7A100051BA02 /* InviteCustomerMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteCustomerMessageViewController.swift; sourceTree = "<group>"; };
 		1143862E25CB868C0051BA02 /* ParsingHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParsingHelper.swift; sourceTree = "<group>"; };
+		1158C01325D18D5700966133 /* PhotoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoService.swift; sourceTree = "<group>"; };
 		1181A74125C496E4005E3986 /* SearchProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchProductsViewController.swift; sourceTree = "<group>"; };
 		1181A74625C49995005E3986 /* ProductInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductInfoViewController.swift; sourceTree = "<group>"; };
 		11A1F77425B3AD1000A2D171 /* Supplier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Supplier.swift; sourceTree = "<group>"; };
@@ -275,6 +277,7 @@
 			children = (
 				11AC5AAF25C1FD12006A7E09 /* FirebaseService.swift */,
 				1143862E25CB868C0051BA02 /* ParsingHelper.swift */,
+				1158C01325D18D5700966133 /* PhotoService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -698,6 +701,7 @@
 				11B6720E25B8BAA600A72CB6 /* NameViewController.swift in Sources */,
 				1143862F25CB868C0051BA02 /* ParsingHelper.swift in Sources */,
 				11AC59F525BF93D2006A7E09 /* MenuViewController.swift in Sources */,
+				1158C01425D18D5700966133 /* PhotoService.swift in Sources */,
 				11CA934225B1FD1800CE9380 /* Constants.swift in Sources */,
 				11A1F78025B3BE7400A2D171 /* SupplierBuilder.swift in Sources */,
 				11A1F80725B617E600A2D171 /* ReuseableCheckboxCell.swift in Sources */,

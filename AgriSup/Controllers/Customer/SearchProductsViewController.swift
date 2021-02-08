@@ -8,20 +8,29 @@
 import UIKit
 import Firebase
 
-class SearchProductsViewController:  UIViewController{
+class SearchProductsViewController:  UIViewController, FirebaseServiceDocumentSearchDelegate{
+    
+    func handleResult(documentSnapshot: DocumentSnapshot) {
+        
+        self.supplier = parseHelper.parseDataToSupplier(data: documentSnapshot.data()!)
+        self.performSegue(withIdentifier: "toProductInfoPage", sender: self)
+    }
+    
     
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
     
-    var db = Firestore.firestore()
+    
     var productResults : [Product] = []
     var firebaseService = FirebaseService()
     var parseHelper = ParsingHelper()
+    var supplier: Supplier?
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
         firebaseService.searchQueryDelegate = self
+        firebaseService.searchDocumentDelegate = self
         searchBar.delegate = self
         tableView.delegate = self
         tableView.dataSource = self
@@ -32,6 +41,7 @@ class SearchProductsViewController:  UIViewController{
         let destinationVC = segue.destination as! ProductInfoViewController
         if let indexpath = tableView.indexPathForSelectedRow {
             destinationVC.product = productResults[indexpath.row]
+            destinationVC.supplier = self.supplier
         }
     }
     
@@ -59,7 +69,7 @@ extension SearchProductsViewController: UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.performSegue(withIdentifier: "toProductInfoPage", sender: self)
+        firebaseService.searchSuppliers(supplierID: productResults[indexPath.row].supplierId)
     }
     
 }

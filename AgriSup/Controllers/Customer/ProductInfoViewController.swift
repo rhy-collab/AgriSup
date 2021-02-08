@@ -6,11 +6,8 @@
 //
 
 import UIKit
-import Firebase
 
 class ProductInfoViewController: UIViewController {
-
-    
     
     @IBOutlet weak var sizeLabel: UILabel!
     @IBOutlet weak var growingMethodLabel: UILabel!
@@ -27,24 +24,16 @@ class ProductInfoViewController: UIViewController {
     
     @IBOutlet weak var imageStringLabel: UILabel!
     
-    var firebaseService = FirebaseService()
-    var parseHelper = ParsingHelper()
+    var supplier: Supplier?
+    var product: Product?
+    var photoService = PhotoService()
     
-    
-    //TODO preload supplier on previous page in prepare?
-    var supplier: Supplier? {
-        didSet {
-            loadSupplier()
-        }
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        photoService.photoServiceDelegate = self
+        loadProduct()
+        loadSupplier()
     }
-
-    
-    var product: Product? {
-        didSet{
-
-        }
-    }
-    
     
     func loadProduct() {
         productNameLabel.text = product?.name
@@ -60,42 +49,19 @@ class ProductInfoViewController: UIViewController {
         leadTimeUnitsLabel.text = product?.leadTimeUnits!
         priceLabel.text = String((product?.unitPrice)!)
         minOrderQuantityLabel.text = String((product?.minOrderQuantity)!)
-        
-        
-        //TODO Extract into service method call - retrievePhotos
-        if let url = URL(string: (supplier?.photo[0])!) {
-            let task = URLSession.shared.dataTask(with: url) { data, response, error in
-                guard let data = data, error == nil else { return }
-                
-                DispatchQueue.main.async { /// execute on main thread
-                    self.supplierImage.image = UIImage(data: data)
-                }
-            }
-            
-            task.resume()
-        }
+        photoService.retrievePhoto(from: (supplier?.photo[0])!)
         imageStringLabel.text = supplier?.photo[0]
         
     }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        firebaseService.searchDocumentDelegate = self
-        firebaseService.searchSuppliers(supplierID: product!.supplierId)
-        
-    }
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        print("Suppliers Name is \(supplier?.firstName ?? "NONE")")
-        loadProduct()
-    }
-    
 }
 
-extension ProductInfoViewController:  FirebaseServiceDocumentSearchDelegate{
+//MARK: - PhotoServiceDelegate
+
+extension ProductInfoViewController : PhotoServiceDelegate {
     
-    func handleResult(documentSnapshot: DocumentSnapshot) {
-        self.supplier = parseHelper.parseDataToSupplier(data: documentSnapshot.data()!)
+    func handleResult(data: Data) {
+        self.supplierImage.image = UIImage(data: data)
     }
+    
 }
