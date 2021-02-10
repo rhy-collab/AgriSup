@@ -21,7 +21,6 @@
         <!--Account-->
         <scene sceneID="qNI-NE-FDr">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HPN-xb-Ff5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="1E7-J1-TF6" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Wy0-wf-tjb">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
@@ -40,6 +39,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Account" image="person" catalog="system" id="rGj-fQ-azu"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HPN-xb-Ff5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-650" y="802"/>
         </scene>
@@ -456,7 +456,6 @@
         <!--Orders-->
         <scene sceneID="sN2-i3-FFy">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="RUT-fr-ZgA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="wXo-As-ZUP" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="W0w-Eu-zpi">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
@@ -475,6 +474,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Orders" image="tray.and.arrow.down" catalog="system" id="Ldt-v2-T87"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RUT-fr-ZgA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1328" y="802"/>
         </scene>
@@ -500,7 +500,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="pi5-v7-1x4"/>
         <segue reference="wSs-rs-pFf"/>
     </inferredMetricsTieBreakers>
     <resources>

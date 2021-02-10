@@ -10,9 +10,6 @@ import Foundation
 
 struct Supplier: Codable {
     
-    
-    
-    
     let firstName: String
     let lastName: String
     let mobileNumber: String
@@ -40,18 +37,6 @@ struct Supplier: Codable {
         let farmingLicense: String?
         let drivingLicense: String?
         
-//        init?(data: [String: Any]) {
-//            guard let abn = data["abn"] as? String,
-//                  let farmingLicense = data["farmingLicense"] as? String,
-//                  let drivingLicense = data["drivingLicense"] as? String else {
-//                return nil
-//            }
-//
-//            self.abn = abn
-//            self.farmingLicense = farmingLicense
-//            self.drivingLicense = drivingLicense
-//        }
-        
         func createDic() -> [String: Any]? {
             guard let dic = self.dictionary else {
                 return nil
@@ -66,18 +51,6 @@ struct Supplier: Codable {
         let accountName: String?
         let bsb: String?
         let accountNumber: String?
-        
-//        init?(data: [String: Any]) {
-//            guard let accountName = data["accountName"] as? String,
-//                  let bsb = data["bsb"] as? String,
-//                  let accountNumber = data["accountNumber"] as? String else {
-//                return nil
-//            }
-//
-//            self.accountName = accountName
-//            self.bsb = bsb
-//            self.accountNumber = accountNumber
-//        }
         
         func createDic() -> [String: Any]? {
             guard let dic = self.dictionary else {

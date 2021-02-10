@@ -12,6 +12,16 @@
 		1158C01425D18D5700966133 /* PhotoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1158C01325D18D5700966133 /* PhotoService.swift */; };
 		1181A74225C496E4005E3986 /* SearchProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1181A74125C496E4005E3986 /* SearchProductsViewController.swift */; };
 		1181A74725C49995005E3986 /* ProductInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1181A74625C49995005E3986 /* ProductInfoViewController.swift */; };
+		118A97F125D42E8700EE0419 /* GettingStartedCustomer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 118A97F025D42E8700EE0419 /* GettingStartedCustomer.storyboard */; };
+		118A97F625D42E8C00EE0419 /* GettingStartedSupplier.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 118A97F525D42E8C00EE0419 /* GettingStartedSupplier.storyboard */; };
+		118A97FC25D43A0200EE0419 /* RegisterCustomerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118A97FB25D43A0200EE0419 /* RegisterCustomerViewController.swift */; };
+		118A980425D43D4000EE0419 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118A980325D43D4000EE0419 /* Customer.swift */; };
+		118A980925D43E7000EE0419 /* CustomerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118A980825D43E7000EE0419 /* CustomerBuilder.swift */; };
+		118A980E25D4470400EE0419 /* CustomerNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118A980D25D4470400EE0419 /* CustomerNameViewController.swift */; };
+		118A981325D459E300EE0419 /* CustomerPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118A981225D459E300EE0419 /* CustomerPhotoViewController.swift */; };
+		118A981825D45B4100EE0419 /* CustomerDeliveryDaysViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118A981725D45B4100EE0419 /* CustomerDeliveryDaysViewController.swift */; };
+		118A981D25D45BEB00EE0419 /* CustomerFinancialInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118A981C25D45BEB00EE0419 /* CustomerFinancialInfoViewController.swift */; };
+		118A982225D45C4E00EE0419 /* CustomerFinalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118A982125D45C4E00EE0419 /* CustomerFinalViewController.swift */; };
 		11A1F77525B3AD1000A2D171 /* Supplier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A1F77425B3AD1000A2D171 /* Supplier.swift */; };
 		11A1F78025B3BE7400A2D171 /* SupplierBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A1F77F25B3BE7400A2D171 /* SupplierBuilder.swift */; };
 		11A1F79D25B40E2600A2D171 /* AuthenticationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11A1F79C25B40E2600A2D171 /* AuthenticationServices.framework */; };
@@ -95,6 +105,16 @@
 		1158C01325D18D5700966133 /* PhotoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoService.swift; sourceTree = "<group>"; };
 		1181A74125C496E4005E3986 /* SearchProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchProductsViewController.swift; sourceTree = "<group>"; };
 		1181A74625C49995005E3986 /* ProductInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductInfoViewController.swift; sourceTree = "<group>"; };
+		118A97F025D42E8700EE0419 /* GettingStartedCustomer.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GettingStartedCustomer.storyboard; sourceTree = "<group>"; };
+		118A97F525D42E8C00EE0419 /* GettingStartedSupplier.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GettingStartedSupplier.storyboard; sourceTree = "<group>"; };
+		118A97FB25D43A0200EE0419 /* RegisterCustomerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCustomerViewController.swift; sourceTree = "<group>"; };
+		118A980325D43D4000EE0419 /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
+		118A980825D43E7000EE0419 /* CustomerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerBuilder.swift; sourceTree = "<group>"; };
+		118A980D25D4470400EE0419 /* CustomerNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerNameViewController.swift; sourceTree = "<group>"; };
+		118A981225D459E300EE0419 /* CustomerPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerPhotoViewController.swift; sourceTree = "<group>"; };
+		118A981725D45B4100EE0419 /* CustomerDeliveryDaysViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerDeliveryDaysViewController.swift; sourceTree = "<group>"; };
+		118A981C25D45BEB00EE0419 /* CustomerFinancialInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerFinancialInfoViewController.swift; sourceTree = "<group>"; };
+		118A982125D45C4E00EE0419 /* CustomerFinalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerFinalViewController.swift; sourceTree = "<group>"; };
 		11A1F77425B3AD1000A2D171 /* Supplier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Supplier.swift; sourceTree = "<group>"; };
 		11A1F77F25B3BE7400A2D171 /* SupplierBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupplierBuilder.swift; sourceTree = "<group>"; };
 		11A1F79B25B40E2600A2D171 /* AgriSup.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AgriSup.entitlements; sourceTree = "<group>"; };
@@ -195,6 +215,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		118A97FA25D439F200EE0419 /* Customer */ = {
+			isa = PBXGroup;
+			children = (
+				118A97FB25D43A0200EE0419 /* RegisterCustomerViewController.swift */,
+				118A980D25D4470400EE0419 /* CustomerNameViewController.swift */,
+				118A981225D459E300EE0419 /* CustomerPhotoViewController.swift */,
+				118A981725D45B4100EE0419 /* CustomerDeliveryDaysViewController.swift */,
+				118A981C25D45BEB00EE0419 /* CustomerFinancialInfoViewController.swift */,
+				118A982125D45C4E00EE0419 /* CustomerFinalViewController.swift */,
+			);
+			path = Customer;
+			sourceTree = "<group>";
+		};
 		11A1F77325B3ACFF00A2D171 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -207,6 +240,8 @@
 		11AC5A3E25C07323006A7E09 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				118A97F525D42E8C00EE0419 /* GettingStartedSupplier.storyboard */,
+				118A97F025D42E8700EE0419 /* GettingStartedCustomer.storyboard */,
 				8E4BD10D25AE856900D75379 /* GettingStarted.storyboard */,
 				11AC59FE25BF9DFB006A7E09 /* Home.storyboard */,
 				11AC5B5625C48635006A7E09 /* Customer.storyboard */,
@@ -217,6 +252,7 @@
 		11AC5A4225C0747C006A7E09 /* GettingStarted */ = {
 			isa = PBXGroup;
 			children = (
+				118A97FA25D439F200EE0419 /* Customer */,
 				8E4BD10B25AE856900D75379 /* ViewController.swift */,
 				11A1F7C725B5CBD000A2D171 /* RegisterViewController.swift */,
 				11A1F85825B6312500A2D171 /* DaysViewController.swift */,
@@ -236,6 +272,7 @@
 			children = (
 				11A1F77425B3AD1000A2D171 /* Supplier.swift */,
 				11AC5A7125C0A8F8006A7E09 /* Product.swift */,
+				118A980325D43D4000EE0419 /* Customer.swift */,
 			);
 			path = "Data Models";
 			sourceTree = "<group>";
@@ -245,6 +282,7 @@
 			children = (
 				11A1F77F25B3BE7400A2D171 /* SupplierBuilder.swift */,
 				11AC5A7625C0AEE2006A7E09 /* ProductBuilder.swift */,
+				118A980825D43E7000EE0419 /* CustomerBuilder.swift */,
 			);
 			path = Builders;
 			sourceTree = "<group>";
@@ -542,11 +580,13 @@
 				11CA936225B2002700CE9380 /* Poppins-ThinItalic.ttf in Resources */,
 				8E4BD10F25AE856900D75379 /* GettingStarted.storyboard in Resources */,
 				11CA937125B2002700CE9380 /* Poppins-ExtraLightItalic.ttf in Resources */,
+				118A97F125D42E8700EE0419 /* GettingStartedCustomer.storyboard in Resources */,
 				11CA936925B2002700CE9380 /* Poppins-LightItalic.ttf in Resources */,
 				11AC59FF25BF9DFB006A7E09 /* Home.storyboard in Resources */,
 				11CA936B25B2002700CE9380 /* Poppins-BoldItalic.ttf in Resources */,
 				11CA937025B2002700CE9380 /* Poppins-ExtraLight.ttf in Resources */,
 				11CA936625B2002700CE9380 /* Poppins-SemiBold.ttf in Resources */,
+				118A97F625D42E8C00EE0419 /* GettingStartedSupplier.storyboard in Resources */,
 				11CA936125B2002700CE9380 /* Poppins-Light.ttf in Resources */,
 				11A1F80825B617E600A2D171 /* ReuseableCheckboxCell.xib in Resources */,
 				11A1F7A825B5C8B600A2D171 /* GoogleService-Info.plist in Resources */,
@@ -684,15 +724,20 @@
 				1181A74725C49995005E3986 /* ProductInfoViewController.swift in Sources */,
 				11A1F7CD25B5DB0400A2D171 /* PopupWindow.swift in Sources */,
 				11AC5A7725C0AEE2006A7E09 /* ProductBuilder.swift in Sources */,
+				118A980925D43E7000EE0419 /* CustomerBuilder.swift in Sources */,
 				11B6724B25B9AD8400A72CB6 /* PictureViewController.swift in Sources */,
+				118A982225D45C4E00EE0419 /* CustomerFinalViewController.swift in Sources */,
 				8E4BD10C25AE856900D75379 /* ViewController.swift in Sources */,
 				1143862A25CB7A100051BA02 /* InviteCustomerMessageViewController.swift in Sources */,
 				11AC59D825BF8BE7006A7E09 /* HomePageViewController.swift in Sources */,
+				118A980E25D4470400EE0419 /* CustomerNameViewController.swift in Sources */,
 				11AC59FA25BF9425006A7E09 /* AccountsViewController.swift in Sources */,
 				11B6721825B8BAFF00A72CB6 /* DeliveryDetailsViewController.swift in Sources */,
 				8E4BD10825AE856900D75379 /* AppDelegate.swift in Sources */,
+				118A981D25D45BEB00EE0419 /* CustomerFinancialInfoViewController.swift in Sources */,
 				11A1F7C825B5CBD000A2D171 /* RegisterViewController.swift in Sources */,
 				11B6721325B8BACE00A72CB6 /* LicenseViewController.swift in Sources */,
+				118A97FC25D43A0200EE0419 /* RegisterCustomerViewController.swift in Sources */,
 				11AC5AB025C1FD12006A7E09 /* FirebaseService.swift in Sources */,
 				11B6722225B8D45200A72CB6 /* FinalSetupViewController.swift in Sources */,
 				11A1F77525B3AD1000A2D171 /* Supplier.swift in Sources */,
@@ -707,8 +752,11 @@
 				11A1F80725B617E600A2D171 /* ReuseableCheckboxCell.swift in Sources */,
 				11A1F85925B6312500A2D171 /* DaysViewController.swift in Sources */,
 				11AC5A6525C07FBB006A7E09 /* ProductCreationViewController.swift in Sources */,
+				118A981825D45B4100EE0419 /* CustomerDeliveryDaysViewController.swift in Sources */,
+				118A980425D43D4000EE0419 /* Customer.swift in Sources */,
 				11AC5B5125C47241006A7E09 /* ToBuySellViewController.swift in Sources */,
 				11AC5A7225C0A8F8006A7E09 /* Product.swift in Sources */,
+				118A981325D459E300EE0419 /* CustomerPhotoViewController.swift in Sources */,
 				1181A74225C496E4005E3986 /* SearchProductsViewController.swift in Sources */,
 				11AC5A7C25C0C998006A7E09 /* ProductDetailsViewController.swift in Sources */,
 			);

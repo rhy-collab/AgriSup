@@ -64,6 +64,18 @@ class FirebaseService {
         
     }
     
+    func addCustomer(customer: Customer) {
+        db.collection(K.customerCollection)
+            .document(customer.email)
+            .setData(customer.createDic()!) { err in
+            if let err = err {
+                self.delegate?.handleError(error: err)
+            } else {
+                print("Customer successfully created")
+            }
+        }
+    }
+    
     func addSupplier(supplier: Supplier) {
         //add supplier to supplier collection
         db.collection(K.supplierCollection)

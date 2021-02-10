@@ -15,13 +15,27 @@ struct K {
     
     static let supplierCollection = "suppliers"
     static let productCollection = "products"
+    static let customerCollection = "customers"
     
     struct UserDefaults {
         static let email = "email"
         static let password = "password"
+        static let type = "type"
     }
     
     struct Segues {
+        
+        struct GettingStartedCustomer {
+            static let customerToIdentityInfo = "customerToIdentityInfo"
+            static let customerToPhotoInfo = "customerToPhotoInfo"
+            static let customerToDeliveryDayInfo = "customerToDeliveryDayInfo"
+            static let customerToFinancialInfo = "customerToFinancialInfo"
+            static let customerToFinalViewInfo = "customerToFinalViewInfo"
+            static let toCustomerHome = "toCustomerHome"
+            
+        }
+        
+        
         static let LOGIN_TO_MAIN_VIEW = "LoginToMainView"
         static let REGISTER_TO_GET_STARTED = "RegisterToGetStarted"
         static let REGISTER_TO_GET_STARTED_2 = "RegisterToGetStarted2"
