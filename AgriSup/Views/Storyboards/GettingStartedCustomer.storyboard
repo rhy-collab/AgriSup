@@ -15,10 +15,10 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Root View Controller-->
         <scene sceneID="2B6-Af-6Wm">
             <objects>
-                <viewController storyboardIdentifier="GettingStartedCustomer" id="yJX-yp-mJ9" customClass="ViewController" customModule="AgriSup" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GettingStartedCustomer" id="yJX-yp-mJ9" customClass="RootViewController" customModule="AgriSup" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iNn-K5-aJp">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -111,10 +111,10 @@
             </objects>
             <point key="canvasLocation" x="1225" y="-279"/>
         </scene>
-        <!--View Controller-->
+        <!--Root View Controller-->
         <scene sceneID="Mro-fa-kAD">
             <objects>
-                <viewController id="iCu-LK-qda" customClass="ViewController" customModule="AgriSup" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="iCu-LK-qda" customClass="RootViewController" customModule="AgriSup" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VVc-wo-qlc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -653,16 +653,16 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="JGU-zz-V2W">
-                                        <rect key="frame" x="40" y="332" width="334" height="194"/>
+                                        <rect key="frame" x="40" y="332" width="334" height="180"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The next section is the Add Product walkthrough. It'll take approximately 5 minutes" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jx4-ok-IXs">
-                                                <rect key="frame" x="0.0" y="0.0" width="334" height="84"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="334" height="70"/>
                                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="20"/>
                                                 <color key="textColor" name="BrandGrey"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L0T-Vc-zfY">
-                                                <rect key="frame" x="0.0" y="134" width="334" height="60"/>
+                                                <rect key="frame" x="0.0" y="120" width="334" height="60"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="vI4-WP-gUD"/>
                                                 </constraints>
@@ -678,10 +678,10 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="HLd-aI-HNQ">
-                                        <rect key="frame" x="176" y="574" width="62" height="234"/>
+                                        <rect key="frame" x="176" y="560" width="62" height="248"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NuV-13-r9S">
-                                                <rect key="frame" x="0.0" y="94" width="62" height="46"/>
+                                                <rect key="frame" x="0.0" y="101" width="62" height="46"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
                                                 <state key="normal" title="Next">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -725,7 +725,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rjo-hE-wob" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8487" y="-230"/>
+            <point key="canvasLocation" x="8414" y="-279"/>
         </scene>
     </scenes>
     <resources>

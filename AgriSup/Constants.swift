@@ -36,21 +36,28 @@ struct K {
         }
         
         
+        struct GettingStartedSupplier {
+            static let toSupplierIdentityInfo = "toSupplierIdentityInfo"
+            static let toSupplierPictureInfo = "toSupplierPictureInfo"
+            static let toSupplierCredentialsInfo = "toSupplierCredentialsInfo"
+            static let toSupplierDeliveryDatesInfo = "toSupplierDeliveryDatesInfo"
+            static let toSupplierDeliveryCityInfo = "toSupplierDeliveryCityInfo"
+            static let toSupplierFinancialInfo = "toSupplierFinancialInfo"
+            static let toSupplierFinalViewInfo = "toSupplierFinalViewInfo"
+        }
+        
+        
         static let LOGIN_TO_MAIN_VIEW = "LoginToMainView"
         static let REGISTER_TO_GET_STARTED = "RegisterToGetStarted"
         static let REGISTER_TO_GET_STARTED_2 = "RegisterToGetStarted2"
         
         static let straightToSearch = "straightToSearch"
         
+        
+        //Might need to get rid of these...
         static let toBuySellInfo = "toBuySellInfo"
         static let toCustomerStoryboard = "toCustomerStoryboard"
         static let toNameInfo = "toNameInfo"
-        static let toLicenseInfo = "toLicenseInfo"
-        static let toPhotoInfo = "toPhotoInfo"
-        static let toDeliveryDayInfo = "toDeliveryDayInfo"
-        static let toDeliveryCityInfo = "toDeliveryCityInfo"
-        static let toFinancialInfo = "toFinancialInfo"
-        static let toFinalView = "toFinalView"
         static let toMainPage = "toMainPage"
         
         static let autoLogin = "autoLogin"

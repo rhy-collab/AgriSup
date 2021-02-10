@@ -71,7 +71,7 @@
 		11CA937225B2002700CE9380 /* Poppins-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11CA936025B2002700CE9380 /* Poppins-ExtraBold.ttf */; };
 		8E4BD10825AE856900D75379 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4BD10725AE856900D75379 /* AppDelegate.swift */; };
 		8E4BD10A25AE856900D75379 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4BD10925AE856900D75379 /* SceneDelegate.swift */; };
-		8E4BD10C25AE856900D75379 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4BD10B25AE856900D75379 /* ViewController.swift */; };
+		8E4BD10C25AE856900D75379 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4BD10B25AE856900D75379 /* RootViewController.swift */; };
 		8E4BD10F25AE856900D75379 /* GettingStarted.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E4BD10D25AE856900D75379 /* GettingStarted.storyboard */; };
 		8E4BD11125AE856A00D75379 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E4BD11025AE856A00D75379 /* Assets.xcassets */; };
 		8E4BD11425AE856A00D75379 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E4BD11225AE856A00D75379 /* LaunchScreen.storyboard */; };
@@ -168,7 +168,7 @@
 		8E4BD10425AE856900D75379 /* AgriSup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AgriSup.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E4BD10725AE856900D75379 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E4BD10925AE856900D75379 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8E4BD10B25AE856900D75379 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8E4BD10B25AE856900D75379 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		8E4BD10E25AE856900D75379 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/GettingStarted.storyboard; sourceTree = "<group>"; };
 		8E4BD11025AE856A00D75379 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8E4BD11325AE856A00D75379 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -228,6 +228,21 @@
 			path = Customer;
 			sourceTree = "<group>";
 		};
+		118A982625D46ABC00EE0419 /* Supplier */ = {
+			isa = PBXGroup;
+			children = (
+				11A1F7C725B5CBD000A2D171 /* RegisterViewController.swift */,
+				11A1F85825B6312500A2D171 /* DaysViewController.swift */,
+				11B6720D25B8BAA600A72CB6 /* NameViewController.swift */,
+				11B6721225B8BACE00A72CB6 /* LicenseViewController.swift */,
+				11B6721725B8BAFF00A72CB6 /* DeliveryDetailsViewController.swift */,
+				11B6721C25B8BB2200A72CB6 /* FinancialDetailsViewController.swift */,
+				11B6722125B8D45200A72CB6 /* FinalSetupViewController.swift */,
+				11B6724A25B9AD8400A72CB6 /* PictureViewController.swift */,
+			);
+			path = Supplier;
+			sourceTree = "<group>";
+		};
 		11A1F77325B3ACFF00A2D171 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -252,16 +267,9 @@
 		11AC5A4225C0747C006A7E09 /* GettingStarted */ = {
 			isa = PBXGroup;
 			children = (
+				118A982625D46ABC00EE0419 /* Supplier */,
 				118A97FA25D439F200EE0419 /* Customer */,
-				8E4BD10B25AE856900D75379 /* ViewController.swift */,
-				11A1F7C725B5CBD000A2D171 /* RegisterViewController.swift */,
-				11A1F85825B6312500A2D171 /* DaysViewController.swift */,
-				11B6720D25B8BAA600A72CB6 /* NameViewController.swift */,
-				11B6721225B8BACE00A72CB6 /* LicenseViewController.swift */,
-				11B6721725B8BAFF00A72CB6 /* DeliveryDetailsViewController.swift */,
-				11B6721C25B8BB2200A72CB6 /* FinancialDetailsViewController.swift */,
-				11B6722125B8D45200A72CB6 /* FinalSetupViewController.swift */,
-				11B6724A25B9AD8400A72CB6 /* PictureViewController.swift */,
+				8E4BD10B25AE856900D75379 /* RootViewController.swift */,
 				11AC5B5025C47241006A7E09 /* ToBuySellViewController.swift */,
 			);
 			path = GettingStarted;
@@ -727,7 +735,7 @@
 				118A980925D43E7000EE0419 /* CustomerBuilder.swift in Sources */,
 				11B6724B25B9AD8400A72CB6 /* PictureViewController.swift in Sources */,
 				118A982225D45C4E00EE0419 /* CustomerFinalViewController.swift in Sources */,
-				8E4BD10C25AE856900D75379 /* ViewController.swift in Sources */,
+				8E4BD10C25AE856900D75379 /* RootViewController.swift in Sources */,
 				1143862A25CB7A100051BA02 /* InviteCustomerMessageViewController.swift in Sources */,
 				11AC59D825BF8BE7006A7E09 /* HomePageViewController.swift in Sources */,
 				118A980E25D4470400EE0419 /* CustomerNameViewController.swift in Sources */,

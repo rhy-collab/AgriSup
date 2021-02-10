@@ -27,7 +27,7 @@ class FinancialDetailsViewController: UIViewController{
             
             supplierBuilder.setFinancialInfo(accountName: accountName, bsb: bsb, accountNumber: accountNumber)
             
-            self.performSegue(withIdentifier: K.Segues.toFinalView, sender: self)
+            self.performSegue(withIdentifier: K.Segues.GettingStartedSupplier.toSupplierFinalViewInfo, sender: self)
         } else {
             errorPopUpDisplayed("A piece of info is missing")
         }

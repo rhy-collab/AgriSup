@@ -31,7 +31,7 @@ class DeliveryDetailsViewController: UIViewController {
             supplierBuilder.appendDeliveryCity(cityName: cityName)
             supplierBuilder.appendDeliveryCityInfo(cityName: cityName, driverName: driverName, driverBusinessName: driverBusinessName, driverMobile: driverPhoneNumber, depotName: depotBusinessName, depotPhoneNumber: depotPhone, depotAddress: depotDeliveryAddress)
             
-            performSegue(withIdentifier: K.Segues.toFinancialInfo, sender: self)
+            performSegue(withIdentifier: K.Segues.GettingStartedSupplier.toSupplierFinancialInfo, sender: self)
         } else {
             errorPopUpDisplayed("At least one of the fields is missing")
         }

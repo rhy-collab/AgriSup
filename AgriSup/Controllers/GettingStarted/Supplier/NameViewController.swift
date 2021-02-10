@@ -24,7 +24,7 @@ class NameViewController: UIViewController {
             
             supplierBuilder.setIdentity(firstName: firstName, lastName: lastName, mobileNumber: mobileNumber)
             
-            self.performSegue(withIdentifier: K.Segues.toLicenseInfo, sender: self)
+            self.performSegue(withIdentifier: K.Segues.GettingStartedSupplier.toSupplierPictureInfo, sender: self)
         } else {
             errorPopUpDisplayed("There was a missing field, please try again")
         }

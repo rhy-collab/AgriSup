@@ -17,7 +17,7 @@ class PictureViewController: UIViewController, FirebaseServicePhotoDelegate{
     }
     func handleResult(url: URL) {
         self.supplierBuilder.appendPhotoURL(url: url.absoluteString)
-        self.performSegue(withIdentifier: K.Segues.toDeliveryDayInfo, sender: self)
+        self.performSegue(withIdentifier: K.Segues.GettingStartedSupplier.toSupplierCredentialsInfo, sender: self)
     }
     
     

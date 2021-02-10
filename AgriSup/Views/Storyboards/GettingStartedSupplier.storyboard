@@ -15,10 +15,10 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Root View Controller-->
         <scene sceneID="s3x-uj-3wn">
             <objects>
-                <viewController storyboardIdentifier="GettingStartedSupplier" id="ZEg-rJ-kAw" customClass="ViewController" customModule="AgriSup" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GettingStartedSupplier" id="ZEg-rJ-kAw" customClass="RootViewController" customModule="AgriSup" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MZ6-gz-DSB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -111,10 +111,10 @@
             </objects>
             <point key="canvasLocation" x="1226" y="483"/>
         </scene>
-        <!--View Controller-->
+        <!--Root View Controller-->
         <scene sceneID="WSX-if-dbN">
             <objects>
-                <viewController id="t4x-GL-4YK" customClass="ViewController" customModule="AgriSup" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="t4x-GL-4YK" customClass="RootViewController" customModule="AgriSup" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mbv-UT-Ggo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -157,6 +157,9 @@
                                                 <state key="normal" title="Next">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <segue destination="vug-YH-RkN" kind="show" id="38z-kw-0eN"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -187,11 +190,11 @@
             <objects>
                 <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="vug-YH-RkN" customClass="RegisterViewController" customModule="AgriSup" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5Os-xn-6Ni">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="69" translatesAutoresizingMaskIntoConstraints="NO" id="aJ7-dC-7bp">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Security" translatesAutoresizingMaskIntoConstraints="NO" id="g6q-YF-nSc">
                                         <rect key="frame" x="84" y="0.0" width="246" height="106.5"/>
@@ -209,7 +212,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="6N4-rU-CrH">
-                                        <rect key="frame" x="40" y="388" width="334" height="430"/>
+                                        <rect key="frame" x="40" y="388" width="334" height="420"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oXC-K2-IjR">
                                                 <rect key="frame" x="0.0" y="0.0" width="334" height="48"/>
@@ -239,7 +242,7 @@
                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eWK-SB-Xh7">
-                                                <rect key="frame" x="0.0" y="189" width="334" height="241"/>
+                                                <rect key="frame" x="0.0" y="189" width="334" height="231"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
                                                 <state key="normal" title="Next">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -273,6 +276,7 @@
                         <outlet property="confirmPasswordTextField" destination="Qx0-MB-ae4" id="sjS-Cu-p4X"/>
                         <outlet property="emailTextField" destination="oXC-K2-IjR" id="Yqg-lu-4SO"/>
                         <outlet property="passwordTextField" destination="Hje-ew-5YB" id="l4M-dk-v9S"/>
+                        <segue destination="Nzq-uo-Pyh" kind="show" identifier="toSupplierIdentityInfo" id="3OP-mt-SbR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EZD-ed-HBQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -284,11 +288,11 @@
             <objects>
                 <viewController storyboardIdentifier="SupplierInfo" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Nzq-uo-Pyh" customClass="NameViewController" customModule="AgriSup" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1d9-k1-Aos">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="48" translatesAutoresizingMaskIntoConstraints="NO" id="Y9C-P0-DN4">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="instant_support" translatesAutoresizingMaskIntoConstraints="NO" id="XFc-dh-oC7">
                                         <rect key="frame" x="66.5" y="0.0" width="281" height="220"/>
@@ -300,7 +304,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="kGu-7A-nAP">
-                                        <rect key="frame" x="40" y="388" width="334" height="430"/>
+                                        <rect key="frame" x="40" y="388" width="334" height="420"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mQp-38-1mp">
                                                 <rect key="frame" x="0.0" y="0.0" width="334" height="48"/>
@@ -330,7 +334,7 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5QS-Bp-3gd">
-                                                <rect key="frame" x="0.0" y="189" width="334" height="241"/>
+                                                <rect key="frame" x="0.0" y="189" width="334" height="231"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
                                                 <state key="normal" title="Next">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -362,6 +366,7 @@
                         <outlet property="firstNameTextField" destination="mQp-38-1mp" id="P8V-Q7-s8B"/>
                         <outlet property="lastNameTextField" destination="NAj-WK-PbF" id="h1g-Fw-MZY"/>
                         <outlet property="mobileNumberTextField" destination="QFl-Fn-z9w" id="Gt2-Qq-lrH"/>
+                        <segue destination="Y37-GH-Um7" kind="show" identifier="toSupplierPictureInfo" id="riE-cl-5Ji"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bTb-jZ-40I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -373,14 +378,14 @@
             <objects>
                 <viewController id="Y37-GH-Um7" customClass="PictureViewController" customModule="AgriSup" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="m2t-CQ-mN3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="8G4-Sw-YL9">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="0.0" width="418" height="808"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We need a few photos of your workplace next!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bwW-LQ-7Jc">
-                                        <rect key="frame" x="27" y="0.0" width="360.5" height="110"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="418" height="110"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="110" id="noY-2E-TTk"/>
                                             <constraint firstAttribute="width" constant="418" id="qB2-EM-wF2"/>
@@ -390,10 +395,10 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Xce-4P-JyF">
-                                        <rect key="frame" x="84.5" y="160" width="245" height="398"/>
+                                        <rect key="frame" x="86.5" y="160" width="245" height="388"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ch-Lg-Gxj">
-                                        <rect key="frame" x="32" y="608" width="350" height="80"/>
+                                        <rect key="frame" x="34" y="598" width="350" height="80"/>
                                         <color key="backgroundColor" red="0.33824411030000001" green="0.73818546529999995" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="350" id="SY9-kV-5tx"/>
@@ -408,7 +413,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fiG-Xl-uij">
-                                        <rect key="frame" x="176" y="738" width="62" height="80"/>
+                                        <rect key="frame" x="178" y="728" width="62" height="80"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="80" id="mGc-oy-19o"/>
                                         </constraints>
@@ -437,6 +442,7 @@
                     <navigationItem key="navigationItem" id="pwB-sP-5fO"/>
                     <connections>
                         <outlet property="imageView" destination="Xce-4P-JyF" id="Oyx-D5-wUb"/>
+                        <segue destination="rwY-ww-ZFR" kind="show" identifier="toSupplierCredentialsInfo" id="5qx-i9-nMC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Xq-kF-eyT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -448,11 +454,11 @@
             <objects>
                 <viewController storyboardIdentifier="SupplierInfoImportant" useStoryboardIdentifierAsRestorationIdentifier="YES" id="rwY-ww-ZFR" customClass="LicenseViewController" customModule="AgriSup" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="avi-xV-BqU">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="48" translatesAutoresizingMaskIntoConstraints="NO" id="9rt-7C-4it">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login" translatesAutoresizingMaskIntoConstraints="NO" id="R3H-L0-O0o">
                                         <rect key="frame" x="40" y="0.0" width="334.5" height="200"/>
@@ -464,7 +470,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="gUQ-Bo-UBm">
-                                        <rect key="frame" x="40" y="368" width="334" height="450"/>
+                                        <rect key="frame" x="40" y="368" width="334" height="440"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ABN" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="II1-db-CbG">
                                                 <rect key="frame" x="0.0" y="0.0" width="334" height="48"/>
@@ -494,7 +500,7 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xty-jX-LHN">
-                                                <rect key="frame" x="0.0" y="189" width="334" height="261"/>
+                                                <rect key="frame" x="0.0" y="189" width="334" height="251"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
                                                 <state key="normal" title="Next">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -526,6 +532,7 @@
                         <outlet property="abnTextField" destination="II1-db-CbG" id="Xu6-zY-je0"/>
                         <outlet property="driversLicenseTextField" destination="VoU-vv-xrz" id="cwG-1g-rD2"/>
                         <outlet property="farmingLicenseField" destination="cec-5C-t9D" id="fW6-7b-9uL"/>
+                        <segue destination="Irn-lk-H2B" kind="show" identifier="toSupplierDeliveryDatesInfo" id="xsa-ew-LFB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VuF-cw-QX5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -537,11 +544,11 @@
             <objects>
                 <viewController id="Irn-lk-H2B" customClass="DaysViewController" customModule="AgriSup" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="D7o-Qu-6Q3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="sPC-8Z-t6f">
-                                <rect key="frame" x="53" y="768" width="308" height="46"/>
+                                <rect key="frame" x="53" y="714" width="308" height="46"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5fp-AG-YO4">
                                         <rect key="frame" x="0.0" y="0.0" width="308" height="46"/>
@@ -556,13 +563,13 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Which days can you deliver?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sks-Sx-s4z">
-                                <rect key="frame" x="60" y="111" width="294" height="72"/>
+                                <rect key="frame" x="60" y="67" width="294" height="72"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsMultipleSelection="YES" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TyR-QZ-Azh">
-                                <rect key="frame" x="31" y="233" width="352" height="493"/>
+                                <rect key="frame" x="31" y="189" width="352" height="483"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="basicStyle" textLabel="Pw5-CG-iWJ" style="IBUITableViewCellStyleDefault" id="hyY-XY-dv3">
@@ -605,6 +612,7 @@
                     <navigationItem key="navigationItem" id="UBW-w3-pn2"/>
                     <connections>
                         <outlet property="tableView" destination="TyR-QZ-Azh" id="3Xl-aW-EXG"/>
+                        <segue destination="sNf-GC-RnB" kind="show" identifier="toSupplierDeliveryCityInfo" id="mzr-s1-CzF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8E6-TS-NAH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -616,11 +624,11 @@
             <objects>
                 <viewController id="sNf-GC-RnB" customClass="DeliveryDetailsViewController" customModule="AgriSup" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sRh-hf-0Va">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="5xi-nj-dx3">
-                                <rect key="frame" x="20" y="44" width="374" height="752"/>
+                                <rect key="frame" x="20" y="0.0" width="374" height="742"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Doing great! Add the details of your delivery locations" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ly-sd-r2g">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="107.5"/>
@@ -629,7 +637,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4LE-hF-s6i">
-                                        <rect key="frame" x="0.0" y="127.5" width="374" height="624.5"/>
+                                        <rect key="frame" x="0.0" y="127.5" width="374" height="614.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="eif-Eg-sUf">
                                                 <rect key="frame" x="0.0" y="0.0" width="371.5" height="541.5"/>
@@ -712,7 +720,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hcs-gd-FRH">
-                                <rect key="frame" x="174" y="814" width="66" height="48"/>
+                                <rect key="frame" x="174" y="760" width="66" height="48"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <state key="normal" title="Next">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -742,22 +750,23 @@
                         <outlet property="driverBusinessName" destination="vPb-D3-nBv" id="nfW-U1-lbh"/>
                         <outlet property="driverName" destination="SHX-Ot-4M4" id="7Xw-VK-Oeo"/>
                         <outlet property="driverPhoneNumber" destination="ap6-Od-utY" id="SPl-f5-X2l"/>
+                        <segue destination="WgV-Xz-EyB" kind="show" identifier="toSupplierFinancialInfo" id="OwS-qV-XkI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MeP-5K-4oi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7405" y="483"/>
+            <point key="canvasLocation" x="7441" y="483"/>
         </scene>
         <!--Financial Details View Controller-->
         <scene sceneID="JOm-TU-T2X">
             <objects>
                 <viewController id="WgV-Xz-EyB" customClass="FinancialDetailsViewController" customModule="AgriSup" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Iuo-Pc-0lN">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="48" translatesAutoresizingMaskIntoConstraints="NO" id="rLp-RZ-Hm3">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login" translatesAutoresizingMaskIntoConstraints="NO" id="UGm-C9-vqB">
                                         <rect key="frame" x="40" y="0.0" width="334.5" height="200"/>
@@ -804,10 +813,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="YG6-ir-vrT">
-                                        <rect key="frame" x="176" y="578" width="62" height="240"/>
+                                        <rect key="frame" x="176" y="578" width="62" height="230"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XY5-6T-OCx">
-                                                <rect key="frame" x="0.0" y="97" width="62" height="46"/>
+                                                <rect key="frame" x="0.0" y="92" width="62" height="46"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
                                                 <state key="normal" title="Next">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -839,6 +848,7 @@
                         <outlet property="accountNameTextField" destination="jiM-Zl-jUf" id="gX3-Xv-7b1"/>
                         <outlet property="accountNumberTextField" destination="DZD-BG-aZD" id="VGI-R1-hw6"/>
                         <outlet property="bsbTextField" destination="wux-7J-24y" id="Hde-cA-bCj"/>
+                        <segue destination="BO0-Xj-wZa" kind="show" identifier="toSupplierFinalViewInfo" id="ynR-XF-VD0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1aG-0m-I1d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -850,11 +860,11 @@
             <objects>
                 <viewController id="BO0-Xj-wZa" customClass="FinalSetupViewController" customModule="AgriSup" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PHU-tW-r21">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="48" translatesAutoresizingMaskIntoConstraints="NO" id="cXN-Bh-IUf">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login" translatesAutoresizingMaskIntoConstraints="NO" id="xNB-l7-Uhv">
                                         <rect key="frame" x="40" y="0.0" width="334.5" height="200"/>
@@ -866,16 +876,16 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="4me-5p-cdl">
-                                        <rect key="frame" x="40" y="332" width="334" height="180"/>
+                                        <rect key="frame" x="40" y="332" width="334" height="194"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The next section is the Add Product walkthrough. It'll take approximately 5 minutes" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5qt-1v-bB9">
-                                                <rect key="frame" x="0.0" y="0.0" width="334" height="70"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="334" height="84"/>
                                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="20"/>
                                                 <color key="textColor" name="BrandGrey"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ukC-ay-qcz">
-                                                <rect key="frame" x="0.0" y="120" width="334" height="60"/>
+                                                <rect key="frame" x="0.0" y="134" width="334" height="60"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="GCH-0m-lmc"/>
                                                 </constraints>
@@ -891,10 +901,10 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="hzt-F8-Stb">
-                                        <rect key="frame" x="176" y="560" width="62" height="258"/>
+                                        <rect key="frame" x="176" y="574" width="62" height="234"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RNB-eT-hze">
-                                                <rect key="frame" x="0.0" y="106" width="62" height="46"/>
+                                                <rect key="frame" x="0.0" y="94" width="62" height="46"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
                                                 <state key="normal" title="Next">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -922,10 +932,23 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Zyf-zO-HlX"/>
+                    <connections>
+                        <segue destination="h0a-mm-S1P" kind="show" identifier="toMainPage" id="2IE-91-fWW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jCN-XG-fm1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="9182" y="483"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="vo4-j4-wMY">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Home" id="h0a-mm-S1P" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="QRL-ZD-dPD"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EDW-CV-Xxj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="10191" y="483"/>
         </scene>
     </scenes>
     <resources>

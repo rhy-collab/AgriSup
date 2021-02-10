@@ -34,7 +34,7 @@ class DaysViewController: UIViewController {
             errorPopUpDisplayed("Please select at least one day")
         } else {
             supplierBuilder.setDeliveryDates(deliveryDates: selectedDays)
-            self.performSegue(withIdentifier: K.Segues.toDeliveryCityInfo, sender: self)
+            self.performSegue(withIdentifier: K.Segues.GettingStartedSupplier.toSupplierDeliveryCityInfo, sender: self)
         }
         
     }

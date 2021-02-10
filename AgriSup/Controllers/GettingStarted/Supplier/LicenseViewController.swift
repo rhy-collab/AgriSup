@@ -29,7 +29,7 @@ class LicenseViewController: UIViewController {
             
             supplierBuilder.setCredentials(abn: abn, farmingLicense: farmingLicense, driversLicense: driversLicense)
             
-            performSegue(withIdentifier: K.Segues.toPhotoInfo, sender: self)
+            performSegue(withIdentifier: K.Segues.GettingStartedSupplier.toSupplierDeliveryDatesInfo, sender: self)
         } else {
             errorPopUpDisplayed("There was a problem, please try again")
         }
