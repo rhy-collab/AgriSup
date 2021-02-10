@@ -11,23 +11,6 @@ import Firebase
 
 class ParsingHelper {
     
-    func parseDataToProduct(data: [String: Any]) -> Product {
-        let supplierID = data["supplierId"] as! String
-        let name = data["name"] as! String
-        let description = data["description"] as! String
-        let growingMethod = data["growingMethod"] as! String
-        let size = data["size"] as! String
-        let unit = data["unit"] as! String
-        let minOrderQuantity = data["minOrderQuantity"] as! Int
-        let leadTime = data["leadTime"] as! Int
-        let leadTimeUnits = data["leadTimeUnits"] as! String
-        let samples = data["samples"] as! Bool
-        let sampleUnits = data["sampleUnits"] as! Int
-        let unitPrice = data["unitPrice"] as! Double
-        
-        return Product(supplierId: supplierID, name: name, description: description, growingMethod: growingMethod, size: size, unit: unit, minOrderQuantity: minOrderQuantity, leadTime: leadTime, leadTimeUnits: leadTimeUnits, samples: samples, sampleUnits: sampleUnits, unitPrice: unitPrice)
-    }
-    
 //    Nasty Mapping method
     func parseDataToSupplier(data: [String: Any] ) -> Supplier{
         let supplierCredentialDTO : [String: Any] = data["credentials"] as! [String: Any]
@@ -48,7 +31,7 @@ class ParsingHelper {
         let firstName = data["firstName"] as! String
         let lastName = data["lastName"] as! String
         let email = "TestEmail" //must get from document index
-        let inviteCode = 123456 // must flush collections and have everyone get an invite code
+        let inviteCode = data["inviteCode"] as! Int
         let mobileNumber = data["mobileNumber"] as! String
         let documentReferenceProductIds = data["productIDs"] as! [DocumentReference]
         

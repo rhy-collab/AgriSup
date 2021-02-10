@@ -8,14 +8,7 @@
 import UIKit
 import Firebase
 
-class SearchProductsViewController:  UIViewController, FirebaseServiceDocumentSearchDelegate{
-    
-    func handleResult(documentSnapshot: DocumentSnapshot) {
-        
-        self.supplier = parseHelper.parseDataToSupplier(data: documentSnapshot.data()!)
-        self.performSegue(withIdentifier: "toProductInfoPage", sender: self)
-    }
-    
+class SearchProductsViewController:  UIViewController{
     
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
@@ -89,16 +82,21 @@ extension SearchProductsViewController: UISearchBarDelegate {
 extension SearchProductsViewController:  FirebaseServiceQuerySearchDelegate {
     
     func handleResult(querySnapshot: QuerySnapshot) {
-        self.productResults = []
-        for document in querySnapshot.documents {
-            print(document.data())
-            let product = parseHelper.parseDataToProduct(data: document.data())
-            self.productResults.append(product)
+        self.productResults = querySnapshot.documents.compactMap { (queryDocumentSnapshot) -> Product? in
+            return try? queryDocumentSnapshot.data(as: Product.self)
         }
         
-        print(self.productResults)
         DispatchQueue.main.async{
             self.tableView.reloadData()
         }
     }
+}
+
+extension SearchProductsViewController: FirebaseServiceDocumentSearchDelegate {
+    
+    func handleResult(documentSnapshot: DocumentSnapshot) {
+        self.supplier = parseHelper.parseDataToSupplier(data: documentSnapshot.data()!)
+        self.performSegue(withIdentifier: "toProductInfoPage", sender: self)
+    }
+    
 }

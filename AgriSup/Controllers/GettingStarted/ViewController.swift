@@ -10,7 +10,6 @@ import Firebase
 
 class ViewController: UIViewController {
     
-    
     @IBAction func loginPressed(_ sender: UIButton) {
         let email: String = UserDefaults.standard.value(forKey: K.UserDefaults.email) as? String ?? "None"
         let password: String = UserDefaults.standard.value(forKey: K.UserDefaults.password) as? String ?? "None"

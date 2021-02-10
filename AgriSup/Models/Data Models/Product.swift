@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+import FirebaseFirestoreSwift
 
 struct Product: Codable {
     
