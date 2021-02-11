@@ -69,6 +69,8 @@
 		11CA937025B2002700CE9380 /* Poppins-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11CA935E25B2002700CE9380 /* Poppins-ExtraLight.ttf */; };
 		11CA937125B2002700CE9380 /* Poppins-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11CA935F25B2002700CE9380 /* Poppins-ExtraLightItalic.ttf */; };
 		11CA937225B2002700CE9380 /* Poppins-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11CA936025B2002700CE9380 /* Poppins-ExtraBold.ttf */; };
+		11EDA86625D56B86001142E4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EDA86525D56B86001142E4 /* LoginViewController.swift */; };
+		11EDA86B25D56E95001142E4 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EDA86A25D56E95001142E4 /* SignInViewController.swift */; };
 		8E4BD10825AE856900D75379 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4BD10725AE856900D75379 /* AppDelegate.swift */; };
 		8E4BD10A25AE856900D75379 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4BD10925AE856900D75379 /* SceneDelegate.swift */; };
 		8E4BD10C25AE856900D75379 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4BD10B25AE856900D75379 /* RootViewController.swift */; };
@@ -161,6 +163,8 @@
 		11CA935E25B2002700CE9380 /* Poppins-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLight.ttf"; sourceTree = "<group>"; };
 		11CA935F25B2002700CE9380 /* Poppins-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
 		11CA936025B2002700CE9380 /* Poppins-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBold.ttf"; sourceTree = "<group>"; };
+		11EDA86525D56B86001142E4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		11EDA86A25D56E95001142E4 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		35206CCF6B80CDF5999B9F18 /* Pods_AgriSup_AgriSupUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AgriSup_AgriSupUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A15DA66EC93BFD2A8CFDA43 /* Pods_AgriSupTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AgriSupTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		73051376F4D0BBB9928A3ADA /* Pods-AgriSup-AgriSupUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgriSup-AgriSupUITests.debug.xcconfig"; path = "Target Support Files/Pods-AgriSup-AgriSupUITests/Pods-AgriSup-AgriSupUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -271,6 +275,8 @@
 				118A97FA25D439F200EE0419 /* Customer */,
 				8E4BD10B25AE856900D75379 /* RootViewController.swift */,
 				11AC5B5025C47241006A7E09 /* ToBuySellViewController.swift */,
+				11EDA86525D56B86001142E4 /* LoginViewController.swift */,
+				11EDA86A25D56E95001142E4 /* SignInViewController.swift */,
 			);
 			path = GettingStarted;
 			sourceTree = "<group>";
@@ -753,9 +759,11 @@
 				8E4BD10A25AE856900D75379 /* SceneDelegate.swift in Sources */,
 				11B6720E25B8BAA600A72CB6 /* NameViewController.swift in Sources */,
 				1143862F25CB868C0051BA02 /* ParsingHelper.swift in Sources */,
+				11EDA86625D56B86001142E4 /* LoginViewController.swift in Sources */,
 				11AC59F525BF93D2006A7E09 /* MenuViewController.swift in Sources */,
 				1158C01425D18D5700966133 /* PhotoService.swift in Sources */,
 				11CA934225B1FD1800CE9380 /* Constants.swift in Sources */,
+				11EDA86B25D56E95001142E4 /* SignInViewController.swift in Sources */,
 				11A1F78025B3BE7400A2D171 /* SupplierBuilder.swift in Sources */,
 				11A1F80725B617E600A2D171 /* ReuseableCheckboxCell.swift in Sources */,
 				11A1F85925B6312500A2D171 /* DaysViewController.swift in Sources */,

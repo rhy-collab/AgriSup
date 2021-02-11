@@ -27,23 +27,23 @@
                                 <rect key="frame" x="0.0" y="88" width="428" height="804"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GetStartedImage" translatesAutoresizingMaskIntoConstraints="NO" id="SBo-sO-UAt">
-                                        <rect key="frame" x="0.0" y="0.0" width="428" height="295.33333333333331"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="428" height="292"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tbC-8l-Y3j">
-                                        <rect key="frame" x="0.0" y="327.33333333333331" width="428" height="47.666666666666686"/>
+                                        <rect key="frame" x="0.0" y="324" width="428" height="56.666666666666686"/>
                                         <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="28"/>
                                         <color key="textColor" name="BrandGrey"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ath-BZ-GwS">
-                                        <rect key="frame" x="0.0" y="407" width="428" height="44"/>
+                                        <rect key="frame" x="0.0" y="412.66666666666669" width="428" height="43.333333333333314"/>
                                         <state key="normal" title="Quick Login"/>
                                         <connections>
                                             <action selector="quickLoginPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ML3-8U-FOY"/>
                                         </connections>
                                     </button>
                                     <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LogoSuppliers" translatesAutoresizingMaskIntoConstraints="NO" id="PXv-Lk-Ndf">
-                                        <rect key="frame" x="0.0" y="483" width="428" height="180"/>
+                                        <rect key="frame" x="0.0" y="488" width="428" height="175"/>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="Mpb-hk-WrZ">
                                         <rect key="frame" x="0.0" y="695" width="428" height="109"/>
@@ -67,7 +67,6 @@
                                                     <color key="titleColor" name="BrandGreen"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="loginPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cE7-oA-srF"/>
                                                     <segue destination="Nby-2C-uYP" kind="show" id="wQJ-V5-h9H"/>
                                                 </connections>
                                             </button>
@@ -128,10 +127,10 @@
                                 <rect key="frame" x="0.0" y="88" width="428" height="804"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="instant_support" translatesAutoresizingMaskIntoConstraints="NO" id="idt-3z-mne">
-                                        <rect key="frame" x="73.333333333333343" y="0.0" width="281.33333333333326" height="434.66666666666669"/>
+                                        <rect key="frame" x="73.333333333333343" y="0.0" width="281.33333333333326" height="399.66666666666669"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are you looking to buy or sell?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y1U-US-rBZ">
-                                        <rect key="frame" x="49.666666666666657" y="447.66666666666657" width="329" height="218.33333333333331"/>
+                                        <rect key="frame" x="49.666666666666657" y="412.66666666666669" width="329" height="253.33333333333331"/>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -188,10 +187,10 @@
             </objects>
             <point key="canvasLocation" x="188" y="134"/>
         </scene>
-        <!--To Buy Sell View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="Rmj-PE-JaI">
             <objects>
-                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="Nby-2C-uYP" customClass="ToBuySellViewController" customModule="AgriSup" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="Nby-2C-uYP" customClass="LoginViewController" customModule="AgriSup" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bfQ-PD-3el">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -200,10 +199,10 @@
                                 <rect key="frame" x="0.0" y="88" width="428" height="804"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="instant_support" translatesAutoresizingMaskIntoConstraints="NO" id="dff-XR-xO7">
-                                        <rect key="frame" x="73.333333333333343" y="0.0" width="281.33333333333326" height="434.66666666666669"/>
+                                        <rect key="frame" x="73.333333333333343" y="0.0" width="281.33333333333326" height="399.66666666666669"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are you a buyer or a seller?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xb5-eN-ZZO">
-                                        <rect key="frame" x="19" y="447.66666666666657" width="390.33333333333331" height="218.33333333333331"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are you registered as a  buyer or a seller?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xb5-eN-ZZO">
+                                        <rect key="frame" x="47.666666666666657" y="412.66666666666669" width="333" height="253.33333333333331"/>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -222,7 +221,7 @@
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="toBuyPressed:" destination="Nby-2C-uYP" eventType="touchUpInside" id="MOl-lQ-D9k"/>
+                                                    <action selector="buyerButtonPressed:" destination="Nby-2C-uYP" eventType="touchUpInside" id="4gM-NE-N3Y"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DuK-dx-xAx">
@@ -233,7 +232,7 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="toSellPressed:" destination="Nby-2C-uYP" eventType="touchUpInside" id="MYW-Za-LIe"/>
+                                                    <action selector="sellerButtonPressed:" destination="Nby-2C-uYP" eventType="touchUpInside" id="Rlz-eB-RrL"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -255,10 +254,95 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="kvv-58-iBY"/>
+                    <connections>
+                        <segue destination="0Qj-fC-6yD" kind="show" identifier="toLoginPage" id="bli-hp-cGY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F9p-RF-7tC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="188" y="1061"/>
+        </scene>
+        <!--Sign In View Controller-->
+        <scene sceneID="Sgf-BO-rl2">
+            <objects>
+                <viewController id="0Qj-fC-6yD" customClass="SignInViewController" customModule="AgriSup" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Xtc-zt-ZBz">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oPq-kr-ZBi">
+                                <rect key="frame" x="42" y="196" width="41" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pa0-sJ-v2c">
+                                <rect key="frame" x="49" y="257" width="330" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cL9-uz-yaX">
+                                <rect key="frame" x="41" y="355" width="74" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Oju-KF-qs8">
+                                <rect key="frame" x="49" y="424" width="330" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GX5-Nw-XVH">
+                                <rect key="frame" x="156" y="523" width="117" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="BrandGreen"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginPressed:" destination="0Qj-fC-6yD" eventType="touchUpInside" id="xPJ-Uc-AAw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="g6W-1a-xHf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="FnX-xT-z8G"/>
+                    <connections>
+                        <outlet property="emailTextfield" destination="pa0-sJ-v2c" id="SoI-Ye-Sdo"/>
+                        <outlet property="passwordTextField" destination="Oju-KF-qs8" id="ge1-6P-eXB"/>
+                        <segue destination="DRI-Vl-rTC" kind="show" identifier="toCustomerHomePage" id="3zN-2P-4JX"/>
+                        <segue destination="tx0-0P-bn1" kind="show" identifier="toSupplierHomePage" id="zkY-9N-Zlj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Lw-Yo-9ei" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1108.8785046728972" y="1060.6911447084235"/>
+        </scene>
+        <!--Customer-->
+        <scene sceneID="WTK-7u-YuQ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Customer" id="DRI-Vl-rTC" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="ntt-OU-SZe"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tCD-Qy-cqt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1818" y="956"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="HnY-Re-P9h">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Home" id="tx0-0P-bn1" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Rf3-iF-JeM"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vx0-rB-YQ7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1818" y="1168"/>
         </scene>
         <!--GettingStartedCustomer-->
         <scene sceneID="pgJ-1j-rQg">

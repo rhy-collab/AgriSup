@@ -46,6 +46,12 @@ struct K {
             static let toSupplierFinalViewInfo = "toSupplierFinalViewInfo"
         }
         
+        struct Login {
+            static let toLoginPage = "toLoginPage"
+            static let toCustomerHomePage = "toCustomerHomePage"
+            static let toSupplierHomePage = "toSupplierHomePage"
+        }
+        
         
         static let LOGIN_TO_MAIN_VIEW = "LoginToMainView"
         static let REGISTER_TO_GET_STARTED = "RegisterToGetStarted"
