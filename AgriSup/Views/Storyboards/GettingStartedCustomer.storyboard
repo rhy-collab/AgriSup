@@ -653,35 +653,21 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="JGU-zz-V2W">
-                                        <rect key="frame" x="40" y="332" width="334" height="180"/>
+                                        <rect key="frame" x="40" y="332" width="334" height="84"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The next section is the Add Product walkthrough. It'll take approximately 5 minutes" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jx4-ok-IXs">
-                                                <rect key="frame" x="0.0" y="0.0" width="334" height="70"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="334" height="84"/>
                                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="20"/>
                                                 <color key="textColor" name="BrandGrey"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L0T-Vc-zfY">
-                                                <rect key="frame" x="0.0" y="120" width="334" height="60"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="60" id="vI4-WP-gUD"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="21"/>
-                                                <state key="normal" title="Take me to my account → ">
-                                                    <color key="titleColor" name="BrandGreen"/>
-                                                </state>
-                                            </button>
                                         </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="L0T-Vc-zfY" secondAttribute="trailing" id="5DY-iE-vLR"/>
-                                            <constraint firstItem="L0T-Vc-zfY" firstAttribute="leading" secondItem="JGU-zz-V2W" secondAttribute="leading" id="PTt-KB-yC0"/>
-                                        </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="HLd-aI-HNQ">
-                                        <rect key="frame" x="176" y="560" width="62" height="248"/>
+                                        <rect key="frame" x="176" y="464" width="62" height="344"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NuV-13-r9S">
-                                                <rect key="frame" x="0.0" y="101" width="62" height="46"/>
+                                                <rect key="frame" x="0.0" y="149" width="62" height="46"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
                                                 <state key="normal" title="Next">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -738,14 +724,11 @@
         <namedColor name="BrandDarkGreen">
             <color red="0.054999999701976776" green="0.28600001335144043" blue="0.12200000137090683" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="BrandGreen">
-            <color red="0.33799999952316284" green="0.73799997568130493" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <namedColor name="BrandGrey">
             <color red="0.82400000095367432" green="0.82400000095367432" blue="0.82400000095367432" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="BrandLinkBlue">
-            <color red="0.13725490196078433" green="0.40392156862745099" blue="0.65098039215686276" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.13699999451637268" green="0.40400001406669617" blue="0.65100002288818359" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
