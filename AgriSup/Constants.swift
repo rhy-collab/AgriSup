@@ -13,6 +13,9 @@ struct K {
     static let cellIdentifier = "ReusableCell"
     static let cellNibName = "ReuseableCheckboxCell"
     
+    static let searchCellIdentifier = "SearchTableCell"
+    static let searchCellNibName = "SearchResultsTableViewCell"
+    
     static let supplierCollection = "suppliers"
     static let productCollection = "products"
     static let customerCollection = "customers"

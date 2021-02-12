@@ -71,6 +71,8 @@
 		11CA937225B2002700CE9380 /* Poppins-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11CA936025B2002700CE9380 /* Poppins-ExtraBold.ttf */; };
 		11EDA86625D56B86001142E4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EDA86525D56B86001142E4 /* LoginViewController.swift */; };
 		11EDA86B25D56E95001142E4 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EDA86A25D56E95001142E4 /* SignInViewController.swift */; };
+		11EDA87225D6A8B1001142E4 /* SearchResultsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EDA87025D6A8B1001142E4 /* SearchResultsTableViewCell.swift */; };
+		11EDA87325D6A8B1001142E4 /* SearchResultsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11EDA87125D6A8B1001142E4 /* SearchResultsTableViewCell.xib */; };
 		8E4BD10825AE856900D75379 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4BD10725AE856900D75379 /* AppDelegate.swift */; };
 		8E4BD10A25AE856900D75379 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4BD10925AE856900D75379 /* SceneDelegate.swift */; };
 		8E4BD10C25AE856900D75379 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4BD10B25AE856900D75379 /* RootViewController.swift */; };
@@ -165,6 +167,8 @@
 		11CA936025B2002700CE9380 /* Poppins-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBold.ttf"; sourceTree = "<group>"; };
 		11EDA86525D56B86001142E4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		11EDA86A25D56E95001142E4 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		11EDA87025D6A8B1001142E4 /* SearchResultsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsTableViewCell.swift; sourceTree = "<group>"; };
+		11EDA87125D6A8B1001142E4 /* SearchResultsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchResultsTableViewCell.xib; sourceTree = "<group>"; };
 		35206CCF6B80CDF5999B9F18 /* Pods_AgriSup_AgriSupUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AgriSup_AgriSupUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A15DA66EC93BFD2A8CFDA43 /* Pods_AgriSupTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AgriSupTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		73051376F4D0BBB9928A3ADA /* Pods-AgriSup-AgriSupUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgriSup-AgriSupUITests.debug.xcconfig"; path = "Target Support Files/Pods-AgriSup-AgriSupUITests/Pods-AgriSup-AgriSupUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -320,6 +324,8 @@
 				11A1F7CC25B5DB0400A2D171 /* PopupWindow.swift */,
 				11A1F80525B617E600A2D171 /* ReuseableCheckboxCell.swift */,
 				11A1F80625B617E600A2D171 /* ReuseableCheckboxCell.xib */,
+				11EDA87025D6A8B1001142E4 /* SearchResultsTableViewCell.swift */,
+				11EDA87125D6A8B1001142E4 /* SearchResultsTableViewCell.xib */,
 			);
 			name = "Reuseable Views";
 			sourceTree = "<group>";
@@ -589,6 +595,7 @@
 				11CA936F25B2002700CE9380 /* Poppins-Black.ttf in Resources */,
 				11CA936D25B2002700CE9380 /* Poppins-Thin.ttf in Resources */,
 				8E4BD11125AE856A00D75379 /* Assets.xcassets in Resources */,
+				11EDA87325D6A8B1001142E4 /* SearchResultsTableViewCell.xib in Resources */,
 				11CA936A25B2002700CE9380 /* Poppins-ExtraBoldItalic.ttf in Resources */,
 				11CA937225B2002700CE9380 /* Poppins-ExtraBold.ttf in Resources */,
 				11CA936225B2002700CE9380 /* Poppins-ThinItalic.ttf in Resources */,
@@ -764,6 +771,7 @@
 				1158C01425D18D5700966133 /* PhotoService.swift in Sources */,
 				11CA934225B1FD1800CE9380 /* Constants.swift in Sources */,
 				11EDA86B25D56E95001142E4 /* SignInViewController.swift in Sources */,
+				11EDA87225D6A8B1001142E4 /* SearchResultsTableViewCell.swift in Sources */,
 				11A1F78025B3BE7400A2D171 /* SupplierBuilder.swift in Sources */,
 				11A1F80725B617E600A2D171 /* ReuseableCheckboxCell.swift in Sources */,
 				11A1F85925B6312500A2D171 /* DaysViewController.swift in Sources */,

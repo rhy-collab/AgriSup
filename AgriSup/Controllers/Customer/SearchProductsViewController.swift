@@ -28,6 +28,8 @@ class SearchProductsViewController:  UIViewController{
         tableView.delegate = self
         tableView.dataSource = self
         
+        tableView.register(UINib(nibName: K.searchCellNibName, bundle: nil), forCellReuseIdentifier: K.searchCellIdentifier)
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -43,19 +45,23 @@ class SearchProductsViewController:  UIViewController{
 //MARK: - TableView Delegates
 
 extension SearchProductsViewController: UITableViewDelegate, UITableViewDataSource {
+
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return productResults.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "SearchTableCell", for: indexPath)
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: K.searchCellIdentifier, for: indexPath) as! SearchResultsTableViewCell
         
         if productResults.count > 0 {
             let product = productResults[indexPath.row]
-            cell.textLabel?.text = product.name + "-" + product.growingMethod
+//            cell.textLabel?.text = product.name + "-" + product.growingMethod
+            cell.orderQuantityLabel.text = String(product.minOrderQuantity!)
+            cell.priceLabel.text = "\(product.unitPrice ?? 0.0) per \(product.unit)"
         } else {
-            cell.textLabel?.text = "No products found matching description"
+            print("Unable to find a product")
         }
         
         return cell
