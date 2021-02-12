@@ -18,7 +18,7 @@
         </array>
     </customFonts>
     <scenes>
-        <!--Item 2-->
+        <!--Menu-->
         <scene sceneID="cNE-Mi-dKw">
             <objects>
                 <viewController id="1CR-uc-W7d" sceneMemberID="viewController">
@@ -28,13 +28,13 @@
                         <viewLayoutGuide key="safeArea" id="lhh-UU-nzY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="qXm-If-BCH"/>
+                    <tabBarItem key="tabBarItem" title="Menu" image="line.horizontal.3" catalog="system" id="qXm-If-BCH"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dsi-3W-MEB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1012" y="87"/>
         </scene>
-        <!--Suppliers-->
+        <!--Home-->
         <scene sceneID="PWE-ZL-eVl">
             <objects>
                 <viewController id="Uys-pm-FBs" customClass="SearchProductsViewController" customModule="AgriSup" customModuleProvider="target" sceneMemberID="viewController">
@@ -66,7 +66,7 @@
                         <viewLayoutGuide key="safeArea" id="uIM-SP-rVQ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Suppliers" image="person.crop.circle" catalog="system" id="qjX-2E-rBA"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="qjX-2E-rBA"/>
                     <connections>
                         <outlet property="searchBar" destination="4Ft-lW-HVc" id="gM5-pt-wJE"/>
                         <outlet property="tableView" destination="pJq-0i-zzL" id="agL-Pg-gFc"/>
@@ -325,7 +325,8 @@
     </scenes>
     <resources>
         <image name="Oyster_test_image" width="361" height="140.33332824707031"/>
-        <image name="person.crop.circle" catalog="system" width="128" height="121"/>
+        <image name="house" catalog="system" width="128" height="106"/>
+        <image name="line.horizontal.3" catalog="system" width="128" height="64"/>
         <namedColor name="BrandGreen">
             <color red="0.33799999952316284" green="0.73799997568130493" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
